@@ -1,3 +1,376 @@
-body{
+*{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Seccion Header, logo y foto de perfil*/
+header{
+    background-color: #0eb3ee;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 10px 30px;
+}
+.logo{
+    margin: 0px 30px;
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo:hover{
+    cursor: pointer;
+    color: #ffff;
+}
+.linkPerfil{
+    margin-left: 80%;
+}
+.fotoDePerfil{
+    height: 35px;
+    border-radius: 40px;
+}
+.botonFlecha{
+    background-color: transparent;
+    border-color: transparent;
+    width: 20px;
+    height: 30px;
+}
+.botonFlecha img{
+    height: 10px;
+}
+/*Navabar*/
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    background: #F2EFEF;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
+}
+
+
+.sidebar .logo_content i{
+    padding: 20px;
+    margin: 5px;
+}
+
+.logo_content .logo_name{
+    color: transparent;
+}
+.sidebar.active .logo_content .logo_name{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    color: black;
+}
+
+
+.sidebar #btn{
+    position: absolute;
+    color: black;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+.sidebar.active #btn{
+    left: 90%;
+}
+
+.sidebar ul{
+margin-top: 150px;
+}
+.sidebar ul li{ 
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+}
+
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 100px;
+    top: auto;
+    border-radius: 6px;
+    height: 35px;
+    width: 110px;
+    background: rgb(201, 199, 199);
+    line-height: 35px;
+    text-align: center;
+    opacity: 0;
+    font-weight: bold;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip{
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+}
+
+
+
+
+.sidebar ul li a{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+
+.sidebar ul li a:hover{
+    color: rgb(255, 255, 255);  
+    background: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 35px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.sidebar .icon-name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .icon-name{
+    opacity: 1;
+    pointer-events: auto;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Main, seccion noticias y busqueda*/
+main{
+    border: 2px solid #d1d1d1;
+    height: 800px;
+    width: 50%;
+    margin: 0 10%;
+    margin-top: 70px;
+}
+.contenedorBuscador{
+    margin-top: 30px;
+    font-size: 80%;
+    text-align: center;
+}
+
+.buscador{
+    width: 26%;
+    border-radius: 15px;
+    border: 1px solid #d1d1d1;
+}
+.bi-search{
+    margin-left: 7px;
+}
+/*cuadros derecha*/
+.contenedor{
+    width: 30%;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 3rem;
+}
+
+
+h2{
+    font-size: .3rem;
+    font-family: var(--fuenteletratitulo);
+}
+p{
+    font-size: .8rem;
+}
+
+
+.box {
+    flex-flow: column wrap;
+    border: 2px solid rgb(151, 150, 150);
+    border-radius: 2PX;
+    margin-bottom: 50px;
+
+  }
+
+.box_1{
+    padding: 1rem 2rem ;
+    font-family: var(--fuenteletratexto);
+}
+
+.box_1_2{
+    border: 1px solid rgb(143, 152, 156);
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 15% 70% 14%;
+    margin-bottom: 15px;
+
+}
+
+.cuadroColor{
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #D91FC6;
+    height: 17PX;
+    width: 17PX;
+    display: -ms-flexbox;
+
+}
+
+.divisionTitulo{
+    max-width: 97%;
+    display: grid;
+    grid-template-columns: 50% 30% 19%;
+    margin-top: 10px;
+}
+.parrafo{
+    max-width: 95%;
+    font-size: .6rem;
+}
+
+.fecha{
+    padding-top: .4rem;
+    font-size: .5rem;
+}
+
+.estrella{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 10px;
+    width: 10px;
+}
+
+@media (max-width:1150px) {
+    .cuadroColor{
+        margin-top: 20px;
+        margin-left: 5px;
+        background-color: #D91FC6;
+        height: 25PX;
+        width: 25PX;
+        display: -ms-flexbox;
+    
+    }
+    .estrella{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 15px;
+    width: 15px;
+}
+
+}
+
+@media (max-width:1050px) {
+    .cuadroColor{
+        margin-top: 20px;
+        margin-left: 5px;
+        background-color: #D91FC6;
+        height: 25PX;
+        width: 25PX;
+        display: -ms-flexbox;
+    
+    }
+    .estrella{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 15px;
+    width: 15px;
+}
+
+}
+
+@media (max-width:950px) {
+    .cuadroColor{
+        margin-top: 20px;
+        margin-left:3rem;
+        background-color: #D91FC6;
+        height: 25PX;
+        width: 25PX;
+    
+    }
+    .estrella{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 15px;
+    width: 15px;
+}
+
+}
+
+@media (max-width:950px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cuadroColor{
+        margin-top: 20px;
+        margin-left: 3rem;
+        background-color: #D91FC6;
+        height: 25PX;
+        width: 25PX;
+        display: -ms-flexbox;
+    
+    }
+    .estrella{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 15px;
+    width: 15px;
+}
+
+}
+
+@media (max-width:650px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cuadroColor{
+        margin-top: 20px;
+        margin-left: .5rem;
+        background-color: #D91FC6;
+        height: 25PX;
+        width: 25PX;
+        display: -ms-flexbox;
+    
+    }
+    .estrella{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 15px;
+    width: 15px;
+}
+
+}
+
+
+

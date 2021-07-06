@@ -14,12 +14,277 @@
     <title>Project Innovation</title>
 </head>
 <body>
+    <!--Seccion Header, logo y foto de perfil-->
+    <header class="header">
+        <nav class="nav">
+          <img class="imagenLogo" src=""  alt="">
+          <a href="#" class="logo">Inovation</a>
+            <a href="#" class="linkPerfil"><img class="fotoDePerfil" src="assets/img/foto de perfil.jpg" alt="user"></a>
+            <button class="botonFlecha"><img src="assets/img/arrow-down-sign-to-navigate.png" alt=""></button>
+        </nav>
+    </header>
+    <!--Navbar-->
+    <div class="sidebar">
+        <div class="logo_content"> <!-- BARRA DE MENU DESPLEGABLE -->
+          <div class="logo_name" >Innovation</div>
+          <i class='bx bx-menu' id="btn"></i>
+        </div>
+     
+        <!-- EMPEZAMOS CON LOS ICONOS -->
+        <ul >
+          <li> <!-- ICONO DE HOME -->
+            <a href="#">
+             <i class='bx bx-home'></i>
+              <span class="icon-name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+     
+          <li> <!-- ICONO DE PERFIL -->
+           <a href="#">
+             <i class='bx bx-user'></i>
+             <span class="icon-name">Perfil</span>
+           </a>
+            <span class="tooltip">Perfil</span>
+         </li>
+     
+         <li>  <!-- ICONO DE BUSQUEDA -->
+           <a href="#">
+             <i class='bx bx-search' ></i>
+             <span class="icon-name">Busqueda</span>
+           </a>
+            <span class="tooltip">Busqueda</span>
+         </li>
+         
+         <li> <!-- ICONO DE SETTINGS -->
+           <a href="#">
+             <i class='bx bx-cog' ></i>
+             <span class="icon-name">Configuracion</span>
+           </a>
+           <span class="tooltip">Configuracion</span>
+         </li>
+        </ul>
+     
+      </div>
+    <!--contenedor publicaciones y busqueda-->
+    <section>
+        <main>
+    <!--Claudia: colocación de inputs y button de search-->
+            <p class="contenedorBuscador">
+            <input class="buscador" type="search" name="search" placeholder= "Search"/>
+            <input class="buscador" type="location" name="location" placeholder="Location"/>
+            <input class="buscador" type="filter" name="filter" placeholder="Filter"/>
+            <a href="#" class="bi bi-search">
+            <img src="assets/img/lupa.png" alt="" width="20px;">
+            </a>
+            </p>
 
-<h1>Hola Mundo</h1>
+            <!-- Inicio de mi Codigo -->
+
+            <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal --> <!-- ficha obtenida de bootstrap de a aqui salio la estructura -->
+            <!-- tarjeta de post en pagina principal  esta dividida en 2 bloques como dientes de bob esponja uno al lado del otro-->
+            <div class="card mb-3 card border-secondary mb-3" style="max-width: 610px; max-height: 110px; margin-top: 70px; margin-left: 55px; border-radius: 20px;"> <!-- tamaño general de la tarjeta 'jugar con el widht o el height para ajustarlo' --> <!-- con borde azul -->
+                <div class="row g-0"> <!-- Gutter. Es el espaciado existente (o no) entre celdas o conjuntos de celdas. --> <!-- remove the grid gutters with .g-0  --> <!-- es lo que hace que uno aparezca junto al otro -->
+                
+                    <!-- contenido Imagen de la publicacion -->
+
+                <div class="col-md-2">  <!-- columna izquierda donde va la imagen  4/12, 1/3--> <!-- https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg --> <!-- link de imagen referencia -->
+                    <img src="https://imagenesnoticias.com/wp-content/uploads/2021/01/ImagenesChidas50.jpeg" class="img-fluid rounded-start" style="height: 50%; margin-left: 25%; margin-top: 15%;" alt="...">
+                </div> <!-- cierre de la col izq solo contiene la imagen -->
+                <div class="col-md-8 , ">  <!-- columna derecha donde va el Texto de la publicacion, la fecha de subida y el Titulo (autor de la pub) 8/12 , 2/3-->
+                    <div class="card-body"> <!--  esta es una tergetita contenida en la columna derecha en la que metemos todo-->
+                    
+                        <!-- contenido del encabezado de la publicacion -->
+                    
+                        <div style="display: flex; justify-content: space-between;" width ="90%" > <!-- encabezado, titulo, fecha y tiempo de publicacion, estrellita -->
+                    <h5 class="card-title" style="font-weight: 600;">Card title</h5> <!-- titulo de la publicacion -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 12px;"> Last updated 3 mins ago </small></p> <!-- la fecha de subida -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 11px;"> 27/08/2029 </small></p> <!-- la año de la publicacion -->
+                    <img src="assets/img/estrella.png" alt="..." width="15px" height="15px;"> <!-- 3 -->
+                        </div> <!-- cierre de la caja del encabezado -->
+                    
+                        <!-- contenido en texto de pla publicación -->
+                    
+                        <p class="card-text" style="font-size: 13px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <!--  el contenido de la publicacion breve descrip -->
+                    </div> <!-- cierre de la card contenida dentro de la col derecha -->
+                </div> <!-- cierre de columna derecha -->
+                </div><!--  cierre de la fila, Renglon dodne estan contenidos los dos bloques izq y derecho -->
+            </div> <!-- cierre del div que contiene la fila que contiene los bloques, que contienen las cosas adentro XD -->
+
+            <!-- fin del codigo -->
+
+            <!-- Inicio de mi Codigo -->
+
+            <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal --> <!-- ficha obtenida de bootstrap de a aqui salio la estructura -->
+            <!-- tarjeta de post en pagina principal  esta dividida en 2 bloques como dientes de bob esponja uno al lado del otro-->
+            <div class="card mb-3 card border-secondary mb-3" style="max-width: 610px; max-height: 110px; margin-top: 30px; margin-left: 55px; border-radius: 20px;"> <!-- tamaño general de la tarjeta 'jugar con el widht o el height para ajustarlo' --> <!-- con borde azul -->
+                <div class="row g-0"> <!-- Gutter. Es el espaciado existente (o no) entre celdas o conjuntos de celdas. --> <!-- remove the grid gutters with .g-0  --> <!-- es lo que hace que uno aparezca junto al otro -->
+                
+                    <!-- contenido Imagen de la publicacion -->
+
+                <div class="col-md-2">  <!-- columna izquierda donde va la imagen  4/12, 1/3--> <!-- https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg --> <!-- link de imagen referencia -->
+                    <img src="https://imagenesnoticias.com/wp-content/uploads/2021/01/ImagenesChidas50.jpeg" class="img-fluid rounded-start" style="height: 50%; margin-left: 25%; margin-top: 15%;" alt="...">
+                </div> <!-- cierre de la col izq solo contiene la imagen -->
+                <div class="col-md-8 , ">  <!-- columna derecha donde va el Texto de la publicacion, la fecha de subida y el Titulo (autor de la pub) 8/12 , 2/3-->
+                    <div class="card-body"> <!--  esta es una tergetita contenida en la columna derecha en la que metemos todo-->
+                    
+                        <!-- contenido del encabezado de la publicacion -->
+                    
+                        <div style="display: flex; justify-content: space-between;" width ="90%" > <!-- encabezado, titulo, fecha y tiempo de publicacion, estrellita -->
+                    <h5 class="card-title" style="font-weight: 600;">Card title</h5> <!-- titulo de la publicacion -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 12px;"> Last updated 3 mins ago </small></p> <!-- la fecha de subida -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 11px;"> 27/08/2029 </small></p> <!-- la año de la publicacion -->
+                    <img src="assets/img/estrella.png" alt="..." width="15px" height="15px;"> <!-- 3 -->
+                        </div> <!-- cierre de la caja del encabezado -->
+                    
+                        <!-- contenido en texto de pla publicación -->
+                    
+                        <p class="card-text" style="font-size: 13px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <!--  el contenido de la publicacion breve descrip -->
+                    </div> <!-- cierre de la card contenida dentro de la col derecha -->
+                </div> <!-- cierre de columna derecha -->
+                </div><!--  cierre de la fila, Renglon dodne estan contenidos los dos bloques izq y derecho -->
+            </div> <!-- cierre del div que contiene la fila que contiene los bloques, que contienen las cosas adentro XD -->
+
+            <!-- fin del codigo -->
+
+            <!-- Inicio de mi Codigo -->
+
+            <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal --> <!-- ficha obtenida de bootstrap de a aqui salio la estructura -->
+            <!-- tarjeta de post en pagina principal  esta dividida en 2 bloques como dientes de bob esponja uno al lado del otro-->
+            <div class="card mb-3 card border-secondary mb-3" style="max-width: 610px; max-height: 110px; margin-top: 30px; margin-left: 55px; border-radius: 20px;"> <!-- tamaño general de la tarjeta 'jugar con el widht o el height para ajustarlo' --> <!-- con borde azul -->
+                <div class="row g-0"> <!-- Gutter. Es el espaciado existente (o no) entre celdas o conjuntos de celdas. --> <!-- remove the grid gutters with .g-0  --> <!-- es lo que hace que uno aparezca junto al otro -->
+                
+                    <!-- contenido Imagen de la publicacion -->
+
+                <div class="col-md-2">  <!-- columna izquierda donde va la imagen  4/12, 1/3--> <!-- https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg --> <!-- link de imagen referencia -->
+                    <img src="https://imagenesnoticias.com/wp-content/uploads/2021/01/ImagenesChidas50.jpeg" class="img-fluid rounded-start" style="height: 50%; margin-left: 25%; margin-top: 15%;" alt="...">
+                </div> <!-- cierre de la col izq solo contiene la imagen -->
+                <div class="col-md-8 , ">  <!-- columna derecha donde va el Texto de la publicacion, la fecha de subida y el Titulo (autor de la pub) 8/12 , 2/3-->
+                    <div class="card-body"> <!--  esta es una tergetita contenida en la columna derecha en la que metemos todo-->
+                    
+                        <!-- contenido del encabezado de la publicacion -->
+                    
+                        <div style="display: flex; justify-content: space-between;" width ="90%" > <!-- encabezado, titulo, fecha y tiempo de publicacion, estrellita -->
+                    <h5 class="card-title" style="font-weight: 600;">Card title</h5> <!-- titulo de la publicacion -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 12px;"> Last updated 3 mins ago </small></p> <!-- la fecha de subida -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 11px;"> 27/08/2029 </small></p> <!-- la año de la publicacion -->
+                    <img src="assets/img/estrella.png" alt="..." width="15px" height="15px;"> <!-- 3 -->
+                        </div> <!-- cierre de la caja del encabezado -->
+                    
+                        <!-- contenido en texto de pla publicación -->
+                    
+                        <p class="card-text" style="font-size: 13px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <!--  el contenido de la publicacion breve descrip -->
+                    </div> <!-- cierre de la card contenida dentro de la col derecha -->
+                </div> <!-- cierre de columna derecha -->
+                </div><!--  cierre de la fila, Renglon dodne estan contenidos los dos bloques izq y derecho -->
+            </div> <!-- cierre del div que contiene la fila que contiene los bloques, que contienen las cosas adentro XD -->
+
+            <!-- fin del codigo -->
+
+            <!-- Inicio de mi Codigo -->
+
+            <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal --> <!-- ficha obtenida de bootstrap de a aqui salio la estructura -->
+            <!-- tarjeta de post en pagina principal  esta dividida en 2 bloques como dientes de bob esponja uno al lado del otro-->
+            <div class="card mb-3 card border-secondary mb-3" style="max-width: 610px; max-height: 110px; margin-top: 30px; margin-left: 55px; border-radius: 20px;"> <!-- tamaño general de la tarjeta 'jugar con el widht o el height para ajustarlo' --> <!-- con borde azul -->
+                <div class="row g-0"> <!-- Gutter. Es el espaciado existente (o no) entre celdas o conjuntos de celdas. --> <!-- remove the grid gutters with .g-0  --> <!-- es lo que hace que uno aparezca junto al otro -->
+                
+                    <!-- contenido Imagen de la publicacion -->
+
+                <div class="col-md-2">  <!-- columna izquierda donde va la imagen  4/12, 1/3--> <!-- https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg --> <!-- link de imagen referencia -->
+                    <img src="https://imagenesnoticias.com/wp-content/uploads/2021/01/ImagenesChidas50.jpeg" class="img-fluid rounded-start" style="height: 50%; margin-left: 25%; margin-top: 15%;" alt="...">
+                </div> <!-- cierre de la col izq solo contiene la imagen -->
+                <div class="col-md-8 , ">  <!-- columna derecha donde va el Texto de la publicacion, la fecha de subida y el Titulo (autor de la pub) 8/12 , 2/3-->
+                    <div class="card-body"> <!--  esta es una tergetita contenida en la columna derecha en la que metemos todo-->
+                    
+                        <!-- contenido del encabezado de la publicacion -->
+                    
+                        <div style="display: flex; justify-content: space-between;" width ="90%" > <!-- encabezado, titulo, fecha y tiempo de publicacion, estrellita -->
+                    <h5 class="card-title" style="font-weight: 600;">Card title</h5> <!-- titulo de la publicacion -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 12px;"> Last updated 3 mins ago </small></p> <!-- la fecha de subida -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 11px;"> 27/08/2029 </small></p> <!-- la año de la publicacion -->
+                    <img src="assets/img/estrella.png" alt="..." width="15px" height="15px;"> <!-- 3 -->
+                        </div> <!-- cierre de la caja del encabezado -->
+                    
+                        <!-- contenido en texto de pla publicación -->
+                    
+                        <p class="card-text" style="font-size: 13px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <!--  el contenido de la publicacion breve descrip -->
+                    </div> <!-- cierre de la card contenida dentro de la col derecha -->
+                </div> <!-- cierre de columna derecha -->
+                </div><!--  cierre de la fila, Renglon dodne estan contenidos los dos bloques izq y derecho -->
+            </div> <!-- cierre del div que contiene la fila que contiene los bloques, que contienen las cosas adentro XD -->
+
+            <!-- fin del codigo -->
+
+            <!-- Inicio de mi Codigo -->
+
+            <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal --> <!-- ficha obtenida de bootstrap de a aqui salio la estructura -->
+            <!-- tarjeta de post en pagina principal  esta dividida en 2 bloques como dientes de bob esponja uno al lado del otro-->
+            <div class="card mb-3 card border-secondary mb-3" style="max-width: 610px; max-height: 110px; margin-top: 30px; margin-left: 55px; border-radius: 20px;"> <!-- tamaño general de la tarjeta 'jugar con el widht o el height para ajustarlo' --> <!-- con borde azul -->
+                <div class="row g-0"> <!-- Gutter. Es el espaciado existente (o no) entre celdas o conjuntos de celdas. --> <!-- remove the grid gutters with .g-0  --> <!-- es lo que hace que uno aparezca junto al otro -->
+                
+                    <!-- contenido Imagen de la publicacion -->
+
+                <div class="col-md-2">  <!-- columna izquierda donde va la imagen  4/12, 1/3--> <!-- https://www.trecebits.com/wp-content/uploads/2017/07/empleo-trabajo.jpg --> <!-- link de imagen referencia -->
+                    <img src="https://imagenesnoticias.com/wp-content/uploads/2021/01/ImagenesChidas50.jpeg" class="img-fluid rounded-start" style="height: 50%; margin-left: 25%; margin-top: 15%;" alt="...">
+                </div> <!-- cierre de la col izq solo contiene la imagen -->
+                <div class="col-md-8 , ">  <!-- columna derecha donde va el Texto de la publicacion, la fecha de subida y el Titulo (autor de la pub) 8/12 , 2/3-->
+                    <div class="card-body"> <!--  esta es una tergetita contenida en la columna derecha en la que metemos todo-->
+                    
+                        <!-- contenido del encabezado de la publicacion -->
+                    
+                        <div style="display: flex; justify-content: space-between;" width ="90%" > <!-- encabezado, titulo, fecha y tiempo de publicacion, estrellita -->
+                    <h5 class="card-title" style="font-weight: 600;">Card title</h5> <!-- titulo de la publicacion -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 12px;"> Last updated 3 mins ago </small></p> <!-- la fecha de subida -->
+                    <p class="card-text"><small class="text-muted" style="font-size: 11px;"> 27/08/2029 </small></p> <!-- la año de la publicacion -->
+                    <img src="assets/img/estrella.png" alt="..." width="15px" height="15px;"> <!-- 3 -->
+                        </div> <!-- cierre de la caja del encabezado -->
+                    
+                        <!-- contenido en texto de pla publicación -->
+                    
+                        <p class="card-text" style="font-size: 13px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <!--  el contenido de la publicacion breve descrip -->
+                    </div> <!-- cierre de la card contenida dentro de la col derecha -->
+                </div> <!-- cierre de columna derecha -->
+                </div><!--  cierre de la fila, Renglon dodne estan contenidos los dos bloques izq y derecho -->
+            </div> <!-- cierre del div que contiene la fila que contiene los bloques, que contienen las cosas adentro XD -->
+
+            <!-- fin del codigo -->
+
+        
+        </main>
+        <!--Cuadros derecha-->
+        <div class="contenedor">
+            <div class="box">
+                <div class="box_1">
+                    <div class="box_1_2">
+                        <div class="cuadroColor">
+
+                        </div>
+                        <div>
+                            <div class="no-margin">
+                                <div class="no-margin">
+                                    <h2>Publicacion titulo</h2>
+                                </div>
+                                <div class="no-margin">
+                                    <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <svg class="estrella" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-star" width="20" height="20" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+                        </div>
+            </div>
+        </div>
+    </section>
 
 
-
-
-<script src="assets/innovation.js"></script>
+<script src="assets/js/innovation.js"></script>
 </body>
 </html>
