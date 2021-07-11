@@ -155,83 +155,15 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-/*Main, seccion noticias y busqueda*/
-.content-inicio{
-    display: flex;
-}
-main{
+
+/*Portada*/
+.portada{
     border: 1px solid #112336;
-    height: 800px;
-    width: 50%;
-    margin: 0 12%;
-    margin-top: 70px;
-    margin-right: 3%;
-}
-.contenedorBuscador{
-    margin-top: 30px;
-    font-size: 80%;
-    text-align: center;
-}
-
-.buscador{
-    width: 26%;
-    border-radius: 15px;
-    border: 1px solid #d1d1d1;
-}
-.bi-search{
-    margin-left: 7px;
-}
-.content-cards-scroll{
+    width: 100%;
+    height: 250px;
     overflow: hidden;
+    object-fit:contain;
 }
-.card img{
-    width: 100px;
-    margin-left: 30%;
-    margin-top: 15%;
+.portada img{
+    width: 100%;
 }
-.card{
-    border-radius: 15px;
-}
-.top-card{
-    display: flex;
-    align-items: center;
-}
-.top-card p{
-    width: 150px;
-    margin-left: 20px;
-}
-.top-card img{
-    height: 15px;
-    width: 15px;
-    margin: 0;
-    padding: 0;
-    margin-left: 50%;
-
-}
-.card-text{
-    font-size: 14px;
-    margin-bottom: 0%;
-}
-
-/*Seccion trabajos*/
-section{
-    border: 1px solid #112336;
-    height: 400px;
-    width: 30%;
-    margin-top: 70px;
-    overflow: hidden;
-}
-
-
-@media (max-width:1050px) {
-    
-
-}
-
-@media (max-width:650px) {
-    
-
-}
-
-
-
