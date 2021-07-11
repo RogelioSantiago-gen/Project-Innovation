@@ -158,12 +158,34 @@ section{
 
 /*Portada*/
 .portada{
+    position: absolute;
     border: 1px solid #112336;
     width: 100%;
     height: 250px;
     overflow: hidden;
     object-fit:contain;
+    z-index: -1;
 }
 .portada img{
     width: 100%;
+}
+portada button{
+    background-color: transparent;
+    margin: 0 auto;
+   
+}
+.portada button img{
+    width: 10px;
+}
+.foto-perfil{
+    margin: 0px auto;
+    border: 1px solid #112336;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    z-index: 0;
+}
+.foto-perfil img{
+    width: 160px;
 }
