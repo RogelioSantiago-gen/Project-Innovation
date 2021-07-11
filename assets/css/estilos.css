@@ -21,6 +21,10 @@ nav{
     justify-content: space-between;
    padding: 10px 30px;
 }
+.dropdown{
+    background-color: transparent;
+    color: #ffff;
+}
 .logo{
     margin: 8px 0px;
     margin-left: 70px;
@@ -36,10 +40,11 @@ nav{
 .imagenLogo{
     height: 40px;
 }
-.linkPerfil{
-    margin-left: 60%;
-    padding-left: 90px;
+.contenedor-perfil-flecha{
+    display: flex;
+    margin-right: 60px;
 }
+
 .fotoDePerfil{
     height: 40px;
     border-radius: 40px;
