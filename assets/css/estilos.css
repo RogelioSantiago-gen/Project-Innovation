@@ -8,6 +8,7 @@ body{
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    /*background-color: #18191A; color para modo oscuro*/
 }
 
 /*Seccion Header, logo y foto de perfil*/
@@ -22,7 +23,7 @@ nav{
 }
 .logo{
     margin: 8px 0px;
-    margin-left: 110px;
+    margin-left: 70px;
     color: #ffff;
     font-size: 30px;
     font-weight: 600;
@@ -33,7 +34,7 @@ nav{
     color: #ffff;
 }
 .imagenLogo{
-    height: 43px;
+    height: 40px;
 }
 .linkPerfil{
     margin-left: 60%;
@@ -111,12 +112,8 @@ margin-top: 150px;
     top: 50%;
 }
 
-
-
-
 .sidebar ul li a{
     color: #112336;
-    font-weight: bold;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -154,12 +151,16 @@ section{
     flex-wrap: wrap;
 }
 /*Main, seccion noticias y busqueda*/
+.content-inicio{
+    display: flex;
+}
 main{
-    border: 2px solid #d1d1d1;
+    border: 1px solid #112336;
     height: 800px;
     width: 50%;
     margin: 0 12%;
     margin-top: 70px;
+    margin-right: 3%;
 }
 .contenedorBuscador{
     margin-top: 30px;
@@ -189,20 +190,29 @@ main{
 }
 .top-card p{
     width: 150px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .top-card img{
     height: 15px;
     width: 15px;
     margin: 0;
     padding: 0;
-    margin-left: 90px;
+    margin-left: 50%;
 
 }
 .card-text{
     font-size: 14px;
     margin-bottom: 0%;
 }
+
+/*Seccion trabajos*/
+section{
+    border: 1px solid #112336;
+    height: 400px;
+    width: 30%;
+    margin-top: 70px;
+}
+
 
 @media (max-width:1050px) {
     
