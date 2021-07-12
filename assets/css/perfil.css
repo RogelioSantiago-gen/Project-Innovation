@@ -159,7 +159,8 @@ section{
 /*Portada*/
 .portada{
     position: absolute;
-    border: 1px solid #112336;
+    border: 1px solid #727b85;
+    box-shadow: 0 20px 40px 0 rgba(204, 204, 204, 0.1);
     width: 100%;
     height: 250px;
     overflow: hidden;
@@ -169,23 +170,45 @@ section{
 .portada img{
     width: 100%;
 }
-portada button{
-    background-color: transparent;
-    margin: 0 auto;
-   
+.boton-portada{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    top: 210px;
+    left: 1850px;
 }
-.portada button img{
-    width: 10px;
+.boton-portada button{
+    background-color: transparent;
+    border: none;
+}
+.boton-portada button img{
+    width: 20px;
 }
 .foto-perfil{
-    margin: 0px auto;
     border: 1px solid #112336;
     border-radius: 20px;
     width: 160px;
     height: 160px;
     overflow: hidden;
-    z-index: 0;
+    position: relative;
+    top: 140px;
+    left: 350px;
 }
 .foto-perfil img{
     width: 160px;
+}
+.nombre{
+    font-weight: 900;
+    font-size: 27px;
+    position: relative;
+    top: 15px;
+    left: 570px;
+    width: 500px;
+}
+.contenedor-padre-inferior{
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-top: 6%;
+    width: 80%;
+    height: 900px;
 }

@@ -160,7 +160,8 @@ section{
     display: flex;
 }
 main{
-    border: 1px solid #112336;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    background: #F2EFEF;
     height: 800px;
     width: 50%;
     margin: 0 12%;
@@ -177,6 +178,7 @@ main{
     width: 26%;
     border-radius: 15px;
     border: 1px solid #d1d1d1;
+    box-shadow: 0px 2px 2px rgba(98, 100, 108, 0.5);
 }
 .bi-search{
     margin-left: 7px;
@@ -190,7 +192,9 @@ main{
     margin-top: 15%;
 }
 .card{
+    border:;
     border-radius: 15px;
+    box-shadow: 0px 3px 4px rgba(98, 100, 108, 0.5);
 }
 .top-card{
     display: flex;
@@ -215,7 +219,8 @@ main{
 
 /*Seccion trabajos*/
 section{
-    border: 1px solid #112336;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    background: #F2EFEF;
     height: 400px;
     width: 30%;
     margin-top: 70px;
