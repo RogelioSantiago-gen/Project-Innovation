@@ -1,9 +1,41 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-body{
-    background-color: black;
-}
+/* FONDO VIDEO */
+.contenido__video{
+  background: #7DD174;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+ }
+ 
+ /* Estilos para la etiqueta "video" con la calse (.video)  */
+ .video{
+  position: absolute;
+  max-width: 300%;
+  width: 100%;
+ }
+ 
+ /* media queries (personalizarlo a su antojo)*/
+ @media(max-width: 900px){
+  .video{
+   width: 150%;
+  }
+ }
+ @media(max-width: 650px){
+  .video{
+   width: 280%;
+  }
+ }
+ @media(max-width: 480px){
+  .video{ 
+   width: 300%;
+  }
+ }
 .contentDad{
     display: flex;
     border-radius: 20px;
