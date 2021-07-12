@@ -1,19 +1,23 @@
+/* -----------ESTILOS DE BODY----- */
+
 body{
     background-color: white;
     overflow-y: scroll;
-    max-width: 2070px;
+ 
     
 }
 
+/* --------  ESTILOS DE CONTENEDOR PRINCIPAL------------ */
 .wrapper {
     display: flex;
     width: 1250px;
     height: 1100px;
-    margin: 60px auto 60px auto;
+    margin : 60px auto 60px auto;
     box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
     
   }
   
+  /*    ----ESTILOS DE CONTENEDOR LATERAL IZQUIERDO(MENU DE CONFIGURACION)---------- */
   .left {
     width: 360px;
     background: #4b6cb7;  /* fallback for old browsers */
@@ -21,11 +25,14 @@ body{
     background: linear-gradient(to bottom, #1a2946, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-right: ;
   }
-  
+  /* 
+    -----LISTA NO ORDENADA CONTENEDOR IZQUIERDO---- */
   ul {
     margin-top: 50px;
   }
   
+ /*  ---LISTA DE APARTADOS DE  CONFIGURACION----- */
+
   li {
     list-style: none;
     margin-bottom: 37px;
@@ -33,6 +40,8 @@ body{
     letter-spacing: 0.7px;
   }
   
+ /*  -----ICONO DE LISTA NO ORENADA CONTENEDOR IZQUIERDO----- */
+
   .icon {
     padding-top: 6px;
     margin: auto;
@@ -91,7 +100,7 @@ body{
   
   .avatar-upload {
     margin-left: 30px;
-    margin-top: -20px;
+    margin-top: -40px;
     height: 265px;
     width: 195px;
     /* los siguientes valores son independientes del tamaño del círculo */
@@ -120,7 +129,7 @@ body{
   
   label {
     letter-spacing: 0.75px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #182848;
     
   }
