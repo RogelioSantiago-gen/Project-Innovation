@@ -1,6 +1,7 @@
 body{
     background-color: white;
     overflow-y: scroll;
+    max-width: 2070px;
     
 }
 
@@ -82,9 +83,8 @@ body{
   h2 {
     color: #182848;
     letter-spacing: 0.79px;
-    margin-left: 355px;
-    margin-top: 40px;
-    padding-bottom: 15px;
+    margin-left: 465px;
+    margin-top: 80px;
     font-family: 'Comfortaa', cursive;
 
   }
@@ -120,7 +120,7 @@ body{
   
   label {
     letter-spacing: 0.75px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #182848;
     
   }
