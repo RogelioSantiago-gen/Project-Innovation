@@ -159,7 +159,6 @@ section{
 /*Portada*/
 .portada{
     position: absolute;
-    border: 1px solid #727b85;
     box-shadow: 0 20px 40px 0 rgba(204, 204, 204, 0.1);
     width: 100%;
     height: 250px;
@@ -184,6 +183,7 @@ section{
 .boton-portada button img{
     width: 20px;
 }
+/*foto de perfil*/
 .foto-perfil{
     border: 1px solid #112336;
     border-radius: 20px;
@@ -198,17 +198,101 @@ section{
     width: 160px;
 }
 .nombre{
-    font-weight: 900;
+    color: #fff;
     font-size: 27px;
     position: relative;
     top: 15px;
     left: 570px;
     width: 500px;
+    font-weight: 900;
 }
+/* Elementos inferiores*/
 .contenedor-padre-inferior{
-    border: 1px solid black;
     margin-left: 15%;
     margin-top: 6%;
     width: 80%;
     height: 900px;
 }
+/*Contenedor datos de usuario*/
+.datos-usuario{
+    margin: 40px 60px;
+    padding:30px 40px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    height: 50%;
+    border-radius: 20px;
+    width: 180px;
+}
+.sub-datos{
+    font-weight: 600;
+    font-size: 14px;
+}
+.info{
+    font-size: 12px;
+}
+.list-habilidades{
+    list-style: none;
+}
+/*Contenedor Proyectos*/
+.contenedor-proyectos{
+    margin-top: 40px;
+    padding:30px 40px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    height: 100%;
+    width: 55%;
+    border-radius: 20px;
+}
+.contenedor-proyectos h2{
+    text-align: center;
+    font-weight: 900;
+}
+
+/*Contenedor izquierdo*/
+.contenedor-izquierdo{
+    margin: 20px 60px;
+    margin-right: 0px;
+    padding:0px 40px;
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+}
+/*Boton amigos*/
+.btn{
+    background-color: transparent;
+    border:none;
+}
+.lista-amigos{
+    list-style: none;
+}
+.lista-amigos li{
+    margin-bottom: 7px;
+}
+.lista-amigos li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+.lista-amigos li img{
+    border-radius: 20px;
+}
+.card{
+    width: 250px;
+}
+/*Boton mensajes*/
+.boton-mensajes{
+    position: relative;
+    left: 50px;
+    bottom: 52px;
+}
+.body-mensajes{
+    position: relative;
+    bottom: 52px;
+    width: 350px;
+}
+.foto-chat{
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.color-alerta{
+    background-color:#ff5e62;
+}
+/*Boton github*/
