@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/perfil.css">
     <title>Perfil</title>
 </head>
@@ -81,19 +85,232 @@
       <main>
           <!--Foto de portada-->
           <div class="portada">
-            <img src="" alt="">
+            <img src="../img/una-taza-de-javascript.png" alt="">
+          </div>
+          <!--Boton imagen portada-->
+          <div class="boton-portada">
             <button><img src="../img/camara.png" alt=""></button>
           </div>
           <!--Foto de perfil-->
           <div class="foto-perfil">
-            <img src="../img/foto de perfil.jpg" alt="">
-           
+            <img src="../img/foto-perfil-usuario-uno.jpg" alt="">
           </div>
           <!--Nombre-->
-          <!--Botones iconos-->
-          <!--Datos-->
-          <!--Contenedor publicaciones-->
-          <!--Contenedor pagina reciente-->
+          <div class="nombre">
+            <h1>Ale Labrada Enríquez</h1>
+          </div>
+          <!--Boton agregar amigo-->
+          <div>
+            <button class="agregar-amigo">
+              <img src="../img/agregar-usuario.png" alt="">
+            </button>
+          </div>
+          <!--Mandar mensajes-->
+          <div>
+            <button class="mandar-mensaje">Mensaje</button>
+          </div>
+          <!--Contenedor section de tres apartados-->
+          <section class="contenedor-padre-inferior">
+            <!--Datos-->
+            <div class="datos-usuario">
+              <div class="trabajo">
+                <h6 class="sub-datos">Trabajo</h6>
+                <p class="info">BBVA Bancomer</p>
+              </div>
+
+              <div class="habilidades">
+                <h6 class="sub-datos">Habilidades</h6>
+                <ul class="list-habilidades">
+                  <li class="info">Frontend</li>
+                  <li class="info">Vendedor</li>
+                  <li class="info">Orientación al futuro</li>
+                </ul>
+              </div>
+
+              <div class="idiomas">
+                <h6 class="sub-datos">Idiomas</h6>
+                <ul class="list-habilidades">
+                  <li class="info">Español</li>
+                  <li class="info">Ingles</li>
+                  <li class="info">Frances</li>
+                </ul>
+              </div>
+
+              <div class="intereses">
+                <h6 class="sub-datos">Intereses</h6>
+                <ul class="list-habilidades">
+                  <li class="info">Viajar</li>
+                  <li class="info">Ciencia de datos</li>
+                  <li class="info">Feminismo</li>
+                </ul>
+              </div>
+            </div>
+            <!--Contenedor publicaciones-->
+            <div class="contenedor-proyectos">
+              <h2>Proyectos</h2>
+
+              <div class="container-b">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="../img/img/webuno.PNG" alt="">
+                    </div>
+                    <div class="description">
+                           <div class="content">
+                               <h2>Netlix</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                            </div>      
+                    </div>  
+            
+                </div>
+               
+                <div class="box"><div class="imgBox">
+                    <img src="../img/img/pexels-marko-blazevic-2708981.jpg" alt="">
+                </div>
+                <div class="description">
+                       <div class="content">
+                           <h2>Gamer</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                        </div>
+                </div> </div>
+                <div class="box"><div class="imgBox">
+                    <img src="../img/img/pexels-toni-ferreira-3596282.jpg" alt="">
+                </div>
+                <div class="description">
+                       <div class="content">
+                           <h2>Converse</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                        </div>      
+                </div> </div>
+                <div class="box"><div class="imgBox">
+                    <img src="../img/img/pexels-wendy-wei-2350325.jpg" alt="">
+                </div>
+                <div class="description">
+                       <div class="content">
+                           <h2>DJ</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                        </div>      
+                </div> </div>
+                <div class="box"><div class="imgBox">
+                    <img src="../img/img/pexels-karolina-grabowska-4471269.jpg" alt="">
+                </div>
+                <div class="description">
+                       <div class="content">
+                           <h2>Coca-Cola</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                        </div>      
+                </div> </div>
+                <div class="box"><div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                </div>
+                <div class="description">
+                       <div class="content">
+                           <h2>Xiaomi</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                        </div>      
+                </div> </div>
+                <div class="box"><div class="imgBox">
+                  <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+              </div>
+              <div class="description">
+                     <div class="content">
+                         <h2>Xiaomi</h2>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                      </div>      
+              </div> </div>
+              <div class="box"><div class="imgBox">
+                <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+            </div>
+            <div class="description">
+                   <div class="content">
+                       <h2>Xiaomi</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                    </div>      
+            </div> </div>
+            <div class="box"><div class="imgBox">
+              <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+          </div>
+          <div class="description">
+                 <div class="content">
+                     <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                  </div>      
+          </div> </div>
+          <div class="box"><div class="imgBox">
+            <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+        </div>
+        <div class="description">
+               <div class="content">
+                   <h2>Xiaomi</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+                </div>      
+        </div> </div>
+        <div class="box"><div class="imgBox">
+          <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+      </div>
+      <div class="description">
+             <div class="content">
+                 <h2>Xiaomi</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+              </div>      
+      </div> </div>
+      <div class="box"><div class="imgBox">
+        <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+    </div>
+    <div class="description">
+           <div class="content">
+               <h2>Xiaomi</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
+            </div>      
+    </div> </div>
+            </div>
+            
+
+
+
+            </div>
+            <!--Contenedor pagina reciente-->
+            <div class="contenedor-izquierdo">
+              <p class="boton-amigos">
+                <a class="btn btn-muted" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <img src="../img/friends.png" alt="" width="22px">
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <ul class="lista-amigos">
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Luis Hernandez</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Mariana Meneses</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Rodrigo Leyva</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Uriel Macias</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Lorena Rodriguez</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Alejandra Contreras</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Aaron Reyes</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Adrian Alvarez</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Daniel Lara</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Ivonne Amaya</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--Boton 2 -->
+              <p class="boton-mensajes">
+                <a class="btn btn-muted" data-toggle="collapse" href="#collapsetwo" role="button" aria-expanded="false" aria-controls="collapseExample"> <img src="../img/chat.png" alt="" width="22px">
+                </a>
+              </p>
+              <div class="collapse" id="collapsetwo">
+                <div class="card card-body body-mensajes">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true"><img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px">
+                      Alejandra Contreras
+                      <span class="badge badge-primary badge-pill color-alerta">14</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Mariana Meneses <span class="badge badge-primary badge-pill color-alerta">2</span></a>
+                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Uriel Macias <span class="badge badge-primary badge-pill color-alerta">6</span></a>
+                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Aaron Reyes <span class="badge badge-primary badge-pill color-alerta"></span></a>
+                    <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Luis Hernandez<span class="badge badge-primary badge-pill color-alerta"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
       </main>
 
