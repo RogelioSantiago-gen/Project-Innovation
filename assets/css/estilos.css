@@ -180,6 +180,7 @@ section{
 /*Main, seccion noticias y busqueda*/
 
 .content-inicio{
+    margin-top: 6%;
     display: flex;
 }
 main{
@@ -192,6 +193,7 @@ main{
     margin: 0 12%;
     margin-top: 70px;
     margin-right: 3%;
+    height: 1080px;
 }
 .contenedorBuscador{
     margin-top: 30px;
