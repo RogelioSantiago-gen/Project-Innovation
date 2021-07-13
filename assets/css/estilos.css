@@ -8,11 +8,8 @@ body{
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: #abbaab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #ffffff, #e3f0e3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #ffffff, #e3f0e3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-overflow-y: scroll;
-overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     /*background-color: #18191A; color para modo oscuro*/
 }
@@ -20,20 +17,27 @@ overflow-x: hidden;
 /*Seccion Header, logo y foto de perfil*/
 header{
     background-color: #112336;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    height: 80px; /* ---anchura de la cabecera--- */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding: 10px 30px;
+    padding: 10px 30px;
 }
 .dropdown{
+
     background-color: transparent;
     color: #ffff;
 }
 .logo{
-    margin: 8px 0px;
-    margin-left: 70px;
+    margin: auto;
+    margin-left: 50px;
     color: #ffff;
     font-size: 30px;
     font-weight: 600;
@@ -45,10 +49,12 @@ nav{
 }
 .imagenLogo{
     height: 40px;
+    margin-top: 10px;
 }
 .contenedor-perfil-flecha{
     display: flex;
-    margin-right: 60px;
+    margin-right: 40px;
+    margin-top: 20px;
 }
 
 .fotoDePerfil{
@@ -56,18 +62,20 @@ nav{
     border-radius: 40px;
 }
 
-
+/*   ------ TERMINA EL HEADER--------- */
 
 /*Navabar*/
+
 .sidebar{
     position: fixed;
-    top: 30;
+    top: 80px;
     left: 0;
     height: 100%;
     width: 70px;
     background: #F2EFEF;
     padding: 6px 14px;
     transition: all 0.5s ease;
+  
 }
 .sidebar.active{
     width: 190px;
@@ -75,10 +83,11 @@ nav{
 
 .sidebar #btn{
     position: absolute;
+    cursor: pointer;
     color: #112336;
     left: 50%;
     top: 6px;
-    font-size: 18px;
+    font-size: 20px;
     height: 50px;
     width: 60px;
     text-align: center;
@@ -102,7 +111,7 @@ margin-top: 150px;
 
 .sidebar ul li .tooltip{
     position: absolute;
-    left: 100px;
+    left: 60px;
     top: auto;
     border-radius: 6px;
     height: 35px;
@@ -120,7 +129,7 @@ margin-top: 150px;
 .sidebar ul li:hover .tooltip{
     transition: all 0.5s ease;
     opacity: 1;
-    top: 50%;
+    
 }
 
 .sidebar ul li a{
@@ -136,12 +145,13 @@ margin-top: 150px;
 
 .sidebar ul li a:hover{
     color: rgb(255, 255, 255);  
-    background: rgb(0, 0, 0);
+    background: #112336;
     font-weight: bold;
+    margin-right: 5px;
 }
 
 .sidebar ul li a i{
-    height: 50px;
+    height: 45px;
     min-width: 35px;
     border-radius: 12px;
     line-height: 50px;
@@ -161,7 +171,10 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
+
+
 /*Main, seccion noticias y busqueda*/
+
 .content-inicio{
     display: flex;
 }

@@ -1,211 +1,219 @@
-/* -----------ESTILOS DE BODY----- */
 
-body{
-    background-color: white;
-    overflow-y: scroll;
- 
-    
+
+body
+{
+ overflow-y: scroll;         /* -----------ESTILOS DE BODY----- */
+
 }
 
-/* --------  ESTILOS DE CONTENEDOR PRINCIPAL------------ */
-.wrapper {
-    display: flex;
-    width: 1250px;
-    height: 1100px;
-    margin : 60px auto 60px auto;
-    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
-    
-  }
-  
-  /*    ----ESTILOS DE CONTENEDOR LATERAL IZQUIERDO(MENU DE CONFIGURACION)---------- */
-  .left {
-    width: 360px;
-    background: #4b6cb7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1a2946, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-right: ;
-  }
-  /* 
-    -----LISTA NO ORDENADA CONTENEDOR IZQUIERDO---- */
-  ul {
-    margin-top: 50px;
-  }
-  
- /*  ---LISTA DE APARTADOS DE  CONFIGURACION----- */
 
-  li {
-    list-style: none;
-    margin-bottom: 37px;
-    font-size: 17px;
-    letter-spacing: 0.7px;
-  }
-  
- /*  -----ICONO DE LISTA NO ORENADA CONTENEDOR IZQUIERDO----- */
 
-  .icon {
-    padding-top: 6px;
-    margin: auto;
-    margin-left: 50px;
-    width: 30px;
-  }
-
-  
-.icon #btn{
-    position: absolute;
-    color: #112336;
-    left: 50%;
-    top: 6px;
-    font-size: 18px;
-    height: 50px;
-    width: 60px;
-    text-align: center;
-    line-height: 50px;
-    transform: translate(-50%);
+.wrapper 
+{
+display: flex; 
+width: 1250px;                                                                     
+height: 1100px;                       /* ----cONTENEDOR PRINCIPAL----- */
+margin : 100px auto auto 255px;
+box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);   
 }
   
-  h5{
-      margin: auto;
-      margin-left: 50px;
-      font-size: 20px;
-      color: white;
-      font-family: 'Comfortaa', cursive;
-  }
-  .profile {
-    color: #fff;
-    padding-left: 10px;
-    padding-top: 11px;
-    position: absolute;
-  }
-  
-  .list_item {
-    color: #fff;
-    opacity: 0.7;
-    padding-left: 10px;
-    padding-top: 11px;
-    position: absolute;
-  }
-  
-  .right {
-    width: 590px;
-  }
-
-  h2 {
-    color: #182848;
-    letter-spacing: 0.79px;
-    margin-left: 465px;
-    margin-top: 80px;
-    font-family: 'Comfortaa', cursive;
-
-  }
-  
-  .avatar-upload {
-    margin-left: 30px;
-    margin-top: -40px;
-    height: 265px;
-    width: 195px;
-    /* los siguientes valores son independientes del tamaño del círculo */
-    background-repeat: no-repeat;
-    background-position: 20%;
-    border-radius: 14%;
-    background-size: 100% auto;
-
-  }
-  
-  h3 {
-    color: #888cbd;
-    opacity: 0.7;
-    font-size: 18px;
-    margin: 0;
-    margin-left: 110px;
-    margin-top: 20px;
-  }
-  
-  .form {
-    margin-left: 320px;
-    margin-top: -10px;
-    margin-bottom: 40px;
-    width: 310px;
-  }
-  
-  label {
-    letter-spacing: 0.75px;
-    font-size: 1rem;
-    color: #182848;
-    
-  }
-  
-  input {
-    padding-bottom: 5px;
-    padding-top: 16px;
-    margin-left: 0px;
-    width: 150%;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border-bottom: 2.5px solid #eaeaea;
-    letter-spacing: 0.29px;
-    color: #112336;
-    font-size: 0.95rem;
-    font-weight: 600;
-  }
-  
-  .field {
-    padding-bottom: 25px;
-  }
-  
-  .field:last-child {
-    padding-bottom: 15px;
-  }
  
 
-  /* ------------Botone de Save-------------- */
-
-  @import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
-
-#box-c {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 50px;
-  color: #112336;
-  font-family: 'Comfortaa', cursive;
-  font-size: 1.2rem;
-  margin-left: 320px;
-  margin-top: 60px;
-}
-.gradient {
-  --borderWidth: 3px;
-  background: white;
-  position: relative;
-  border-radius: var(--borderWidth);
-}
-.gradient:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #6529d4, #a166ab, #1855ce, #10a9c0, #07b39b, #6fba82);
-  border-radius: calc(3* var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
+.left 
+{
+width: 325px;
+background: #4b6cb7;  
+background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);   /* ----ESTILOS DE CONTENEDOR LATERAL IZQUIERDO(MENU DE CONFIGURACION)---------- */
+background: linear-gradient(to bottom, #1a2946, #4b6cb7); 
+border-right: ;
 }
 
 
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+ul 
+{
+  margin-top: 90px;         /* -----LISTA NO ORDENADA CONTENEDOR IZQUIERDO---- */
+}
+  
+
+
+li 
+{
+list-style: none;
+margin-bottom: 37px;
+font-size: 17px;            /*  ---LISTA DE APARTADOS DE  CONFIGURACION----- */
+letter-spacing: 0.7px;
+}
+  
+ 
+.icon 
+{
+padding-top: 6px;
+margin: auto;               /*  -----ICONO DE LISTA NO ORENADA CONTENEDOR IZQUIERDO----- */
+margin-left: 50px;
+width: 30px;
+cursor: pointer;
+}
+
+  
+  
+h5
+{
+margin: auto;
+margin-left: 50px;
+font-size: 20px;             /*  ------TITULOS DE CUENTA, PREFERENCIAS ETC------ */
+color: white;
+font-family: 'Comfortaa', cursive;
+}
+
+.profile 
+{
+color: #fff;
+padding-left: 10px;
+padding-top: 11px;
+position: absolute;
+}
+  
+ .list_item 
+ {
+color: #fff;
+opacity: 0.7;
+padding-left: 10px;
+padding-top: 11px;
+position: absolute;
+}
+  
+.right 
+{
+width: 590px;
+}
+
+h2 
+{
+color: #182848;
+letter-spacing: 0.79px;
+margin-left: 465px;
+margin-top: 80px;
+font-family: 'Comfortaa', cursive;
+}
+  
+.avatar-upload 
+{
+margin-left: 30px;
+margin-top: -40px;
+height: 265px;
+width: 195px;
+ /* los siguientes valores son independientes del tamaño del círculo */
+background-repeat: no-repeat;
+background-position: 20%;
+border-radius: 14%;
+background-size: 100% auto;
+}
+  
+ h3 
+{
+color: #888cbd;
+opacity: 0.7;
+font-size: 18px;
+margin: 0;
+margin-left: 110px;
+margin-top: 20px;
+}
+  
+.form 
+{
+margin-left: 340px;
+margin-top: -10px;                /* -----CONTENEDOR DE INGRESO DE DATOS DE PERFIL(NOMBRE,TRABAJO,INTERESES,ETC)------ */
+margin-bottom: 40px;
+width: 310px;
+}
+  
+label 
+{
+letter-spacing: 0.75px;
+font-size: 0.9rem;                /*  ----APARTADO DE NOMBRE, INTERES, TRABAJO ETC.---- */
+color: #182848;
+}
+  
+input 
+{
+padding-bottom: 5px;
+padding-top: 16px;
+margin-left: 0px;
+width: 150%;
+border: none;                     /* -----APARTADO DE RESPUESTA A NOMBRE, INTERESES, ETC---- */
+outline: none;
+border-bottom: 2.5px solid #eaeaea;    
+letter-spacing: 0.29px;
+color: #112336;
+font-size: 0.95rem;
+font-weight: 600;
+}
+  
+.field 
+{
+padding-bottom: 25px;
+}
+  
+.field:last-child 
+{
+ padding-bottom: 15px;
+}
+ 
+
+  /* ------------Boton de Save-------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+#box-c 
+{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80px;
+height: 50px;
+color: white;
+font-family: 'Comfortaa', cursive;
+font-size: 1.2rem;
+margin-left: 350px;
+margin-top: 60px;
+}
+
+.gradient 
+{
+--borderWidth: 3px;
+position: relative;
+border-radius: var(--borderWidth);
+}
+
+
+.gradient:after 
+{
+content: '';
+position: absolute;
+top: calc(-1 * var(--borderWidth));
+left: calc(-1 * var(--borderWidth));
+height: calc(100% + var(--borderWidth) * 2);
+width: calc(100% + var(--borderWidth) * 2);
+background: linear-gradient(60deg, #182848, #183a88, #2934d4, #1855ce, #10a9c0,#182848);
+border-radius: calc(3* var(--borderWidth));
+z-index: -1;
+animation: animatedgradient 3s ease alternate infinite;
+background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient 
+{
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
 }
 
  /* -------------Boton cancel------------- */
@@ -215,47 +223,53 @@ body{
  @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 
- #box-d {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 80px;
-   height: 50px;
-   color: #112336;
-   font-family: 'Comfortaa', cursive;
-   font-size: 1.2rem;
-   margin-left: 500px;
-   margin-top: -50px;
- }
- .gradient-border {
-   --borderWidth: 3px;
-   background: white;
-   position: relative;
-   border-radius: var(--borderWidth);
- }
- .gradient-border:after {
-   content: '';
-   position: absolute;
-   top: calc(-1 * var(--borderWidth));
-   left: calc(-1 * var(--borderWidth));
-   height: calc(100% + var(--borderWidth) * 2);
-   width: calc(100% + var(--borderWidth) * 2);
-   background: linear-gradient(60deg, #f79533, #f37055, #6529d4, #a166ab, #1855ce, #10a9c0, #07b39b, #6fba82);
-   border-radius: calc(3* var(--borderWidth));
-   z-index: -1;
-   animation: animatedgradient 3s ease alternate infinite;
-   background-size: 300% 300%;
- }
+ #box-d 
+ {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80px;
+height: 50px;
+color: white;
+font-family: 'Comfortaa', cursive;
+font-size: 1.2rem;
+margin-left: 500px;
+margin-top: -50px;
+}
+
+ .gradient-border 
+ {
+--borderWidth: 3px;
+  /*  background: white; */
+position: relative;
+border-radius: var(--borderWidth);
+}
+
+.gradient-border:after 
+{
+content: '';
+position: absolute;
+top: calc(-1 * var(--borderWidth));
+left: calc(-1 * var(--borderWidth));
+height: calc(100% + var(--borderWidth) * 2);
+width: calc(100% + var(--borderWidth) * 2);
+background: linear-gradient(60deg, #182848, #183a88, #2934d4, #1855ce, #10a9c0,#182848);
+border-radius: calc(3* var(--borderWidth));
+z-index: -1;
+animation: animatedgradient 3s ease alternate infinite;
+background-size: 300% 300%;
+}
  
  
- @keyframes animatedgradient {
-     0% {
-         background-position: 0% 50%;
-     }
-     50% {
-         background-position: 100% 50%;
-     }
-     100% {
-         background-position: 0% 50%;
-     }
- }
+ @keyframes animatedgradient 
+ {
+ 0% {
+ background-position: 0% 50%;
+}
+50% {
+ background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
