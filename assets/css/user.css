@@ -6,6 +6,17 @@ body
 
 }
 
+header{
+  background-color: #112336;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  height: 80px; /* ---anchura de la cabecera--- */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 10;  /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+  
+}
+
 
 
 .wrapper 
@@ -13,7 +24,7 @@ body
 display: flex; 
 width: 1250px;                                                                     
 height: 1100px;                       /* ----cONTENEDOR PRINCIPAL----- */
-margin : 100px auto auto 255px;
+margin : 100px auto auto 240px;
 box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);   
 }
   
