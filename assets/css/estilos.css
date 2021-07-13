@@ -22,8 +22,11 @@ header{
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 10;  /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+    
 }
-}
+
+
 nav{
     display: flex;
     align-items: center;
@@ -49,12 +52,12 @@ nav{
 }
 .imagenLogo{
     height: 40px;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 .contenedor-perfil-flecha{
     display: flex;
     margin-right: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .fotoDePerfil{
@@ -63,6 +66,7 @@ nav{
 }
 
 /*   ------ TERMINA EL HEADER--------- */
+
 
 /*Navabar*/
 
