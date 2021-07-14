@@ -136,7 +136,7 @@ margin-top: 150px;
     
 }
 
-.sidebar ul li a{
+ .sidebar ul li a{
     color: #112336;
     display: flex;
     align-items: center;
@@ -144,15 +144,15 @@ margin-top: 150px;
     transition: all 0.5s ease;
     border-radius: 12px;
     white-space: nowrap;
-}
+} 
 
 
-.sidebar ul li a:hover{
+ .sidebar ul li a:hover{
     color: rgb(255, 255, 255);  
     background: #112336;
     font-weight: bold;
     margin-right: 5px;
-}
+} 
 
 .sidebar ul li a i{
     height: 45px;

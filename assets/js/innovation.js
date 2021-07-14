@@ -9,4 +9,4 @@ btn.onclick = function(){
 }
 btn.onclick = function(){
     sidebar.classList.toggle("active");
-}
+} 
