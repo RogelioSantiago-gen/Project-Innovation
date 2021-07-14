@@ -33,7 +33,6 @@ nav{
     padding: 10px 30px;
 }
 .dropdown{
-    
     background-color: transparent;
     color: #ffff;
 }
@@ -211,7 +210,7 @@ section{
     height: 160px;
     overflow: hidden;
     position: relative;
-    top: 140px;
+    top: 164px;
     left: 350px;
 }
 .foto-perfil img{
@@ -221,7 +220,7 @@ section{
     color: #fff;
     font-size: 27px;
     position: relative;
-    top: 15px;
+    top: 39px;
     left: 570px;
     width: 500px;
     box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
@@ -233,7 +232,7 @@ section{
 .agregar-amigo{
     position: relative;
     left: 600px;
-    top: 60px;
+    top: 80px;
     width: 25px;
     background-color: transparent;
     border: none;
@@ -245,7 +244,7 @@ section{
 .mandar-mensaje{
     position:relative;
     left: 650px;
-    top: 35px;
+    top: 50px;
     font-size: 13px;
     padding: 6px;
     border-radius: 20px;
@@ -256,7 +255,7 @@ section{
 /* Elementos inferiores*/
 .contenedor-padre-inferior{
     margin-left: 15%;
-    margin-top: 6%;
+    margin-top: 4%;
     width: 80%;
     height: 700px;
 }
@@ -291,7 +290,8 @@ section{
 .contenedor-proyectos h2{
     text-align: center;
     font-weight: 900;
-    overflow:hidden
+    overflow:hidden;
+    margin-bottom: 52px;
 }
 .boton-upload{
     background-color: transparent;
