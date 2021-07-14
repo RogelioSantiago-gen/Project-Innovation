@@ -205,7 +205,7 @@ section{
 }
 /*foto de perfil*/
 .foto-perfil{
-    border: 1px solid #112336;
+    border: none;
     border-radius: 20px;
     width: 160px;
     height: 160px;
@@ -224,6 +224,7 @@ section{
     top: 39px;
     left: 570px;
     width: 500px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
 }
 .nombre h1 {
     font-weight: 700;
