@@ -91,6 +91,11 @@ body{
     font-size:17px;
     color: #4e4f5c;
   }
+  button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+  }
   button:hover{
     cursor: pointer;
   }

@@ -63,6 +63,10 @@ nav{
     height: 40px;
     border-radius: 40px;
 }
+.dropdown-menu button a{
+    color: #000;
+    text-decoration: none;
+}
 
 /*   ------ TERMINA EL HEADER--------- */
 
