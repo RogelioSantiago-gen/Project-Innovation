@@ -17,6 +17,10 @@ header{
   z-index: 10;  /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
   
 }
+.dropdown-menu button a{
+  color: #000;
+  text-decoration: none;
+}
 
 
 
