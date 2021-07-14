@@ -13,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/perfil.css">
-    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/perfilamigo.css">
+    <title>Perfil amigo</title>
 </head>
 <body>
        <!--Seccion Header, logo y foto de perfil-->
@@ -87,17 +87,23 @@
           <div class="portada">
             <img src="../img/una-taza-de-javascript.png" alt="">
           </div>
-          <!--Boton imagen portada-->
-          <div class="boton-portada">
-            <button><img src="../img/camara.png" alt=""></button>
-          </div>
           <!--Foto de perfil-->
           <div class="foto-perfil">
             <img src="../img/foto-perfil-usuario-uno.jpg" alt="">
           </div>
           <!--Nombre-->
           <div class="nombre">
-            <h1>Ale Labrada Enríquez</h1>
+            <h1>Luis Hernandez</h1>
+          </div>
+          <!--Boton agregar amigo-->
+          <div>
+            <button class="agregar-amigo">
+              <img src="../img/agregar-usuario.png" alt="">
+            </button>
+          </div>
+          <!--Mandar mensajes-->
+          <div>
+            <button class="mandar-mensaje">Mensaje</button>
           </div>
           <!--Contenedor section de tres apartados-->
           <section class="contenedor-padre-inferior">
@@ -138,7 +144,6 @@
             <!--Contenedor publicaciones-->
             <div class="contenedor-proyectos">
               <h2>Proyectos</h2>
-              <button class="boton-upload"><img src="../img/upload.png" alt=""></button>
               <div class="container-b">
                 <div class="box">
                     <div class="imgBox">
@@ -267,7 +272,7 @@
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                   <ul class="lista-amigos">
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="perfilamigo.html">Luis Hernandez</a></li>
+                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="perfil.html">Ale Labrada</a></li>
                     <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Mariana Meneses</a></li>
                     <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Rodrigo Leyva</a></li>
                     <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Uriel Macias</a></li>
@@ -278,25 +283,6 @@
                     <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Daniel Lara</a></li>
                     <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Ivonne Amaya</a></li>
                   </ul>
-                </div>
-              </div>
-              <!--Boton 2 -->
-              <p class="boton-mensajes">
-                <a class="btn btn-muted" data-toggle="collapse" href="#collapsetwo" role="button" aria-expanded="false" aria-controls="collapseExample"> <img src="../img/chat.png" alt="" width="22px">
-                </a>
-              </p>
-              <div class="collapse" id="collapsetwo">
-                <div class="card card-body body-mensajes">
-                  <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true"><img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px">
-                      Alejandra Contreras
-                      <span class="badge badge-primary badge-pill color-alerta">14</span>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Mariana Meneses <span class="badge badge-primary badge-pill color-alerta">2</span></a>
-                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Uriel Macias <span class="badge badge-primary badge-pill color-alerta">6</span></a>
-                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Aaron Reyes <span class="badge badge-primary badge-pill color-alerta"></span></a>
-                    <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Luis Hernandez<span class="badge badge-primary badge-pill color-alerta"></span></a>
-                  </div>
                 </div>
               </div>
             </div>
