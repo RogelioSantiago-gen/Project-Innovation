@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-popup{
+    margin: 0 auto;
+    width: 30%;
+    height: 300px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    margin-top: 200px;
+    border-radius: 20px;
+}
+.contenedor-portada{
+    border: 1px solid #000;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+.agregar-imagen{
+    border:none;
+    background-color: transparent;
+    position: relative;
+    top: 30px;
+    left: 505px;
+}
+.agregar-imagen:hover{
+    cursor: pointer;
+}
+.agregar-imagen img{
+    width: 20px;
+}
+.guardar-cambios{
+    position: relative;
+    top: 80px;
+    left: 230px;
+    width: 80px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #26578b;
+    color: #fff;
+    border: 0;
+}
+.guardar-cambios:hover{
+    cursor: pointer;
+}
