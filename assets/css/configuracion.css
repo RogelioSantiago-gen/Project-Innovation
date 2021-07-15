@@ -27,7 +27,7 @@ header{
 .wrapper 
 {
 display: flex; 
-width: 1250px;                                                                     
+width: 1250px; 
 height: 1100px;                       /* ----cONTENEDOR PRINCIPAL----- */
 margin : 100px auto auto 240px;
 box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);   
