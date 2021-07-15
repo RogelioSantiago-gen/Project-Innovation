@@ -242,6 +242,49 @@ main{
     margin-bottom: 0%;
 }
 
+/* comienza prueba de estilos de caja de comentarios css */
+
+
+.date {
+    font-size: 11px
+}
+
+.comment-text {
+    font-size: 12px
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.shadow-none {
+    box-shadow: none
+}
+
+.name {
+    color: #007bff
+}
+
+.cursor:hover {
+    color: blue
+}
+.cursor {
+    cursor: pointer
+}
+
+.textarea {
+    resize: none ;
+    background-color:rgba(98, 100, 108, 0.5);
+    margin: auto;
+    margin-left: -200px;
+    display: flex;
+    align-content: center;
+}
+
+/* 
+/Termnia prueba de estilo/ */
+
+
 /*Seccion trabajos*/
 section{
     box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
