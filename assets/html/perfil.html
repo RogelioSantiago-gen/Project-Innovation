@@ -138,7 +138,45 @@
             <!--Contenedor publicaciones-->
             <div class="contenedor-proyectos">
               <h2>Proyectos</h2>
-              <button class="boton-upload"><img src="../img/upload.png" alt=""></button>
+              
+              <!--container de pop up-->
+               <div class=" container">
+                <div class="row ">
+                  <div class=" col-md-12 ">
+                    <div class="modal fade " id="myModal">
+                      <div class="modal-dialog modal-none">
+                        <div class=" modal-content rounded-sm">
+                        <div class=" modal-header">
+                          <h1>Proyecto</h1>
+                        </div>
+                        <div class=" modal-body font-weight-bold">
+                          Subir archivo
+                          <div class="input-group">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default border-dark" type="button">Buscar</button>
+                            </span>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class=" modal-footer">
+                          <input class="btn btn-dark" data-dismiss="modal" value="Subir">
+                        </div>
+                      </div>
+              
+                      </div>
+              
+                    </div>
+                    <a  href="#" data-toggle="modal" data-target="#myModal"><img src="../img/upload.png" 
+                     alt=""  class="float-right" width="30px" height="30px"></a>
+                  </div>
+                </div>
+              </div>
+
+
+            
+
+
+
               <div class="container-b">
                 <div class="box">
                     <div class="imgBox">
