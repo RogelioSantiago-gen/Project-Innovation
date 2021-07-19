@@ -363,9 +363,9 @@ section {
     #ece9e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 450px;
-  width: 25%;
+  width: 30%;
   margin-top: 70px;
-  margin-left: 50px;
+  margin-left: 20px;
   overflow: hidden;
 }
 

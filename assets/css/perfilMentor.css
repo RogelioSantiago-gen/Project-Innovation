@@ -260,7 +260,7 @@ section{
     display: grid;
     grid-template-columns: 17% 55% 28%;
     margin-left: 4rem;
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-left: 7rem;
 }
 
@@ -346,6 +346,7 @@ h1{
 .container{
     padding-top: 1rem;
 }
+
 
 /*container proyecto y fotos*/
 
