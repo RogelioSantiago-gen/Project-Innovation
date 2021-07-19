@@ -17,329 +17,413 @@
     <title>Perfil</title>
 </head>
 <body>
-       <!--Seccion Header, logo y foto de perfil-->
-       <header class="header">
+      <!--Seccion Header, logo y foto de perfil-->
+      <header class="header">
         <nav class="nav">
-          
-          <a href="../../index.html" class="logo"><img class="imagenLogo" src="../img/Generation logo.png"  alt=""></a>
+      
+          <a href="../../index.html" class="logo"><img class="imagenLogo" src="../img/Generation logo.png" alt=""></a>
           <div class="contenedor-perfil-flecha">
             <a href="perfil.html" class="linkPerfil"><img class="fotoDePerfil" src="../img/foto de perfil.jpg" alt="user"></a>
             <div class="dropdown" style="margin-right: 7%;">
-                <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../img/flecha-hacia-abajo-para-navegar.png" alt="">
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button"><a href="../../configuracion.html">Configuración</a></button>
-                  <button class="dropdown-item" type="button"><a href="#">Mensajes</a></button>
-                  <button class="dropdown-item" type="button"><a href="login.html">Cerrar sesión</a></button>
-                </div>
+              <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><img src="../img/flecha-hacia-abajo-para-navegar.png" alt="">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button"><a href="../../configuracion.html">Configuración</a></button>
+                <button class="dropdown-item" type="button"><a href="#">Mensajes</a></button>
+                <button class="dropdown-item" type="button"><a href="login.html">Cerrar sesión</a></button>
+              </div>
             </div>
           </div>
-            
+      
         </nav>
-    </header>
-    <!--Navbar-->
-    <div class="sidebar">
-        <div class="logo_content"> <!-- BARRA DE MENU DESPLEGABLE -->
-          <div class="logo_name" ></div>
+      </header>
+      <!--Navbar-->
+      <div class="sidebar">
+        <div class="logo_content">
+          <!-- BARRA DE MENU DESPLEGABLE -->
+          <div class="logo_name"></div>
           <i class='bx bx-menu' id="btn"></i>
         </div>
-     
+      
         <!-- EMPEZAMOS CON LOS ICONOS -->
-        <ul >
-          <li> <!-- ICONO DE HOME -->
+        <ul>
+          <li>
+            <!-- ICONO DE HOME -->
             <a href="../../index.html">
-             <i class='bx bx-home'></i>
+              <i class='bx bx-home'></i>
               <span class="icon-name">Inicio</span>
             </a>
             <!--Nombre de los iconos-->
-             <span class="tooltip">Inicio</span>
+            <span class="tooltip">Inicio</span>
           </li>
-     
-          <li> <!-- ICONO DE PERFIL -->
-           <a href="perfil.html">
-             <i class='bx bx-user'></i>
-             <span class="icon-name">Perfil</span>
-           </a>
+      
+          <li>
+            <!-- ICONO DE PERFIL -->
+            <a href="perfil.html">
+              <i class='bx bx-user'></i>
+              <span class="icon-name">Perfil</span>
+            </a>
             <span class="tooltip">Perfil</span>
-         </li>
-     
-         <li>  <!-- ICONO DE BUSQUEDA -->
-           <a href="#">
-             <i class='bx bx-search' ></i>
-             <span class="icon-name">Busqueda</span>
-           </a>
+          </li>
+      
+          <li>
+            <!-- ICONO DE BUSQUEDA -->
+            <a href="#">
+              <i class='bx bx-search'></i>
+              <span class="icon-name">Busqueda</span>
+            </a>
             <span class="tooltip">Busqueda</span>
-         </li>
-         
-         <li> <!-- ICONO DE SETTINGS -->
-           <a href="../../configuracion.html">
-             <i class='bx bx-cog' ></i>
-             <span class="icon-name">Configuracion</span>
-           </a>
-           <span class="tooltip">Configuracion</span>
-         </li>
+          </li>
+      
+          <li>
+            <!-- ICONO DE SETTINGS -->
+            <a href="../../configuracion.html">
+              <i class='bx bx-cog'></i>
+              <span class="icon-name">Configuracion</span>
+            </a>
+            <span class="tooltip">Configuracion</span>
+          </li>
         </ul>
-     
+      
       </div>
-
+      
       <main>
-          <!--Foto de portada-->
-          <div class="portada">
-            <img src="../img/una-taza-de-javascript.png" alt="">
-          </div>
-          <!--Boton imagen portada-->
-          <div class="boton-portada">
-            <button><img src="../img/camara.png" alt=""></button>
-          </div>
-          <!--Foto de perfil-->
-          <div class="foto-perfil">
-            <img src="../img/foto-perfil-usuario-uno.jpg" alt="">
-          </div>
-          <!--Nombre-->
-          <div class="nombre">
-            <h1>Ale Labrada Enríquez</h1>
-          </div>
-          <!--Contenedor section de tres apartados-->
-          <section class="contenedor-padre-inferior">
-            <!--Datos-->
-            <div class="datos-usuario">
-              <div class="trabajo">
-                <h6 class="sub-datos">Trabajo</h6>
-                <p class="info">BBVA Bancomer</p>
-              </div>
-
-              <div class="habilidades">
-                <h6 class="sub-datos">Habilidades</h6>
-                <ul class="list-habilidades">
-                  <li class="info">Frontend</li>
-                  <li class="info">Vendedor</li>
-                  <li class="info">Orientación al futuro</li>
-                </ul>
-              </div>
-
-              <div class="idiomas">
-                <h6 class="sub-datos">Idiomas</h6>
-                <ul class="list-habilidades">
-                  <li class="info">Español</li>
-                  <li class="info">Ingles</li>
-                  <li class="info">Frances</li>
-                </ul>
-              </div>
-
-              <div class="intereses">
-                <h6 class="sub-datos">Intereses</h6>
-                <ul class="list-habilidades">
-                  <li class="info">Viajar</li>
-                  <li class="info">Ciencia de datos</li>
-                  <li class="info">Feminismo</li>
-                </ul>
-              </div>
-            </div>
-            <!--Contenedor publicaciones-->
-            <div class="contenedor-proyectos">
-              <h2>Proyectos</h2>
-              
-              <!--container de pop up-->
-               <div class=" container">
-                <div class="row ">
-                  <div class=" col-md-12 ">
-                    <div class="modal fade " id="myModal">
-                      <div class="modal-dialog modal-none">
-                        <div class=" modal-content rounded-sm">
-                        <div class=" modal-header">
-                          <h1>Proyecto</h1>
-                        </div>
-                        <div class=" modal-body font-weight-bold">
-                          Subir archivo
-                          <div class="input-group">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default border-dark" type="button">Buscar</button>
-                            </span>
-                            <input type="text" class="form-control">
-                          </div>
-                        </div>
-                        <div class=" modal-footer">
-                          <input class="btn btn-dark" data-dismiss="modal" value="Subir">
-                        </div>
-                      </div>
-              
-                      </div>
-              
-                    </div>
-                    <a  href="#" data-toggle="modal" data-target="#myModal"><img src="../img/upload.png" 
-                     alt=""  class="float-right" width="30px" height="30px"></a>
-                  </div>
-                </div>
-              </div>
-
-
-            
-
-
-
-              <div class="container-b">
-                <div class="box">
-                    <div class="imgBox">
-                        <img src="../img/img/webuno.PNG" alt="">
-                    </div>
-                    <div class="description">
-                           <div class="content">
-                               <h2>Netlix</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                            </div>      
-                    </div>  
-            
-                </div>
-               
-                <div class="box"><div class="imgBox">
-                    <img src="../img/img/pexels-marko-blazevic-2708981.jpg" alt="">
-                </div>
-                <div class="description">
-                       <div class="content">
-                           <h2>Gamer</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                        </div>
-                </div> </div>
-                <div class="box"><div class="imgBox">
-                    <img src="../img/img/pexels-toni-ferreira-3596282.jpg" alt="">
-                </div>
-                <div class="description">
-                       <div class="content">
-                           <h2>Converse</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                        </div>      
-                </div> </div>
-                <div class="box"><div class="imgBox">
-                    <img src="../img/img/pexels-wendy-wei-2350325.jpg" alt="">
-                </div>
-                <div class="description">
-                       <div class="content">
-                           <h2>DJ</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                        </div>      
-                </div> </div>
-                <div class="box"><div class="imgBox">
-                    <img src="../img/img/pexels-karolina-grabowska-4471269.jpg" alt="">
-                </div>
-                <div class="description">
-                       <div class="content">
-                           <h2>Coca-Cola</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                        </div>      
-                </div> </div>
-                <div class="box"><div class="imgBox">
-                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
-                </div>
-                <div class="description">
-                       <div class="content">
-                           <h2>Xiaomi</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                        </div>      
-                </div> </div>
-                <div class="box"><div class="imgBox">
-                  <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
-              </div>
-              <div class="description">
-                     <div class="content">
-                         <h2>Xiaomi</h2>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                      </div>      
-              </div> </div>
-              <div class="box"><div class="imgBox">
-                <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
-            </div>
-            <div class="description">
-                   <div class="content">
-                       <h2>Xiaomi</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                    </div>      
-            </div> </div>
-            <div class="box"><div class="imgBox">
-              <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
-          </div>
-          <div class="description">
-                 <div class="content">
-                     <h2>Xiaomi</h2>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                  </div>      
-          </div> </div>
-          <div class="box"><div class="imgBox">
-            <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+        <!--Foto de portada-->
+        <div class="portada">
+          <img src="../img/una-taza-de-javascript.png" alt="">
         </div>
-        <div class="description">
-               <div class="content">
-                   <h2>Xiaomi</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-                </div>      
-        </div> </div>
-        <div class="box"><div class="imgBox">
-          <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
-      </div>
-      <div class="description">
-             <div class="content">
-                 <h2>Xiaomi</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-              </div>      
-      </div> </div>
-      <div class="box"><div class="imgBox">
-        <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
-    </div>
-    <div class="description">
-           <div class="content">
-               <h2>Xiaomi</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis unde magni</p>
-            </div>      
-    </div> </div>
-            </div>
-            
-
-
-
-            </div>
-            <!--Contenedor pagina reciente-->
-            <div class="contenedor-izquierdo">
-              <p class="boton-amigos">
-                <a class="btn btn-muted" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> <img src="../img/friends.png" alt="" width="22px">
-                </a>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ul class="lista-amigos">
-                    <li> <img src="../img/foto-amigo.jpg" alt="" width="30px"><a href="perfilamigo.html">Luis Hernandez</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Mariana Meneses</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Rodrigo Leyva</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Uriel Macias</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Lorena Rodriguez</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Alejandra Contreras</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Aaron Reyes</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Adrian Alvarez</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Daniel Lara</a></li>
-                    <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Ivonne Amaya</a></li>
+        <!--Boton imagen portada-->
+        <div class="boton-portada">
+          <button><img src="../img/camara.png" alt=""></button>
+        </div>
+        <!--Foto de perfil-->
+        <div class="foto-perfil">
+          <img src="../img/foto-perfil-usuario-uno.jpg" class="" height=200px alt="">
+        </div>
+        <!--Nombre-->
+        <div class="nombre">
+          <h1 class="letra_subtitulo">Labrada Enríquez<br>
+          </h1>
+        </div>
+      
+        <!--termino de portada-->
+      
+        <!--container de containers y iconos de amigos y mensajes-->
+        <div class="container_grupo_containers">
+          <div>
+            <!-- primer description-->
+            <div class="container_principal_1">
+              <div class="datos-usuario">
+      
+                <div class="habilidades">
+                  <h6 class="sub-datos">Trabajo</h6>
+                  <ul class="list-habilidades">
+                    <li class="info">BBVA Bancomer</li>
+                  </ul>
+                </div>
+      
+                <div class="habilidades">
+                  <h6 class="sub-datos">Habilidades</h6>
+                  <ul class="list-habilidades">
+                    <li class="info">Frontend</li>
+                    <li class="info">Vendedor</li>
+                    <li class="info">Orientación al futuro</li>
+                  </ul>
+                </div>
+      
+                <div class="idiomas">
+                  <h6 class="sub-datos">Idiomas</h6>
+                  <ul class="list-habilidades">
+                    <li class="info">Español</li>
+                    <li class="info">Ingles</li>
+                    <li class="info">Frances</li>
+                  </ul>
+                </div>
+      
+                <div class="intereses">
+                  <h6 class="sub-datos">Intereses</h6>
+                  <ul class="list-habilidades">
+                    <li class="info">Viajar</li>
+                    <li class="info">Ciencia de datos</li>
+                    <li class="info">Feminismo</li>
                   </ul>
                 </div>
               </div>
-              <!--Boton 2 -->
-              <p class="boton-mensajes">
-                <a class="btn btn-muted" data-toggle="collapse" href="#collapsetwo" role="button" aria-expanded="false" aria-controls="collapseExample"> <img src="../img/chat.png" alt="" width="22px">
-                </a>
-              </p>
-              <div class="collapse" id="collapsetwo">
-                <div class="card card-body body-mensajes">
-                  <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action" aria-current="true"><img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px">
-                      Alejandra Contreras
-                      <span class="badge badge-primary badge-pill color-alerta">14</span>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Mariana Meneses <span class="badge badge-primary badge-pill color-alerta">2</span></a>
-                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Uriel Macias <span class="badge badge-primary badge-pill color-alerta">6</span></a>
-                    <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Aaron Reyes <span class="badge badge-primary badge-pill color-alerta"></span></a>
-                    <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true"> <img class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Luis Hernandez<span class="badge badge-primary badge-pill color-alerta"></span></a>
+            </div>
+          </div>
+      
+      
+      
+      
+          <!-- segundo proyectos-->
+          <div>
+            <div class="container_principal">
+              <div class="container_titulo">
+                <h1>proyecto</h1>
+      
+                <!--container de pop up-->
+                <div class=" container">
+                  <div class="row ">
+                    <div class=" col-md-12 ">
+                      <div class="modal fade " id="myModal">
+                        <div class="modal-dialog modal-none">
+                          <div class=" modal-content rounded-sm">
+                            <div class=" modal-header">
+                              <h1>Proyecto</h1>
+                            </div>
+                            <div class=" modal-body font-weight-bold">
+      
+                              <form>
+                                <div class="form-group">
+                                  <label for=" text">Titulo</label>
+                                  <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+      
+                                  <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Describe proyecto..."></textarea>
+                                </div>
+                              </form>
+                              <div class="input-group mb-3">
+                                <input type="file" id="inputGroupFile02">
+      
+                              </div>
+                            </div>
+      
+                            <div class=" modal-footer">
+                              <input class="btn btn-primary" data-dismiss="modal" value="Subir">
+                            </div>
+                          </div>
+      
+                        </div>
+      
+                      </div>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="../img/upload.png" alt=""
+                          class="float-right" width="30px" height="30px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="container-b">
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/webuno.PNG" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Netlix</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+      
+                </div>
+      
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-marko-blazevic-2708981.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Gamer</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-toni-ferreira-3596282.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Converse</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-wendy-wei-2350325.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>DJ</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-karolina-grabowska-4471269.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Coca-Cola</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-
+          </div>
+      
+      
+      
+          <div>
+            <!--Contenedor pagina reciente-->
+            <div class="contenedor-izquierdo no-margin">
+              <div>
+                <p class="boton-amigos">
+                  <a class="btn btn-muted" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample"> <img src="../img/friends.png" class="amigos_boton1 no-margin" alt=""
+                      width="30px">
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <ul class="lista-amigos">
+                      <li> <img src="../img/foto-amigo.jpg" alt="" width="30px"><a href="perfilamigo.html">Luis Hernandez</a></li>
+                    <li> <img src="../img/foto_mentor.jpg" alt="" width="30px"><a href="perfilMentor.html">Rodrigo Leyva</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Mariana Meneses</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Uriel Macias</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Lorena Rodriguez</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Alejandra Contreras</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Aaron Reyes</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Adrian Alvarez</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Daniel Lara</a></li>
+                      <li> <img src="../img/foto de perfil.jpg" alt="" width="30px"><a href="#">Ivonne Amaya</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--Boton 2 -->
+              <div>
+                <p class="boton-mensajes">
+                  <a class="btn btn-muted" data-toggle="collapse" href="#collapsetwo" role="button" aria-expanded="false"
+                    aria-controls="collapseExample"> <img src="../img/chat.png" class=" no-margin" alt="" width="22px">
+                  </a>
+                </p>
+                <div class="collapse" id="collapsetwo">
+                  <div class="card card-body body-mensajes">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action" aria-current="true"><img class="foto-chat"
+                          src="../img/foto de perfil.jpg" alt="" width="30px">
+                        Alejandra Contreras
+                        <span class="badge badge-primary badge-pill color-alerta">14</span>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat"
+                          src="../img/foto de perfil.jpg" alt="" width="30px"> Mariana Meneses <span
+                          class="badge badge-primary badge-pill color-alerta">2</span></a>
+                      <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat"
+                          src="../img/foto de perfil.jpg" alt="" width="30px"> Uriel Macias <span
+                          class="badge badge-primary badge-pill color-alerta">6</span></a>
+                      <a href="#" class="list-group-item list-group-item-action"> <img class="foto-chat"
+                          src="../img/foto de perfil.jpg" alt="" width="30px"> Aaron Reyes <span
+                          class="badge badge-primary badge-pill color-alerta"></span></a>
+                      <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true"> <img
+                          class="foto-chat" src="../img/foto de perfil.jpg" alt="" width="30px"> Luis Hernandez<span
+                          class="badge badge-primary badge-pill color-alerta"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      
+          </div>
+      
       </main>
 
       <script src="../js/innovation.js"></script>

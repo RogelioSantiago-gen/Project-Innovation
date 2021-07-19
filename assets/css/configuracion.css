@@ -27,9 +27,9 @@ header{
 .wrapper 
 {
 display: flex; 
-width: 1250px; 
+width: 85%; 
 height: 1100px;                       /* ----cONTENEDOR PRINCIPAL----- */
-margin : 100px auto auto 240px;
+margin : 100px auto auto 150px;
 box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);   
 }
   
@@ -37,7 +37,7 @@ box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
 
 .left 
 {
-width: 330px;
+width: 300px;
 background: #4b6cb7;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #182848, #182848);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #182848, #314b8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -58,7 +58,7 @@ background: linear-gradient(to bottom, #182848, #314b8a); /* W3C, IE 10+/ Edge, 
   display: flex;
   flex-direction: row-reverse;
   background: none;
-  width: 250px;
+  width: 245px;
   height: 45px;
   margin-left: 30px;
   border: none;
@@ -94,7 +94,7 @@ letter-spacing: 0.7px;
 {
 padding-top: 0;
 margin: auto;               /*  -----ICONO DE LISTA NO ORENADA CONTENEDOR IZQUIERDO----- */
-margin-left: 30px;
+margin-left: 7px;
 width: 27px;
 cursor: pointer;
 }

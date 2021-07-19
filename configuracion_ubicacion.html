@@ -96,22 +96,22 @@
                   <br>
                   <br>
                   <li>
-                    <button id="perfil" class="menu-izquierdo"><img class="icon" src="assets/img/user (1).svg" alt=""><a class="list_item" href>Perfil</a></button>
+                    <button id="perfil" class="menu-izquierdo"><img class="icon" src="assets/img/user (1).svg" alt=""><a class="list_item" href="configuracion.html">Perfil</a></button>
                   </li>
                   <li>
-                    <button class="menu-izquierdo" id="contraseña"><img class="icon" src="assets/img/mostrar-contrasena.png" alt=""><a href="/configuracion_contraseña.html" class="list_item">Contraseña</a></button>
+                    <button class="menu-izquierdo" id="contraseña"><img class="icon" src="assets/img/mostrar-contrasena.png" alt=""><a href="configuracion_contraseña.html" class="list_item">Contraseña</a></button>
                   </li>
-                  <li><button class="menu-izquierdo" id="privacidad"><img class="icon" src="assets/img/insurance.png" alt=""><a href="/configuracion_privacidad.html" class="list_item">Privacidad</a></button>
+                  <li><button class="menu-izquierdo" id="privacidad"><img class="icon" src="assets/img/insurance.png" alt=""><a href="configuracion_privacidad.html" class="list_item">Privacidad</a></button>
                   </li>      
                   <br>
                   <h5>Preferencias</h5>
                   <br>
                   <br>
-                  <li><button class="menu-izquierdo" id="notificaciones"><img class="icon" src="assets/img/alarm.svg" alt=""><a href="/configuracion_notificaciones.html" class="list_item"> Notificaciones</a></button>
+                  <li><button class="menu-izquierdo" id="notificaciones"><img class="icon" src="assets/img/alarm.svg" alt=""><a class="list_item" href="/configuracion_notificaciones.html"> Notificaciones</a></button>
                   </li>
-                  <li><button class="menu-izquierdo" id="idioma-region"><img class="icon" src="assets/img/worldwide.png" alt=""><a href="/configuracion_idioma.html" class="list_item">Idioma o region</a></button>
+                  <li><button class="menu-izquierdo" id="idioma-region"><img class="icon" src="assets/img/worldwide.png" alt=""><a class="list_item" href="/configuracion_idioma.html">Idioma o region</a></button>
                   </li>
-                  <li><button class="menu-izquierdo" id="ubicacion"><img class="icon" src="assets/img/map.png" alt=""><a href="/configuracion_ubicacion.html" class="list_item">Ubicacion</a></button>
+                  <li><button class="menu-izquierdo" id="ubicacion"><img class="icon" src="assets/img/map.png" alt=""><a class="list_item" href="/configuracion_ubicacion.html">Ubicacion</a></button>
                   </li>
                   <br>
                   <h5>Normas y politicas</h5>
@@ -127,7 +127,7 @@
           </div>
                  <!-- Menu derecho de configuracion -->
            <div class="right">
-             <h2>Perfil</h2>
+             <h2>Ubicacion</h2>
                                   <!--  ----------AVATAR IMAGEN----- -->
               <div class="avatar-upload">
                 <img class="avatar-upload" src="assets/img/pexels-mikhail-nilov-6707077.jpg" alt="">
@@ -135,16 +135,13 @@
                             <!--      ---------------Formato de datos--------- --- -->
               <div class="form">
                     <form action="index.html" method="post">
-                        <div class="field"><label for="">Nombre</label><input class="full_name" type="text" name="full-name" value="" />
-                        </div>
-                        <div class="field"><label for="">Correo electronico</label><input class="full_name" type="text" name="full-name" />
-                        </div>
-                        <div class="field"><label for="">Habilidades</label><input class="full_name" type="text" name="full-name" />
-                        </div>
-                        <div class="field"><label for="">Trabajo</label><input class="full_name" type="text" name="full-name" />
-                        </div>
-                        <div class="field"><label for="">Intereses</label><input class="full_name" type="text" name="full-name" />
-                        </div>
+                        <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481726.88753697445!2d-99.42381745913329!3d19.391166837931287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1626666712551!5m2!1ses-419!2smx"
+   width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!--Google Maps-->
                     </form>
                </div>
                   <a href="#" class="gradient" id="box-c">Guardar</a> 
