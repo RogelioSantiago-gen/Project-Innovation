@@ -324,7 +324,7 @@ section{
     }
 }
 
-/*container de titulo y carga de proyectos*/
+/*container de titulo y carga de proyectos(pop up)*/
 .container_titulo{
     display: grid;
     grid-template-columns: 80% 20%;
@@ -348,12 +348,10 @@ h1{
 }
 
 .container_modal{
-    display: grid;
-    grid-template-columns: 100%;
-    margin-top: 40px;
+    margin-top: 70px;
     padding:30px 40px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 100px;
 }
 
 /*container proyecto y fotos*/
