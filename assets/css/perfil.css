@@ -347,6 +347,15 @@ h1{
     padding-top: 1rem;
 }
 
+.container_modal{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 40px;
+    padding:30px 40px;
+    width: 100%;
+    border-radius: 20px;
+}
+
 /*container proyecto y fotos*/
 
 .container-b{
