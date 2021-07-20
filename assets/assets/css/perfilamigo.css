@@ -1,0 +1,481 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /*background-color: #18191A; color para modo oscuro*/
+}
+
+header{
+    background-color: #112336;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    height: 80px; /* ---anchura de la cabecera--- */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 10;  /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.dropdown{
+    background-color: transparent;
+    color: #ffff;
+}
+
+.logo{
+    margin: auto;
+    margin-left: 50px;
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo:hover{
+    cursor: pointer;
+    color: #ffff;
+}
+.imagenLogo{
+    height: 40px;
+    margin-top: -2px;
+}
+.contenedor-perfil-flecha{
+    display: flex;
+    margin-right: 99px;
+    margin-top: 9px;
+}
+
+.fotoDePerfil{
+    height: 40px;
+    border-radius: 40px;
+}
+.dropdown-menu button a{
+    color: #000;
+    text-decoration: none;
+}
+
+/*   ------ TERMINA EL HEADER--------- */
+
+/*Navabar*/
+
+.sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    background: #F2EFEF;
+    padding: 6px 14px;
+    transition: all 0.5s ease; 
+}
+
+.sidebar.active{
+    width: 190px;
+}
+
+.sidebar #btn{
+    position: absolute;
+    cursor: pointer;
+    color: #112336;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+.sidebar.active #btn{
+    left: 90%;
+}
+
+.sidebar ul{
+margin-top: 150px;
+}
+
+.sidebar ul li{ 
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+}
+
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 60px;
+    top: auto;
+    border-radius: 6px;
+    height: 35px;
+    width: 110px;
+    background: rgb(201, 199, 199);
+    line-height: 35px;
+    text-align: center;
+    opacity: 0;
+    font-weight: bold;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip{
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.sidebar ul li a{
+    color: #112336;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+
+.sidebar ul li a:hover{
+    color: rgb(255, 255, 255);  
+    background: #112336;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.sidebar ul li a i{
+    height: 45px;
+    min-width: 35px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.sidebar .icon-name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .icon-name{
+    opacity: 1;
+    pointer-events: auto;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*Portada*/
+.portada{
+    position: absolute;
+    box-shadow: 0 20px 40px 0 rgba(204, 204, 204, 0.1);
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    object-fit:contain;
+    z-index: -1;
+}
+.portada img{
+    width: 100%;
+}
+.boton-portada{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    top: 210px;
+    left: 1850px;
+}
+.boton-portada button{
+    background-color: transparent;
+    border: none;
+}
+.boton-portada button img{
+    width: 20px;
+}
+/*foto de perfil*/
+.foto-perfil{
+    border: none;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    top: 164px;
+    left: 350px;
+}
+.foto-perfil img{
+    width: 160px;
+}
+.nombre{
+    color: #fff;
+    font-size: 27px;
+    position: relative;
+    top: 39px;
+    left: 570px;
+    width: 500px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+}
+.nombre h1 {
+    font-weight: 700;
+}
+/*Agregar amigo*/
+.agregar-amigo{
+    position: relative;
+    left: 600px;
+    top: 80px;
+    width: 25px;
+    background-color: transparent;
+    border: none;
+}
+.agregar-amigo img{
+    width: 20px;
+}
+/*Mandar mensaje*/
+.mandar-mensaje{
+    position:relative;
+    left: 650px;
+    top: 50px;
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 20px;
+    border:none;
+    background-color: #1e538b;
+    color: #fff;
+}
+/* Elementos inferiores*/
+.contenedor-padre-inferior{
+    margin-left: 15%;
+    margin-top: 4%;
+    width: 80%;
+    height: 700px;
+}
+/*Contenedor datos de usuario*/
+.datos-usuario{
+    margin: 40px 60px;
+    padding:30px 40px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    height: 60%;
+    border-radius: 20px;
+    width: 180px;
+}
+.sub-datos{
+    font-weight: 600;
+    font-size: 14px;
+}
+.info{
+    font-size: 12px;
+}
+.list-habilidades{
+    list-style: none;
+}
+/*Contenedor Proyectos*/
+.contenedor-proyectos{
+    margin-top: 40px;
+    padding:30px 40px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    height: 1080px;
+    width: 55%;
+    border-radius: 20px;
+}
+.contenedor-proyectos h2{
+    text-align: center;
+    font-weight: 900;
+    overflow:hidden;
+    margin-bottom: 52px;
+}
+.boton-upload{
+    background-color: transparent;
+    border: none;
+    margin-left: 730px;
+}
+.boton-upload img{
+    width: 20px;
+
+}
+.container-b{
+    width: 88%;
+    height: 500px;
+    margin: 20px auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-b .box{
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.container-b .box .imgBox{
+    position: relative;
+
+    margin-right: 10px;
+    border-radius: 20px;
+
+}
+
+
+.container-b .box .imgBox img{
+
+    width: 200px;
+    transition: transform 2s;
+    cursor: pointer;
+}
+
+.container-b .box:hover .imgBox img{
+
+    transform: scale(1.5);
+}
+
+.container-b .box .description{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 80px;
+    right: 20px;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+    border-radius: 20px;
+}
+
+.container-b .box:hover .description{
+
+    transform: scaleY(1);
+}
+
+.container-b .box .description .content{
+
+    position: absolute;
+    top: 30px;
+    transform: translateY(-50px);
+    font-size: 13px;
+    padding: 15px;
+    color: #000;
+
+}
+
+.container-b .box .description .content h2{
+margin: 10px 0 0;
+margin-bottom: 5px;
+padding: 0;
+font-size: 20px;
+color:#112336;
+font-family: sans-serif;
+}
+
+@media all and (min-width:500px){
+
+    .container-b .box .imgBox img{
+
+
+    }
+}
+
+@media all and (max-width: 500px){
+
+    .container-b{
+    
+        height: 3500px;
+    }
+
+
+   .container-b .box{
+        width: 550px;
+        height: 90;
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-b .box .description{
+        margin-bottom: -50px;
+        margin-top: -30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container-b .box .description .content{
+        font-size: 25px;
+
+    }
+
+    .container-b .box .description .content h2{
+        margin-top: -30px;
+        font-size: 35px;
+    }
+
+}
+
+/*Contenedor izquierdo*/
+.contenedor-izquierdo{
+    margin: 20px 60px;
+    margin-right: 0px;
+    padding:0px 40px;
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+}
+/*Boton amigos*/
+.btn{
+    background-color: transparent;
+    border:none;
+}
+.lista-amigos{
+    list-style: none;
+}
+.lista-amigos li{
+    margin-bottom: 7px;
+}
+.lista-amigos li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+.lista-amigos li img{
+    border-radius: 20px;
+}
+.card{
+    width: 250px;
+}
+/*Boton mensajes*/
+.boton-mensajes{
+    position: relative;
+    left: 50px;
+    bottom: 52px;
+}
+.body-mensajes{
+    position: relative;
+    bottom: 52px;
+    width: 350px;
+}
+.foto-chat{
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.color-alerta{
+    background-color:#ff5e62;
+}
+/*Boton github*/

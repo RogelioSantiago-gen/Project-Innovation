@@ -1,0 +1,377 @@
+
+body
+{
+ font-family: 'Rubik', sans-serif;
+ overflow-y: scroll;         /* -----------ESTILOS DE BODY----- */
+ background: rgb(248, 248, 248);
+
+}
+
+header{
+  background-color: #112336;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  height: 80px; /* ---anchura de la cabecera--- */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 10;  /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+  
+}
+.dropdown-menu button a{
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+.wrapper 
+{
+display: flex; 
+width: 85%; 
+height: 1100px;                       /* ----cONTENEDOR PRINCIPAL----- */
+margin : 100px auto auto 150px;
+box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);   
+}
+  
+ 
+
+.left 
+{
+width: 300px;
+background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #182848, #182848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #182848, #314b8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+ button{
+  outline: none;
+  background: none;
+  box-shadow: 0px 6px 16px rgba(0.9, 0.9, 78, 0.3); 
+  border-radius: 0;
+}
+ 
+
+ .menu-izquierdo{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  background: none;
+  width: 245px;
+  height: 45px;
+  margin-left: 30px;
+  border: none;
+  padding: auto;
+  padding-right: 10px ;
+ 
+}
+
+.left .menu-izquierdo:hover {
+  background-color: rgb(61, 82, 138);
+
+  
+}
+
+
+ul 
+{
+  margin-top: 90px;         /* -----LISTA NO ORDENADA CONTENEDOR IZQUIERDO---- */
+}
+
+  
+li 
+{
+list-style: none;
+margin-bottom: 37px;
+font-size: 17px;            /*  ---LISTA DE APARTADOS DE  CONFIGURACION----- */
+letter-spacing: 0.7px;
+}
+  
+
+
+.icon 
+{
+padding-top: 0;
+margin: auto;               /*  -----ICONO DE LISTA NO ORENADA CONTENEDOR IZQUIERDO----- */
+margin-left: 7px;
+width: 27px;
+cursor: pointer;
+}
+
+  
+  
+h5
+{
+margin: auto;
+margin-left: 50px;
+font-size: 20px;             /*  ------TITULOS DE CUENTA, PREFERENCIAS ETC------ */
+color: white;
+font-family: 'Comfortaa', cursive;
+}
+
+.profile 
+{
+color: #fff;
+padding-left: 10px;
+padding-top: 11px;
+position: absolute;
+}
+  
+ .list_item 
+{
+color: #fff;
+opacity: 1; 
+padding: auto;
+padding-right: 50px;
+padding-top: 9px;
+position: absolute;
+font-size: 15px;
+letter-spacing: 1px;
+font-weight: 450;
+/* font-family: 'Rubik', sans-serif; */
+margin-top: 2px;
+
+}
+
+
+#perfil .list_item{
+  margin-right: 40px;
+
+}
+ 
+#privacidad .list_item{
+margin-right: 5px;
+}
+
+#notificaciones .list_item{
+  margin-right: -15px;
+}
+
+#idioma-region .list_item{
+  margin-right: -18px;
+}
+
+#ubicacion .list_item{
+  margin-right: 20px;
+}
+
+#condiciones-de-servicio .list_item{
+  margin-left: 85px;
+  font-size: 13.5px;
+  margin-top: -6px;
+}
+
+#politica-de-datos .list_item{
+  margin-right: -3px;
+  font-size: 13.5px;
+  margin-top: 2px;
+}
+
+
+#normas-comunitarias .list_item{
+  margin-right: -26px;
+  font-size: 13.5px;
+  margin-top: 2px;
+}
+
+.right 
+{
+width: 590px;
+}
+
+h2 
+{
+color: #182848;
+letter-spacing: 0.79px;
+margin-left: 465px;
+margin-top: 80px;
+font-family: 'Comfortaa', cursive;
+font-weight:bolder;
+} 
+  
+.avatar-upload 
+{
+margin-left: 30px;
+margin-top: -40px;
+height: 265px;
+width: 195px;
+ /* los siguientes valores son independientes del tamaño del círculo */
+background-repeat: no-repeat;
+background-position: 20%;
+border-radius: 14%;
+background-size: 100% auto;
+}
+  
+ h3 
+{
+color: #888cbd;
+opacity: 0.7;
+font-size: 18px;
+margin: 0;
+margin-left: 110px;
+margin-top: 20px;
+font-family: 'Rubik', sans-serif;
+}
+  
+.form 
+{
+margin-left: 340px;
+margin-top: -10px;                /* -----CONTENEDOR DE INGRESO DE DATOS DE PERFIL(NOMBRE,TRABAJO,INTERESES,ETC)------ */
+margin-bottom: 40px;
+width: 310px;
+
+
+}
+  
+label 
+{
+font-family: 'Roboto', sans-serif;
+letter-spacing: 0.75px;
+font-size: 15px;                /*  ----APARTADO DE NOMBRE, INTERES, TRABAJO ETC.---- */
+color: #182848;
+border: none;                     
+outline: none;
+
+}
+  
+input 
+{
+font-family: 'Rubik', sans-serif;
+padding-bottom: 5px;
+padding-top: 16px;
+margin-left: 0px;
+width: 150%;
+border: none;                     /* -----APARTADO DE RESPUESTA A NOMBRE, INTERESES, ETC---- */
+outline: none;
+border-bottom: 2.5px solid #eaeaea;    
+letter-spacing: 0.29px;
+color: #112336;
+font-size: 0.95rem;
+font-weight: 600;
+background: none;
+}
+  
+.field 
+{
+padding-bottom: 25px;
+}
+  
+.field:last-child 
+{
+ padding-bottom: 15px;
+}
+ 
+
+  /* ------------Boton de Save-------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+#box-c 
+{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80px;
+height: 50px;
+color: white;
+font-family: 'Comfortaa', cursive;
+font-size: 1rem;
+margin-left: 350px;
+margin-top: 60px;
+}
+
+.gradient 
+{
+--borderWidth: 3px;
+position: relative;
+border-radius: var(--borderWidth);
+}
+
+
+.gradient:after 
+{
+content: '';
+position: absolute;
+top: calc(-1 * var(--borderWidth));
+left: calc(-1 * var(--borderWidth));
+height: calc(100% + var(--borderWidth) * 2);
+width: calc(100% + var(--borderWidth) * 2);
+background: linear-gradient(60deg, #84a7ec, #2e76e0, #166ef1d0, #10337a, #28386b,#2051b3);
+border-radius: calc(3* var(--borderWidth));
+z-index: -1;
+animation: animatedgradient 2s ease alternate infinite;
+background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient 
+{
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+ /* -------------Boton cancel------------- */
+
+
+ 
+ @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+ #box-d 
+ {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80px;
+height: 50px;
+color: white;
+font-family: 'Comfortaa', cursive;
+font-size: 1rem;
+margin-left: 500px;
+margin-top: -50px;
+}
+
+ .gradient-border 
+ {
+--borderWidth: 3px;
+position: relative;
+border-radius: var(--borderWidth);
+}
+
+.gradient-border:after 
+{
+content: '';
+position: absolute;
+top: calc(-1 * var(--borderWidth));
+left: calc(-1 * var(--borderWidth));
+height: calc(100% + var(--borderWidth) * 2);
+width: calc(100% + var(--borderWidth) * 2);
+background: linear-gradient(60deg, #84a7ec, #2e76e0, #166ef1d0, #10337a, #28386b,#2051b3);
+border-radius: calc(3* var(--borderWidth));
+z-index: -1;
+animation: animatedgradient 2s ease alternate infinite;
+background-size: 300% 300%;
+}
+ 
+ 
+ @keyframes animatedgradient 
+ {
+ 0% {
+ background-position: 0% 50%;
+}
+50% {
+ background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}

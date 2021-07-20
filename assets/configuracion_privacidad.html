@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/configuracion.css">
+    <title>Configuracion</title>
+</head>
+
+
+<body>
+
+    <!--Seccion Header, logo y foto de perfil-->
+    <header class="header">
+        <nav class="nav">         
+          <a href="index.html" class="logo"><img class="imagenLogo" src="assets/img/Generation logo.png"  alt=""></a>
+          <div class="contenedor-perfil-flecha">
+            <a href="assets/html/perfil.html" class="linkPerfil"><img class="fotoDePerfil" src="assets/img/foto de perfil.jpg" alt="user"></a>
+            <div class="dropdown" style="margin-right: 7%;">
+                <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/flecha-hacia-abajo-para-navegar.png" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button"><a href="configuracion.html">Configuración</a></button>
+                  <button class="dropdown-item" type="button"><a href="#">Mensajes</a></button>
+                  <button class="dropdown-item" type="button"><a href="assets/html/login.html">Cerrar sesión</a></button>
+                </div>
+            </div>
+          </div>
+
+        </nav>
+    </header>
+    <!--Navbar-->
+    <div class="sidebar">
+        <div class="logo_content"> <!-- BARRA DE MENU DESPLEGABLE -->
+          <div class="logo_name" ></div>
+          <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <!-- EMPEZAMOS CON LOS ICONOS -->
+        <ul >
+          <li> <!-- ICONO DE HOME -->
+            <a href="../index.html">
+             <i class='bx bx-home'></i>
+              <span class="icon-name">Inicio</span>
+            </a>
+            <!--Nombre de los iconos-->
+             <span class="tooltip">Inicio</span>
+          </li>
+
+          <li> <!-- ICONO DE PERFIL -->
+           <a href="/assets/html/perfil.html">
+             <i class='bx bx-user'></i>
+             <span class="icon-name">Perfil</span>
+           </a>
+            <span class="tooltip">Perfil</span>
+         </li>
+
+         <li>  <!-- ICONO DE BUSQUEDA -->
+           <a href="#">
+             <i class='bx bx-search' ></i>
+             <span class="icon-name">Busqueda</span>
+           </a>
+            <span class="tooltip">Busqueda</span>
+         </li>
+
+         <li> <!-- ICONO DE SETTINGS -->
+           <a href="/configuracion.html">
+             <i class='bx bx-cog' ></i>
+             <span class="icon-name">Configuracion</span>
+           </a>
+           <span class="tooltip">Configuracion</span>
+         </li>
+        </ul>
+
+      </div>
+
+     <!----contenedor principal de configuracion---- -->
+    <div class="wrapper">
+       <!----contenedor Izquierdo de configuracion---- -->
+        <div class="left">   
+            <ul>
+                  <h5>Cuenta</h5>
+                  <br>
+                  <br>
+                  <li>
+                    <button id="perfil" class="menu-izquierdo"><img class="icon" src="assets/img/user (1).svg" alt=""><a class="list_item" href="configuracion.html">Perfil</a></button>
+                  </li>
+                  <li>
+                    <button class="menu-izquierdo" id="contraseña"><img class="icon" src="assets/img/mostrar-contrasena.png" alt=""><a href="configuracion_contraseña.html" class="list_item">Contraseña</a></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="privacidad"><img class="icon" src="assets/img/insurance.png" alt=""><a href="/configuracion_privacidad.html" class="list_item"> Privacidad</a></button>
+                  </li>      
+                  <br>
+                  <h5>Preferencias</h5>
+                  <br>
+                  <br>
+                  <li><button class="menu-izquierdo" id="notificaciones"><img class="icon" src="assets/img/alarm.svg" alt=""><a href="/configuracion_notificaciones.html" class="list_item"> Notificaciones</a></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="idioma-region"><img class="icon" src="assets/img/worldwide.png" alt=""><a href="/configuracion_idioma.html" class="list_item">Idioma o region</a></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="ubicacion"><img class="icon" src="assets/img/map.png" alt=""><a href="/configuracion_ubicacion.html" class="list_item">Ubicacion</a></button>
+                  </li>
+                  <br>
+                  <h5>Normas y politicas</h5>
+                  <br>
+                  <br>
+                  <li><button class="menu-izquierdo" id="condiciones-de-servicio"><img class="icon" src="assets/img/copy.svg" alt=""><span class="list_item"> Condiciones de Servicio</span></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="politica-de-datos"><img class="icon" src="assets/img/copy.svg" alt=""><span class="list_item">Politica de datos</span></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="normas-comunitarias"><img class="icon" src="assets/img/copy.svg" alt=""><span class="list_item">Normas comunitarias</span></button>
+                  </li>
+              </ul>
+          </div>
+                 <!-- Menu derecho de configuracion -->
+           <div class="right">
+             <h2>Privacidad</h2>
+                                  <!--  ----------AVATAR IMAGEN----- -->
+              <div class="avatar-upload">
+                <img class="avatar-upload" src="assets/img/pexels-mikhail-nilov-6707077.jpg" alt="">
+              </div>
+                            <!--      ---------------Formato de datos--------- --- -->
+              <div class="form">
+                    <form action="index.html" method="post">
+                        <div class="field"><label for="">Nombre</label><input class="full_name" type="text" name="full-name" value="" />
+                        </div>
+                        <div class="field"><label for="">Correo electronico</label><input class="full_name" type="text" name="full-name" />
+                        </div>
+                        <div class="field"><label for="">Habilidades</label><input class="full_name" type="text" name="full-name" />
+                        </div>
+                        <div class="field"><label for="">Trabajo</label><input class="full_name" type="text" name="full-name" />
+                        </div>
+                        <div class="field"><label for="">Intereses</label><input class="full_name" type="text" name="full-name" />
+                        </div>
+                    </form>
+               </div>
+                  <a href="#" class="gradient" id="box-c">Guardar</a> 
+                  <a href="#" class="gradient-border" id="box-d">Cancelar</a>
+           </div>
+     </div>
+
+
+         <script src="assets/js/settings.js"></script>
+        <script src="assets/js/innovation.js"></script>
+         <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html> 

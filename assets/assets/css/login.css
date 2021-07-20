@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* FONDO VIDEO */
+.contenido__video{
+    background: #7DD174;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+   }
+   
+   /* Estilos para la etiqueta "video" con la calse (.video)  */
+   .video{
+    position: absolute;
+    max-width: 300%;
+    width: 100%;
+   }
+   
+   /* media queries (personalizarlo a su antojo)*/
+   @media(max-width: 900px){
+    .video{
+     width: 150%;
+    }
+   }
+   @media(max-width: 650px){
+    .video{
+     width: 280%;
+    }
+   }
+   @media(max-width: 480px){
+    .video{ 
+     width: 300%;
+    }
+   }
+/*Login*/
+.contentDad{
+    display: flex;
+    border-radius: 20px;
+    background-color: #ffff;
+    width: 320px;
+    height: 540px;
+    margin: 200px auto;
+    box-shadow: 0 20px 40px 0 rgba(204, 204, 204, 0.1);
+  }
+  .contentLog{
+    margin: 0 auto;
+  }
+  .textCenter{
+    text-align: center;
+  }
+  h2{
+    margin-top:35px;
+    padding:0;
+    margin-bottom:10px;
+  }
+  a{
+    display:flex;
+    justify-content:center;
+    font-size:13px;
+    text-decoration: none;
+  }
+  p{
+    font-size: 13px;
+  }
+  label{
+    font-weight:600;
+    font-size: 14px;
+    color: #4e4f5c;
+  }
+  input{
+    margin-bottom: 10px;
+    width:240px;
+    height:35px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+  }
+  button{
+    background-color: #ffff;
+    margin-bottom: 10px;
+    width:245px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:17px;
+    color: #4e4f5c;
+  }
+  button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  .buttonLog{
+    background-color: #0eb3ee;
+    color: #ffff;
+  }
+  .buttonLog:hover{
+    cursor: pointer;
+  }
+  h6{
+    padding: 0;
+    margin:10px;
+    font-size:14px;
+    color: #4e4f5c;
+  }   

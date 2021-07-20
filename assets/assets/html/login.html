@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Video</title>
+</head>
+<body>
+     <!-- ******* VIDEO FONDO ******* -->
+ <div class="contenido__video">
+    <!-- 
+      autoplay: propiedad para que se reproduzca una ves que carga la página
+      loop: propiedad para el vídeo se repita infinitamente
+      muted: propiedad para que el vídeo no emita sonido
+      poster: propiedad que muestra una imagen hasta que cargue el vídeo 
+    -->
+    <video class="video" autoplay="autoplay" loop="loop" muted="muted" poster="">
+     <source src="../img/Office - 6395.mp4" type="video/mp4" />
+     <source src="../img/Office - 6395.mp4" type="video/webm" />
+    </video>
+   </div>
+
+   <!--Login-->
+
+    <!--Contenedor padre de todo el login-->
+    <div class = "contentDad">
+        <!--Contenedor del formulario-->
+      <div class = "contentLog">
+          <!--Titulo y subtitulo con enlace a registro-->
+          <h2 class = "textCenter">Welcome</h2>
+          <p class = "textCenter">Don´t have an acount? <a href="registro.html" class = "textCenter">Sign Up</a></p>
+          <!--Input de Email-->
+          <label>Email</label> <br>
+          <input id ="email"></input><br>
+          <!--Input de Password-->
+          <label>Password</label> <br>
+          <input type="password" id="password"></input> <br>
+          <br>
+          <!--Boton Login-->
+          <button class ="buttonLog"><a href="../../index.html">Log in</a> </button>
+          <a href ="#">Forgot password?</a>
+          <!--Or-->
+          <h6 class = "textCenter">or</h6>
+          <!--Boton Google-->
+          <button>
+            <img src="../img/google.png" width = 25px;></img>
+            <p>Sign in with Google</p>
+          </button>
+          <!--Boton Facebook-->
+          <button>
+            <img src = "../img/facebook_16423.png" width = "25px"></img>
+            <p>Sign in with Facebook</p>
+          </button>
+      </div>
+    </div>
+</body>
+</html>

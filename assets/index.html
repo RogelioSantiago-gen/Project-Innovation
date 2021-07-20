@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--links de caja de comentarios -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!--fin de links de caja de comentarios-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Project Innovation</title>
+</head>
+<body>
+    
+    <!--Seccion Header, logo y foto de perfil-->
+    <header class="header">
+        <nav class="nav">
+          
+          <a href="index.html" class="logo"><img class="imagenLogo" src="assets/img/Generation logo.png"  alt=""></a>
+          <div class="contenedor-perfil-flecha">
+            <a href="assets/html/perfil.html" class="linkPerfil"><img class="fotoDePerfil" src="assets/img/foto de perfil.jpg" alt="user"></a>
+            <div class="dropdown" style="margin-right: 7%;">
+                <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/flecha-hacia-abajo-para-navegar.png" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button"><a href="configuracion.html">Configuración</a></button>
+                  <button class="dropdown-item" type="button"><a href="#">Mensajes</a></button>
+                  <button class="dropdown-item" type="button"><a href="assets/html/login.html">Cerrar sesión</a></button>
+                </div>
+            </div>
+          </div>
+            
+        </nav>
+    </header>
+    <!--Navbar-->
+    <div class="sidebar">
+        <div class="logo_content"> <!-- BARRA DE MENU DESPLEGABLE -->
+          <div class="logo_name" ></div>
+          <i class='bx bx-menu' id="btn"></i>
+        </div>
+     
+        <!-- EMPEZAMOS CON LOS ICONOS -->
+        <ul >
+          <li> <!-- ICONO DE HOME -->
+            <a href="index.html">
+             <i class='bx bx-home'></i>
+              <span class="icon-name">Inicio</span>
+            </a>
+            <!--Nombre de los iconos-->
+             <span class="tooltip">Inicio</span>
+          </li>
+     
+          <li> <!-- ICONO DE PERFIL -->
+           <a href="assets/html/perfil.html">
+             <i class='bx bx-user'></i>
+             <span class="icon-name">Perfil</span>
+           </a>
+            <span class="tooltip">Perfil</span>
+         </li>
+     
+         <li>  <!-- ICONO DE BUSQUEDA -->
+           <a href="#">
+             <i class='bx bx-search' ></i>
+             <span class="icon-name">Busqueda</span>
+           </a>
+            <span class="tooltip">Busqueda</span>
+         </li>
+         
+         <li> <!-- ICONO DE SETTINGS -->
+           <a href="configuracion.html">
+             <i class='bx bx-cog' ></i>
+             <span class="icon-name">Configuracion</span>
+           </a>
+           <span class="tooltip">Configuracion</span>
+         </li>
+        </ul>
+     
+      </div>
+        <div class="content-inicio">
+        <!--contenedor publicaciones y busqueda-->
+        <main>
+        <!--Claudia: colocación de inputs y button de search-->
+            <p class="contenedorBuscador">
+            <input class="buscador" type="search" name="search" placeholder= "Search"/>
+            <input class="buscador" type="location" name="location" placeholder="Location"/>
+            <input class="buscador" type="filter" name="filter" placeholder="Filter"/>
+            <a href="#" class="bi bi-search">
+            <img src="assets/img/lupa.png" alt="" width="20px;">
+            </a>
+            </p>
+
+            <div class="content-cards-scroll ">
+                    <!--Card 1-->
+                <div class="card mb-3 " style="width: 90%; margin: 60px auto;" >
+                        <div class="row no-gutters">
+                           <div class="col-md-3">
+                  
+                             <img src="assets/img/codigo-fuente.jpg" class="card-img mr-5" alt="..."> 
+                           </div>
+                        <div class="col-md-9 ">
+                           <div class="card-body">
+                                <div class="top-card">
+                                    <h5 class="card-title" style="font-weight: 600;">Titulo</h5>
+                                    <p class="card-text mt-3"><small class="text-muted">Publicado hace 3 minutos</small></p>
+                                    <img src="assets/img/estrella.png" alt="">
+                                </div>
+                            
+                            <p class="card-text  anim-typewriter">Es un honor contar contigo en esta ocasión especial.</p>
+                         
+                            <!--Prueba de caja de comentarios-->
+
+                             <div class="containerBr">
+                                <div class="d-flex justify-content-right row">
+                                    <div class="col-md-8">
+                                        <div class="d-flex flex-column comment-section" id="myGroup">
+                                           
+                                            <div class="bg-white p-2">
+                                                <div id="icon" class="d-flex flex-row fs-42">
+                                                    <div class="like p-2 cursor ml-3"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                    <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div id="collapse-1" class="bg-light p-2 collapse">
+                                                <div><textarea class="form-control ml-0 shadow-none textarea "></textarea></div>
+                                                <div class="mt-3  mr-2 text-right"><button class="btn btn-primary btn-light shadow-lg fs-30 mr-2 w-15" type="button">Enviar</button><button class="btn btn-primary btn-light shadow-lg " type="button">Cancelar</button></div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fin de prueba -->
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                    <!--Card 2-->
+                <div class="card mb-3" style="width: 90%; margin: 20px auto;" >
+                        <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="assets/img/codigo-fuente.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="top-card">
+                                    <h5 class="card-title" style="font-weight: 600;">Titulo</h5>
+                                    <p class="card-text"><small class="text-muted">Publicado hace 5 minutos</small></p>
+                                    <img src="assets/img/estrella.png" alt="">
+                                </div>
+                            
+
+                                <p class="card-text  anim-typewriter">Es un honor contar contigo en esta ocasión especial.</p>
+                             <!--Prueba de caja de comentarios-->
+
+                             <div class="containerBr">
+                                <div class="d-flex justify-content-right row">
+                                    <div class="col-md-8">
+                                        <div class="d-flex flex-column comment-section" id="myGroup">
+                                           
+                                            <div class="bg-white p-2">
+                                                <div id="icon" class="d-flex flex-row fs-42">
+                                                    <div class="like p-2 cursor ml-3"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                    <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div id="collapse-1" class="bg-light p-2 collapse">
+                                                <div><textarea class="form-control ml-0 shadow-none textarea "></textarea></div>
+                                                <div class="mt-3  mr-2 text-right"><button class="btn btn-primary btn-light shadow-lg fs-30 mr-2 w-15" type="button">Enviar</button><button class="btn btn-primary btn-light shadow-lg " type="button">Cancelar</button></div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fin de prueba -->
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                    <!--Card 3-->
+                <div class="card mb-3" style="width: 90%; margin: 20px auto;" >
+                        <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="assets/img/codigo-fuente.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="top-card">
+                                    <h5 class="card-title" style="font-weight: 600;">Titulo</h5>
+                                    <p class="card-text"><small class="text-muted">Publicado hace 8 minutos</small></p>
+                                    <img src="assets/img/estrella.png" alt="">
+                                </div>
+                            
+
+                                <p class="card-text  anim-typewriter">Es un honor contar contigo en esta ocasión especial.</p>
+                             <!--Prueba de caja de comentarios-->
+
+                             <div class="containerBr">
+                                <div class="d-flex justify-content-right row">
+                                    <div class="col-md-8">
+                                        <div class="d-flex flex-column comment-section" id="myGroup">
+                                           
+                                            <div class="bg-white p-2">
+                                                <div id="icon" class="d-flex flex-row fs-42">
+                                                    <div class="like p-2 cursor ml-3"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                    <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div id="collapse-1" class="bg-light p-2 collapse">
+                                                <div><textarea class="form-control ml-0 shadow-none textarea "></textarea></div>
+                                                <div class="mt-3  mr-2 text-right"><button class="btn btn-primary btn-light shadow-lg fs-30 mr-2 w-15" type="button">Enviar</button><button class="btn btn-primary btn-light shadow-lg " type="button">Cancelar</button></div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fin de prueba -->
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                    <!--Card 4-->
+                <div class="card mb-3" style="width: 90%; margin: 20px auto;" >
+                        <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="assets/img/codigo-fuente.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="top-card">
+                                    <h5 class="card-title" style="font-weight: 600;">Titulo</h5>
+                                    <p class="card-text"><small class="text-muted">Publicado hace 10 minutos</small></p>
+                                    <img src="assets/img/estrella.png" alt="">
+                                </div>
+                            
+
+                                <p class="card-text  anim-typewriter">Es un honor contar contigo en esta ocasión especial.</p>
+                             <!--Prueba de caja de comentarios-->
+
+                             <div class="containerBr">
+                                <div class="d-flex justify-content-right row">
+                                    <div class="col-md-8">
+                                        <div class="d-flex flex-column comment-section" id="myGroup">
+                                           
+                                            <div class="bg-white p-2">
+                                                <div id="icon" class="d-flex flex-row fs-42">
+                                                    <div class="like p-2 cursor ml-3"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                    <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div id="collapse-1" class="bg-light p-2 collapse">
+                                                <div><textarea class="form-control ml-0 shadow-none textarea "></textarea></div>
+                                                <div class="mt-3  mr-2 text-right"><button class="btn btn-primary btn-light shadow-lg fs-30 mr-2 w-15" type="button">Enviar</button><button class="btn btn-primary btn-light shadow-lg " type="button">Cancelar</button></div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fin de prueba -->
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                    <!--Card 5-->
+                <div class="card mb-3" style="width: 90%; margin: 20px auto;" >
+                        <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="assets/img/codigo-fuente.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="top-card">
+                                    <h5 class="card-title" style="font-weight: 600;">Titulo</h5>
+                                    <p class="card-text"><small class="text-muted">Publicado hace 15 minutos</small></p>
+                                    <img src="assets/img/estrella.png" alt="">
+                                </div>
+                            
+
+                                <p class="card-text  anim-typewriter">Es un honor contar contigo en esta ocasión especial.</p>
+                           <!--Prueba de caja de comentarios-->
+
+                           <div class="containerBr">
+                            <div class="d-flex justify-content-right row">
+                                <div class="col-md-8">
+                                    <div class="d-flex flex-column comment-section" id="myGroup">
+                                       
+                                        <div class="bg-white p-2">
+                                            <div id="icon" class="d-flex flex-row fs-42">
+                                                <div class="like p-2 cursor ml-3"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div id="collapse-1" class="bg-light p-2 collapse">
+                                            <div><textarea class="form-control ml-0 shadow-none textarea "></textarea></div>
+                                            <div class="mt-3  mr-2 text-right"><button class="btn btn-primary btn-light shadow-lg fs-30 mr-2 w-15" type="button">Enviar</button><button class="btn btn-primary btn-light shadow-lg " type="button">Cancelar</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fin de prueba -->
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Contenedor trabajos-->
+        <section>
+            <div>
+                <!--Card 1-->
+                <div class="card mb-3" style="width: 90%; height: 120px; margin:20px auto; margin-bottom: 5px;" >
+                            <div class="row no-gutters">
+                            <div class="col-md-3">
+                                <img class="card-trabajo-imagen" style="width: 85px; height: 80px; margin-top: 20px; margin-left: 10%;"src="assets/img/2.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="top-card">
+                                        <h5 class="card-title" style="font-weight: 600; font-size: 17px; margin-bottom: 5px; margin-left: 10px;">Trabajo</h5>
+                                    </div>
+                                
+
+                                    <p class="card-text-trabajo">¡Este es mi primer trabajo!</p>
+                        
+                                </div>
+                            </div>
+                            </div>
+                </div>
+                <!--Card 2-->
+                <div class="card mb-3" style="width: 90%; height: 120px; margin:1px auto; margin-bottom: 5px;" >
+                    <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img class="card-trabajo-imagen" style="width: 85px; height: 80px; margin-top: 20px; margin-left: 10%;"src="assets/img/2.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <div class="top-card">
+                                <h5 class="card-title" style="font-weight: 600; font-size: 17px; margin-bottom: 5px; margin-left: 10px;">Trabajo</h5>
+                            </div>
+                        
+
+                            <p class="card-text-trabajo">¡Este es mi primer trabajo!</p>
+                   
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="card mb-3" style="width: 90%; height: 120px; margin:1px auto;" >
+            <div class="row no-gutters">
+            <div class="col-md-3">
+                <img class="card-trabajo-imagen" style="width: 85px; height: 80px; margin-top: 20px; margin-left: 10%; margin-left: 10px;"src="assets/img/2.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-9">
+                <div class="card-body">
+                    <div class="top-card">
+                        <h5 class="card-title" style="font-weight: 600; font-size: 17px; margin-bottom: 5px; margin-left: 10px;">Trabajo</h5>
+                    </div>
+                
+
+                    <p class="card-text-trabajo">¡Este es mi primer trabajo!</p>
+            
+                </div>
+            </div>
+            </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="assets/js/innovation.js"></script>
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
