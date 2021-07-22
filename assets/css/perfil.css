@@ -303,7 +303,14 @@ section {
 .letra_subtitulo {
   text-align: justify;
 }
+/* boton git Hub */
+.boton-git {
+    position: relative;
+    top: 50px;
+    left: 430px;
+}
 
+/* fin boton hit hub */
 /*Contenedor datos de usuario*/
 
 .sub-datos {
