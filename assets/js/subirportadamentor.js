@@ -15,6 +15,12 @@
         imgPrevista.src="";
     });
 
+    overlay.addEventListener('click' , (e)=>{
+        overlay.classList.remove('active');
+        popup.classList.remove('active');
+        imgPrevista.src="";  
+    });
+ 
     //CODIGO PARA SELECCIONAR LA IMG Y ENVIARLA AL SERVIDOR
     var imgSubida = document.getElementById("img-subida");
     var imgPrevista = document.getElementById("img-prevista");
