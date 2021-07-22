@@ -214,7 +214,7 @@ section {
   padding-bottom: 0;
   border-radius: 20px;
   border: 1px solid rgb(160, 159, 159);
-  box-decoration: none;
+  
 }
 .boton-buscar1{
   width: 30%;
@@ -229,7 +229,7 @@ section {
   cursor: pointer;
 }
 
-/* ------------------------fin del cuadro de busqueda ----------- */
+/* ------------------------fin del cuadro de busqueda ------------------------------ */
 
 /*Main, seccion noticias y busqueda*/
 
