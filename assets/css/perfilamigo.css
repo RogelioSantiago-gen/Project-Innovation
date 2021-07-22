@@ -293,6 +293,14 @@ section{
 .nombre h1 {
     font-weight: 700;
 }
+/* boton git Hub */
+.boton-git {
+    position: relative;
+    top: 105px;
+    left: 550px;
+}
+
+/* fin boton hit hub */
 /*Agregar amigo*/
 .agregar-amigo{
     position: relative;
