@@ -202,6 +202,23 @@ background-position: 20%;
 border-radius: 14%;
 background-size: 100% auto;
 }
+
+/* Boton para agregar imagen en configuracion */
+.avatar-upload .boton-portada-perfil{
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  top: 210px;
+  left: 190px;
+}
+.avatar-upload .boton-portada-perfil button{
+  background-color: transparent;
+  
+}
+.avatar-upload .boton-portada-perfil button img{
+  width: 20px;
+}
+
   
  h3 
 {

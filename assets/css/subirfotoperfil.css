@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.overlay{
+.overlay-fotoPerfil{
     z-index: 100;
     background: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -14,11 +14,11 @@
     visibility: hidden;
 }
 
-.overlay.active{
+.overlay-fotoPerfil.active{
     visibility: visible;
 }
 
-.contenedor-popup .agregar-imagen img{
+.contenedor-popup-fotoPerfil .agregar-imagen-fotoPerfil img{
     position: absolute;
     left: 0;
     top:0;
@@ -26,69 +26,70 @@
     height: 100%;
 }
 
-.contenedor-popup{
+.contenedor-popup-fotoPerfil{
     
     background: #f8f8f8;
     margin: 0 auto;
-    width: 70%;
+    width: 200px;
     height: 300px;
     box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 20px;
 
     transition: 0.5s ease all;
     transform: scale(0.6);
     opacity: 0;
 }
-.contenedor-popup.active{
+.contenedor-popup-fotoPerfil.active{
     opacity: 1;
     transform: scale(1);
 }
 
-.contenedor-popup .btn-cerrar-popup{
+.contenedor-popup-fotoPerfil .btn-cerrar-popup-fotoPerfil{
     position: relative;
     top: 5%;
-    left: 93%;
+    left: 85%;
     font-size: 16px;
     line-height: 16px;
     color: #BBBBBB;
     transition: .3s ease all;
     
 }
-.contenedor-popup .btn-cerrar-popup:hover{
+.contenedor-popup-fotoPerfil .btn-cerrar-popup-fotoPerfil:hover{
     color: black;
 }
 
-.contenedor-popup form .contenedor-inputs{
- position: relative;
- top: 30px;
- left: 10%;
 
+
+.contenedor-popup-fotoPerfil form .contenedor-inputs-fotoPerfil{
+ position: relative;
+ top: 35px;
+ left: 18%;
 }
 
 
-.agregar-imagen{
-    height: 200px;
-    width: 90%;
+.agregar-imagen-fotoPerfil{
+    width: 160px;
+    height: 160px;
     border: groove;
     position: relative;
-    top: 5%;
-    left: 4.5%;
+    top: 10%;
+    left: 8%;
 }
-.agregar-imagen:hover{
+.agregar-imagen-fotoPerfil:hover{
     cursor: pointer;
 }
 
-.agregar-imagen img{
+.agregar-imagen-fotoPerfil img{
     width: 20px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
-.contenedor-popup .guardar-cambios{
+.contenedor-popup-fotoPerfil .guardar-cambios-fotoPerfil{
     position: relative;
-    top: 3%;
-    left: 80%;
+    top: 18%;
+    left: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +102,7 @@
     border: 0;
     cursor: pointer;
 }
-.guardar-cambios:hover{
+.guardar-cambios-fotoPerfil:hover{
     cursor: pointer;
     background: rgba(94, 125, 227, 0.9);
 }
