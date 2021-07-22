@@ -102,11 +102,55 @@
             <a href="#" class="bi bi-search">
             <img src="assets/img/lupa.png" alt="" width="20px;">
             </a>
+            <!-- contenedor del boton de subir publicacion -->
+
+            <div class=" container">
+                    <div class="modal fade " id="myModal">
+                      <div class="modal-dialog modal-none">
+                        <div class=" modal-content rounded-sm">
+                          <div class=" modal-header">
+                            <h1>Proyectos</h1>
+                          </div>
+                          <div class=" modal-body font-weight-bold">
+    
+                            <form>
+                              <div class="form-group">
+                                <label for=" text">Titulo</label>
+                                <div class="mb-3">
+                                  <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                              </div>
+                              <div class="form-group">
+    
+                                <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Describe proyecto..."></textarea>
+                              </div>
+                            </form>
+                            <div class="input-group mb-3">
+                              <input type="file" id="inputGroupFile02">
+    
+                            </div>
+                          </div>
+    
+                          <div class=" modal-footer">
+                            <input class="btn btn-primary" data-dismiss="modal" value="Subir">
+                          </div>
+                        </div>
+    
+                      </div>
+    
+                    </div>
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn btn-outline-light btn-lg btn-block"><small class="text-muted">Publicar</small></button> <!-- boton asociado -->
+                    </a>
+              </div>
+            
+            <!-- cierre del bootn de subir publicacion -->
             </p>
 
             <div class="content-cards-scroll ">
                     <!--Card 1-->
-                <div class="card mb-3 " style="width: 90%; margin: 60px auto;" >
+                <div class="card mb-3 " style="width: 90%; margin: auto;" > <!-- margin: 60px auto; se quito el 60px" -->
                         <div class="row no-gutters">
                            <div class="col-md-3">
                   
