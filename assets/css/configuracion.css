@@ -213,10 +213,11 @@ background-size: 100% auto;
 }
 .avatar-upload .boton-portada-perfil button{
   background-color: transparent;
-  
+  border:none;
 }
 .avatar-upload .boton-portada-perfil button img{
   width: 20px;
+  border:none;
 }
 
   
