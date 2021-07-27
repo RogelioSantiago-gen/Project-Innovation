@@ -1,8 +1,8 @@
     /* CODIGO PARA ACTIVAR O DESACTIVAR EL POPUP */
-    var btnAbrirPopup = document.getElementById('btnAbrirPopup-perfil'),
-    overlay= document.getElementById('overlay-fotoPerfil'),
-    popup= document.getElementById('contenedor-popup-fotoPerfil'),
-    btnCerrarPopup = document.getElementById('btn-cerrar-popup-fotoPerfil');
+    var btnAbrirPopup = document.getElementById('btnAbrirPopup'),
+    overlay= document.getElementById('overlay'),
+    popup= document.getElementById('contenedor-popup'),
+    btnCerrarPopup = document.getElementById('btn-cerrar-popup');
 
     btnAbrirPopup.addEventListener('click', ()=>{
         overlay.classList.add('active');
@@ -21,14 +21,10 @@
         imgPrevista.src="";  
     });
  
-
-
-
-
     //CODIGO PARA SELECCIONAR LA IMG Y ENVIARLA AL SERVIDOR
-    var imgSubida = document.getElementById("img-subida-fotoPerfil");
-    var imgPrevista = document.getElementById("img-prevista-fotoPerfil");
-    var btnGuardar = document.getElementById('guardar-cambios-fotoPerfil');
+    var imgSubida = document.getElementById("img-subida");
+    var imgPrevista = document.getElementById("img-prevista");
+    var btnGuardar = document.getElementById('guardar-cambios');
 
 
 

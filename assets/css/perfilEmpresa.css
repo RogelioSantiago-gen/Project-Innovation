@@ -33,6 +33,7 @@ nav{
     padding: 10px 30px;
 }
 .dropdown{
+    
     background-color: transparent;
     color: #ffff;
 }
@@ -178,67 +179,6 @@ section{
     flex-wrap: wrap;
 }
 
-/*------------------ estilo del cuadro de busqueda --------------------------*/
-.contenedor1{ /* contenedor del cuadro de busqueda */
-    /* atribustos para ocultar la caja */
-    opacity: 0; /*  esto lo hace transparente */
-    visibility: hidden; /* esto lo oculta */
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: Flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .buscador1{
-    width: 230px;
-    height: 150px;
-    margin: 0 auto;
-    /* margin-top: 100px; */ /* mantiene el centrado */
-    padding: 15px;
-    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
-    background-color: rgba(255, 255, 255, 0.651);
-    border-radius: 20px;
-    /* animacion */
-    position: relative;
-    transition: transform 1s;
-    transform: translateY(0%) 
-  }
-  .busc-close{
-   transform: translateY(-400%);
-  }
-  .entrada-busqueda1{
-    width: 90%;
-    height: 20px;
-    margin-top: 20%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    border-radius: 20px;
-    border: 1px solid rgb(160, 159, 159);
-    
-  }
-  .boton-buscar1{
-    width: 30%;
-    height: 20%;
-    margin-left: 35%;
-    color: #fff;
-    background-color: #112336;
-    border: none;
-    border-radius: 20px;
-  }
-  .boton-buscar1:hover{
-    cursor: pointer;
-  }
-  
-  /* ------------------------fin del cuadro de busqueda ------------------------------ */
-  
-
 
 /*Portada*/
 .portada{
@@ -258,7 +198,7 @@ section{
     padding: 0%;
     position: relative;
     top: 210px;
-    left: 1850px;
+    left: 1200px;
 }
 .boton-portada button{
     background-color: transparent;
@@ -268,79 +208,27 @@ section{
     width: 20px;
 }
 /*foto de perfil*/
-.foto-perfil{
-    border: none;
-    border-radius: 20px;
-    width: 160px;
-    height: 160px;
-    overflow: hidden;
-    position: relative;
-    top: 164px;
-    left: 350px;
-}
-.foto-perfil img{
-    width: 160px;
-}
+
 .nombre{
     color: #fff;
     font-size: 27px;
     position: relative;
-    top: 39px;
-    left: 570px;
+    left: 390px;
     width: 500px;
-    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    top:175px;
 }
 .nombre h1 {
     font-weight: 700;
 }
-/* boton git Hub */
-.boton-git {
-    position: relative;
-    top: 105px;
-    left: 550px;
+.nombre_size{
+    text-align: justify;
+}
+.letra_subtitulo{
+    text-align: justify;
 }
 
-/* fin boton hit hub */
-/*Agregar amigo*/
-.agregar-amigo{
-    position: relative;
-    left: 600px;
-    top: 80px;
-    width: 25px;
-    background-color: transparent;
-    border: none;
-}
-.agregar-amigo img{
-    width: 20px;
-}
-/*Mandar mensaje*/
-.mandar-mensaje{
-    position:relative;
-    left: 650px;
-    top: 50px;
-    font-size: 13px;
-    padding: 6px;
-    border-radius: 20px;
-    border:none;
-    background-color: #1e538b;
-    color: #fff;
-}
-/* Elementos inferiores*/
-.contenedor-padre-inferior{
-    margin-left: 15%;
-    margin-top: 4%;
-    width: 80%;
-    height: 700px;
-}
 /*Contenedor datos de usuario*/
-.datos-usuario{
-    margin: 40px 60px;
-    padding:30px 40px;
-    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
-    height: 60%;
-    border-radius: 20px;
-    width: 180px;
-}
+
 .sub-datos{
     font-weight: 600;
     font-size: 14px;
@@ -351,63 +239,129 @@ section{
 .list-habilidades{
     list-style: none;
 }
-/*Contenedor Proyectos*/
-.contenedor-proyectos{
+
+
+
+/*contenedor de descripcion,proyectos y iconos*/
+.container_grupo_containers{
+    display: grid;
+    grid-template-columns: 17% 55% 28%;
+    margin-left: 4rem;
+    padding-top: 10rem;
+    padding-left: 7rem;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+/*contenedor de datos*/
+.container_principal_1{
+    display: grid;
+    grid-template-columns: 100%;
     margin-top: 40px;
     padding:30px 40px;
     box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
-    height: 1080px;
-    width: 55%;
+    width: 70%;
     border-radius: 20px;
 }
-.contenedor-proyectos h2{
-    text-align: center;
-    font-weight: 900;
-    overflow:hidden;
-    margin-bottom: 52px;
-}
-.boton-upload{
-    background-color: transparent;
-    border: none;
-    margin-left: 730px;
-}
-.boton-upload img{
-    width: 20px;
 
+
+
+
+/*contenedor de proyectos*/
+.container_principal{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 40px;
+    padding:30px 40px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    width: 97%;
+    border-radius: 20px;
 }
+
+/*responsive de container datos*/
+
+@media (max-width: 1600px ) {
+    .container_grupo_containers{
+        margin-left: 5rem;
+    }
+    .container_principal_1{
+        width: 90%;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 1300px ) {
+    .container_grupo_containers{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-left: 0rem;
+    }
+    .container_principal_1{
+        width: 70%;
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width: 600px ) {
+    .container_principal_1{
+        width: 97%;
+        margin-left: 0rem;
+    }
+}
+
+/*container de titulo y carga de proyectos*/
+.container_titulo{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding-bottom: 1rem;
+}
+
+h1{
+    padding-top: 0rem;
+    text-align: center;
+}
+
+.upload{
+    margin-top: 1rem;
+    width: 40px;
+    height: 40px;
+    padding-top: 1rem;
+}
+
+.container{
+    padding-top: 1rem;
+}
+
+/*container proyecto y fotos*/
+
 .container-b{
-    width: 88%;
-    height: 500px;
-    margin: 20px auto ;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
 }
 
 .container-b .box{
 
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    display: inline-block;
+    width: 150px;
+    height: 150px;
     margin-top: 30px;
     overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 10px;
 }
 
 .container-b .box .imgBox{
-    position: relative;
 
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 20px;
-
 }
 
 
 .container-b .box .imgBox img{
 
-    width: 200px;
+    width: 100px;
     transition: transform 2s;
     cursor: pointer;
 }
@@ -498,53 +452,60 @@ font-family: sans-serif;
 
 }
 
-/*Contenedor izquierdo*/
+@media (min-width:450px ) {
+    .container-b{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .container-b .box .imgBox img{
+
+        width: 200px;
+        transition: transform 2s;
+        cursor: pointer;
+    }
+
+    
+}
+
+@media (min-width:900px ) {
+    .container-b{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    .container-b .box .imgBox img{
+
+        width: 200px;
+        transition: transform 2s;
+        cursor: pointer;
+    }
+}
+
+h2{
+    text-align: center-;
+}
+p{
+    text-align: center;
+}
+
+
+
+
+
+
+/*Contenedor icono de amigos y mensajes*/
 .contenedor-izquierdo{
-    margin: 20px 60px;
-    margin-right: 0px;
-    padding:0px 40px;
     height: 100%;
     width: 20%;
-    border-radius: 20px;
+
 }
-/*Boton amigos*/
-.btn{
-    background-color: transparent;
-    border:none;
+
+@media (max-width: 1300px ) {
+    .contenedor-izquierdo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .boton-mensajes{
+        margin-left: 170px;
+    }
 }
-.lista-amigos{
-    list-style: none;
-}
-.lista-amigos li{
-    margin-bottom: 7px;
-}
-.lista-amigos li a{
-    text-decoration: none;
-    margin-left: 20px;
-    color: black;
-}
-.lista-amigos li img{
-    border-radius: 20px;
-}
-.card{
-    width: 250px;
-}
-/*Boton mensajes*/
-.boton-mensajes{
-    position: relative;
-    left: 50px;
-    bottom: 52px;
-}
-.body-mensajes{
-    position: relative;
-    bottom: 52px;
-    width: 350px;
-}
-.foto-chat{
-    border-radius: 20px;
-    margin-right: 15px;
-}
-.color-alerta{
-    background-color:#ff5e62;
-}
-/*Boton github*/
