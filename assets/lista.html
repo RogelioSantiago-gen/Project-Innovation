@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo :: Crud</title>
+</head>
+<body>
+    <div class="page-header">
+        <h1>Nuevo Usuario</h1>
+    </div>
+    <form action="#" th:action="@(/crud/crear)" th:object="${usuario}" method="post">
+    <div class="form-group">
+        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="tu nombre es ..." required="required"/>
+            <p typeth:if= "${#fields.hasErrors('nombre')}" th:errors="*{nombre}" class="alert alert-danger"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="col-sm-2 control-label">contraseña</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" name="password" id="password" placeholder="tu contraseña es ..." required="required"/>
+            <p typeth:if= "${#fields.hasErrors('password')}" th:errors="*{password}" class="alert alert-danger"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Correo electronico</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" name="email" id="email" placeholder="tu correo electronico es ..." required="required"/>
+            <p typeth:if= "${#fields.hasErrors('email')}" th:errors="*{email}" class="alert alert-danger"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Crear</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
