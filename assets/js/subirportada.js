@@ -1,15 +1,15 @@
-    /* CODIGO PARA ACTIVAR O DESACTIVAR EL POPUP */
+   /* Variable del popup */ 
     var btnAbrirPopup = document.getElementById('btnAbrirPopup'),
     overlay= document.getElementById('overlay'),
     popup= document.getElementById('contenedor-popup'),
     btnCerrarPopup = document.getElementById('btn-cerrar-popup');
 
-    
+    /* Abrir el popup*/
     btnAbrirPopup.addEventListener('click', ()=>{
         overlay.classList.add('active');
         popup.classList.add('active');
     })
-
+    /* Cerrar el popup */
     btnCerrarPopup.addEventListener('click', ()=>{
         overlay.classList.remove('active');
         popup.classList.remove('active');
@@ -32,7 +32,7 @@
   const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/dgvsi8noz/image/upload'; //aDONDE
   const CLOUDINARY_UPLOAD_PRESET = 'an4gdqvw';//CONTRa
 
-
+/* Con este evento lo enviamos al servidor */
     imgSubida.addEventListener('change', async (e)=>{
          //Se envia imagen a cloudinary
          const file =e.target.files[0];
@@ -52,11 +52,11 @@
          imgPrevista.src = res.data.secure_url;
 
     });   
-    
+    /* Cuando precionas este boton se envia la url de la imagen 
+    a la base de datos y se actualiza la foto de portada */ 
     btnGuardar.addEventListener('click', ()=>{
         /* cuando se presione guardar enviar imgPrevista.src a la base de datos 
         y cambiar la foto de portada */
-        
     });
     
     
