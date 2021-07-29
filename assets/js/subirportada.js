@@ -18,7 +18,7 @@
      overlay.addEventListener('click' , (e)=>{
         overlay.classList.remove('active');
         popup.classList.remove('active');
-        imgPrevista.src="";  
+        imgPrevista.src="";
     });
  
 
