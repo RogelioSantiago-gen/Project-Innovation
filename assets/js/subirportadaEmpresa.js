@@ -1,9 +1,10 @@
     /* CODIGO PARA ACTIVAR O DESACTIVAR EL POPUP */
-    var btnAbrirPopup = document.getElementById('btnAbrirPopup-perfil'),
-    overlay= document.getElementById('overlay-fotoPerfil'),
-    popup= document.getElementById('contenedor-popup-fotoPerfil'),
-    btnCerrarPopup = document.getElementById('btn-cerrar-popup-fotoPerfil');
+    var btnAbrirPopup = document.getElementById('btnAbrirPopup'),
+    overlay= document.getElementById('overlay'),
+    popup= document.getElementById('contenedor-popup'),
+    btnCerrarPopup = document.getElementById('btn-cerrar-popup');
 
+    
     btnAbrirPopup.addEventListener('click', ()=>{
         overlay.classList.add('active');
         popup.classList.add('active');
@@ -15,22 +16,19 @@
         imgPrevista.src="";
     });
 
-   /*  overlay.addEventListener('click' , (e)=>{
+    /*  overlay.addEventListener('click' , ()=>{
         overlay.classList.remove('active');
         popup.classList.remove('active');
         imgPrevista.src="";  
-    }); */
- 
-
-
-
+    });
+  */
 
     //CODIGO PARA SELECCIONAR LA IMG Y ENVIARLA AL SERVIDOR
-    var imgSubida = document.getElementById("img-subida-fotoPerfil");
-    var imgPrevista = document.getElementById("img-prevista-fotoPerfil");
-    var btnGuardar = document.getElementById('guardar-cambios-fotoPerfil');
+    var imgSubida = document.getElementById("img-subida");
+    var imgPrevista = document.getElementById("img-prevista");
+    var btnGuardar = document.getElementById('guardar-cambios');
 
-     /*Cloudinary*/
+  /*Cloudinary*/
   const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/dgvsi8noz/image/upload'; //aDONDE
   const CLOUDINARY_UPLOAD_PRESET = 'an4gdqvw';//CONTRa
 
@@ -51,13 +49,14 @@
          });
          console.log(res);
 
-         imgPrevista.src = res.data.secure_url;       
+         imgPrevista.src = res.data.secure_url;
+
     });   
     
-
     btnGuardar.addEventListener('click', ()=>{
         /* cuando se presione guardar enviar imgPrevista.src a la base de datos 
-        y cambiar la foto de perfil */
+        y cambiar la foto de portada de la empresa*/
+        
     });
-
+    
     
