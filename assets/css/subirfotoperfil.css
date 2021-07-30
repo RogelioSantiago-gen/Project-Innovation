@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-fotoPerfil{
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.overlay-fotoPerfil.active{
+    visibility: visible;
+}
+
+.contenedor-popup-fotoPerfil .agregar-imagen-fotoPerfil img{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-popup-fotoPerfil{
+    
+    background: #f8f8f8;
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 16px rgba(98, 100, 108, 0.5);
+    margin-top: 100px;
+    border-radius: 20px;
+
+    transition: 0.5s ease all;
+    transform: scale(0.6);
+    opacity: 0;
+}
+.contenedor-popup-fotoPerfil.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.contenedor-popup-fotoPerfil .btn-cerrar-popup-fotoPerfil{
+    position: relative;
+    top: 5%;
+    left: 85%;
+    font-size: 16px;
+    line-height: 16px;
+    color: #BBBBBB;
+    transition: .3s ease all;
+    
+}
+.contenedor-popup-fotoPerfil .btn-cerrar-popup-fotoPerfil:hover{
+    color: black;
+}
+
+
+
+.contenedor-popup-fotoPerfil form .contenedor-inputs-fotoPerfil{
+ position: relative;
+ top: 35px;
+ left: 18%;
+}
+
+
+.agregar-imagen-fotoPerfil{
+    width: 160px;
+    height: 160px;
+    border: groove;
+    position: relative;
+    top: 10%;
+    left: 8%;
+}
+.agregar-imagen-fotoPerfil:hover{
+    cursor: pointer;
+}
+
+.agregar-imagen-fotoPerfil img{
+    width: 20px;
+    object-fit: cover;
+}
+
+
+.contenedor-popup-fotoPerfil .guardar-cambios-fotoPerfil{
+    position: relative;
+    top: 18%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    width: 80px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #26578b;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.guardar-cambios-fotoPerfil:hover{
+    cursor: pointer;
+    background: rgba(94, 125, 227, 0.9);
+}

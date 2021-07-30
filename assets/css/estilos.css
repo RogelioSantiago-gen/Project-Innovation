@@ -1,0 +1,656 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /*background-color: #18191A; color para modo oscuro*/
+}
+
+/*Seccion Header, logo y foto de perfil*/
+header {
+  background-color: #112336;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  height: 70px; /* ---anchura de la cabecera--- */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 10; /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.dropdown {
+  background-color: transparent;
+  color: #ffff;
+}
+.logo {
+  margin: auto;
+  margin-left: 50px;
+  color: #ffff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.logo:hover {
+  cursor: pointer;
+  color: #ffff;
+}
+.imagenLogo {
+  height: 50px;
+  margin-top: -5px;
+}
+
+.contenedor-perfil-flecha {
+  display: flex;
+  margin-right: 60px;
+  margin-top: 0px;
+}
+
+.fotoDePerfil {
+  height: 40px;
+  border-radius: 40px;
+}
+.dropdown-menu button a {
+  color: #000;
+  text-decoration: none;
+}
+/*   ------ TERMINA EL HEADER--------- */
+
+/*Navabar*/
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100%;
+  width: 70px;
+  background: #f2efef;
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+}
+.sidebar.active {
+  width: 190px;
+}
+
+.sidebar #btn {
+  position: absolute;
+  cursor: pointer;
+  color: #112336;
+  left: 50%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 60px;
+  text-align: center;
+  line-height: 50px;
+  transform: translate(-50%);
+}
+.sidebar.active #btn {
+  left: 90%;
+}
+
+.sidebar ul {
+  margin-top: 150px;
+}
+.sidebar ul li {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+}
+
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 60px;
+  top: auto;
+  border-radius: 6px;
+  height: 35px;
+  width: 110px;
+  background: rgb(201, 199, 199);
+  line-height: 35px;
+  text-align: center;
+  opacity: 0;
+  font-weight: bold;
+}
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.sidebar ul li a {
+  color: #112336;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.sidebar ul li a:hover {
+  color: rgb(255, 255, 255);
+  background: #112336;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.sidebar ul li a i {
+  height: 45px;
+  min-width: 35px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sidebar .icon-name {
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar.active .icon-name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*------------------ estilo del cuadro de busqueda ------------*/
+.contenedor1 {
+  /* contenedor del cuadro de busqueda */
+  /* atribustos para ocultar la caja */
+  opacity: 0; /*  esto lo hace transparente */
+  visibility: hidden; /* esto lo oculta */
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+}
+.buscador1 {
+  width: 230px;
+  height: 150px;
+  margin: 0 auto;
+  /* margin-top: 100px; */ /* mantiene el centrado */
+  padding: 15px;
+  box-shadow: 0px 6px 16px rgba(248, 248, 248, 0.651);
+  border-radius: 20px;
+  /* animacion */
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+}
+.busc-close {
+  transform: translateY(-400%);
+}
+
+::placeholder {
+  display: inline;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+.entrada-busqueda1 {
+  width: 90%;
+  height: 20px;
+  margin-top: 20%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  border: 1px solid rgb(160, 159, 159);
+}
+h4 {
+  margin-left: 140px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.boton-buscar1 {
+  width: 30%;
+  height: 20%;
+  margin-left: 35%;
+  color: #fff;
+  background-color: #112336;
+  border: none;
+  border-radius: 20px;
+}
+.boton-buscar1:hover {
+  cursor: pointer;
+}
+
+.form-control {
+  margin-left: -7px;
+}
+
+/* ------------------------fin del cuadro de busqueda ------------------------------ */
+
+/*Main, seccion noticias y busqueda*/
+
+.content-inicio {
+  margin-top: 4%;
+  margin-left: 75px;
+  display: flex;
+  height: max-content;
+  width: 100%;
+}
+main {
+  box-shadow: 0px 6px 16px rgba(237, 238, 240, 0.761);
+  background: #ffffff;
+  background: -webkit-linear-gradient(to bottom, #ffff);
+  background: linear-gradient(to bottom, #ffff);
+  width: 44%;
+  margin: 0 12%;
+  margin-top: 70px;
+  margin-right: 3%;
+  height: 1900px;
+}
+.contenedorBuscador {
+  margin-top: 30px;
+  font-size: 80%;
+  text-align: center;
+}
+
+.buscador {
+  width: 26%;
+  border-radius: 15px;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0px 2px 2px rgba(98, 100, 108, 0.5);
+}
+.bi-search {
+  margin-left: 7px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-left: 7%;
+  margin-top: 1%;
+  border-radius: 10px;
+  background-color: tomato;
+}
+
+.card {
+  border-radius: 10px;
+  height: auto;
+}
+
+.container-archivo {
+  width: 250px;
+  height: 350px;
+  margin-left: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.archivo {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.archivo img {
+  width: 100%;
+  height: 100%;
+}
+
+.archivo video {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  float: right;
+  margin-right: -194px;
+  margin-top: -250px;
+  width: 399px;
+  height: 250px;
+}
+
+.container-imagen {
+  width: 185px;
+  height: auto;
+  padding: auto;
+  cursor: pointer;
+}
+
+.top-card img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  margin-top: -325px;
+}
+
+.card-title {
+  width: 350px;
+  height: auto;
+  float: right;
+  font-family: "Roboto", sans-serif;
+  margin-right: 0px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  text-align: start;
+  color: #112336;
+}
+
+.card-text-descripcion {
+  float: right;
+  width: 600px;
+  text-align: justify;
+  width: 320px;
+  margin-right: 30px;
+  font-weight: 300;
+  font-size: 14;
+  color: #000;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+
+.name {
+  color: #2752b1;
+}
+
+.icons {
+  width: 250px;
+  height: 50px;
+  margin-top: 170px;
+  margin-left: 50px;
+}
+
+#heart {
+  height: 70px;
+  float: right;
+  display: block;
+  align-items: flex-end;
+  top: -40px;
+  left: 460px;
+}
+
+.col {
+  float: right;
+  margin-right: -50px;
+  margin-top: -59px;
+  width: 100px;
+  font-size: 32px;
+}
+
+input[type="checkbox"] + label {
+  position: absolute;
+  overflow: hidden;
+  height: 5em;
+  width: 3em;
+  left: calc(30% - 3em);
+  margin-top: -40px;
+  display: block;
+  text-align: center;
+  line-height: 95px;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  background-color: transparent;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: rgb(197, 15, 82);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  -webkit-ransform: scale(0);
+  border: none;
+}
+
+input[type="checkbox"] + label:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label svg {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  fill: rgb(206, 24, 91);
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+}
+
+input[type="checkbox"]:checked + label:after {
+  -webkit-animation: like-a 0.3s 0.2s forwards;
+  -moz-animation: like-a 0.3s 0.2s forwards;
+  animation: like-a 0.3s 0.2s forwards;
+}
+
+input[type="checkbox"]:checked + label:before {
+  -webkit-animation: like-a 0.5s 0s forwards;
+  -moz-animation: like-a 0.5s 0s forwards;
+  animation: like-a 0.5s 0s forwards;
+}
+
+label svg {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 23px;
+  fill: rgb(223, 216, 216);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.cursor:hover {
+  color: #163780;
+}
+
+.bg-light {
+  width: 510px;
+}
+
+.form-control {
+  width: 480px;
+}
+
+#myGroup {
+  margin-left: 45px;
+  width: -700px;
+}
+
+.textarea {
+  left: auto;
+  display: flex;
+}
+
+.like {
+  font-size: 17px;
+}
+
+.card-text {
+  position: relative;
+  width: 100px;
+  margin: 0;
+  margin-left: -100px;
+  margin-top: 20px;
+  color: #0c0c2b;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+#collapse-1 {
+  width: 700px;
+}
+
+.form-control-comment {
+  width: 600px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.boton {
+  float: right;
+  right: -200px;
+  width: 400px;
+  height: 40px;
+  margin-left: -80px;
+  margin-bottom: 40px;
+}
+
+.btn-uno {
+  width: 70px;
+  height: 40px;
+  border: #2752b1 0.5px solid;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-dos {
+  width: 70px;
+  height: 40px;
+  border: #2752b1 0.5px solid;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: -110px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.loading {
+  opacity: 30px;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  left: 39%;
+  transform: translateX(-10%);
+  transition: opacity 0.3s ease-in;
+}
+
+.loading.show {
+  opacity: 1;
+}
+
+.ball {
+  background-color: rgb(17, 35, 54);
+  border-radius: 50%;
+  margin: 5px;
+  height: 8px;
+  width: 8px;
+  animation: jump 0.5s ease-in infinite;
+}
+
+.ball:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.ball:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*Seccion trabajos*/
+section {
+  box-shadow: 0px 6px 16px rgba(237, 239, 247, 0.761);
+  height: 750px;
+  width: 17%;
+  margin-top: -1900px;
+  margin-right: 70px;
+  overflow: hidden;
+  float: right;
+}
+
+.card-principal {
+  width: 78%;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 16px rgba(242, 242, 248, 0.803);
+}
+
+.container-img {
+  margin-left: 20px;
+  width: 170px;
+  height: 85px;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  margin-left: 1px;
+  border-radius: 10px;
+}
+
+.card-title-trabajo {
+  margin-top: 10px;
+  font-family: sans-serif;
+  margin-left: 6px;
+  font-size: 19px;
+}
+
+.card-text-trabajo {
+  float: right;
+  width: 170px;
+  font-size: 13px;
+  margin-right: -48px;
+}
+
+/* Para 960px */
+@media only screen and (max-width: 1800px) and (min-width: 1221px) {
+}

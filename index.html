@@ -1,0 +1,421 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+                <!--links de caja de comentarios -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+                <!--fin de links de caja de comentarios-->
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+                <!--Estilos propios-->
+                <link rel="stylesheet" href="assets/css/estilos.css">
+                <link rel="stylesheet" href="assets/css/estilos.scss">
+                <link rel="shortcut icon" href="assets/img/favicon.png">
+                <title>Innovation</title>
+            </head>
+            <body>
+                
+                <!--Seccion Header, logo y foto de perfil-->
+                <header class="header">
+                    <nav class="nav">     
+                      <a href="index.html" class="logo"><img class="imagenLogo" src="assets/img/innovation-logo-azul.png"  alt=""></a>
+                      <div class="contenedor-perfil-flecha">
+                        <a href="assets/html/perfil.html" class="linkPerfil"><img class="fotoDePerfil" src="assets/img/pexels-mikhail-nilov-6707077.jpg" alt="user"></a>
+                        <div class="dropdown" style="margin-right: 7%;">
+                            <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/flecha-hacia-abajo-para-navegar.png" alt="">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <button class="dropdown-item" type="button"><a href="configuracion.html">Configuración</a></button>
+                              <button class="dropdown-item" type="button"><a href="#">Mensajes</a></button>
+                              <button class="dropdown-item" type="button"><a href="assets/html/login.html">Cerrar sesión</a></button>
+                            </div>
+                        </div>
+                      </div>
+                        
+                    </nav>
+                </header>
+                <!--Navbar-->
+                <div class="sidebar">
+                    <div class="logo_content"> <!-- BARRA DE MENU DESPLEGABLE -->
+                      <div class="logo_name" ></div>
+                      <i class='bx bx-menu' id="btn"></i>
+                    </div>
+                 
+                    <!-- EMPEZAMOS CON LOS ICONOS -->
+                    <ul >
+                      <li> <!-- ICONO DE HOME -->
+                        <a href="index.html">
+                         <i class='bx bx-home'></i>
+                          <span class="icon-name">Inicio</span>
+                        </a>
+                        <!--Nombre de los iconos-->
+                         <span class="tooltip">Inicio</span>
+                      </li>
+                 
+                      <li> <!-- ICONO DE PERFIL -->
+                       <a href="assets/html/perfil.html">
+                         <i class='bx bx-user'></i>
+                         <span class="icon-name">Perfil</span>
+                       </a>
+                        <span class="tooltip">Perfil</span>
+                     </li>
+                 
+                     <li >  <!-- ICONO DE BUSQUEDA -->
+                       <a href="#">
+                         <i class='bx bx-search busc'></i>
+                         <span class="icon-name">Busqueda</span>
+                       </a>
+                        <span class="tooltip">Busqueda</span>
+                     </li>
+                     
+                    <!-- Div de la ventana de busqueda -->
+                    <div class = "contenedor1">
+                        <div class="buscador1 busc-close">
+                            <input class="entrada-busqueda1" type="text" placeholder="Buscar">
+                            <button class="boton-buscar1">Buscar</button>
+                        </div>
+                    </div>
+                    <!-- Fin de la Ventana de busqueda -->
+                        
+                     <li> <!-- ICONO DE SETTINGS -->
+                       <a href="configuracion.html">
+                         <i class='bx bx-cog' ></i>
+                         <span class="icon-name">Configuracion</span>
+                       </a>
+                       <span class="tooltip">Configuracion</span>
+                     </li>
+                    </ul>
+                 
+                  </div>
+                   
+                    <!-- Aqui empieza el contenedor publicaciones y busqueda-->
+                    <div class="content-inicio">
+                        <main id="containerM">
+                             <!--Aqui empieza la  colocación de inputs y button de search-->
+                              <div class="contenedorBuscador">
+                                <input class="buscador" type="search" name="search" placeholder= "Search"/>
+                                  <input class="buscador" type="location" name="location" placeholder="Location"/>
+                                     <input class="buscador" type="filter" name="filter" placeholder="Filter"/>
+                                         <a href="#" class="bi bi-search">
+                                             <img src="assets/img/lupa.png" alt="" width="20px;">
+                                         </a>     <!-- Aqui termina la colocación de inputs y button de search-->
+                                        <a href="#" data-toggle="modal" data-target="#myModal">    <!-- Aqui comienza el codigo del apartado de publicar para enlazar con el pop-up  -->
+                                            <button id="Publicar" type="button" class="btn btn-outline-light btn-lg btn-block" style=" border: 0.5px  solid #428bda; width: 90%; margin-top: 20px; margin-bottom: 30px; margin-left: 50px;"><small class="tex-publicar" style="color:black; letter-spacing: 1px;">Publicar</small></button> 
+                                        </a>    <!-- Aqui Termina el codigo del apartado de publicar para enlazar con el pop-up  -->
+                                 <!--   Aqui vamos a poner el codigo de la ventana emergente para realizar publicaciones -->
+                                      <div class="container-publicacion">
+                                          <div class="modal fade" id="myModal">
+                                              <div class="modal-dialog modal-none">
+                                                  <div class="modal-content rounded-sm">
+                                                      <div class="modal-header">
+                                                          <h4>¡Publica ahora!</h4>
+                                                      </div>
+                                                      <div class="modal-body font-weight-bold">
+                                                        <form action="">
+                                                              <div class="form-group">
+                                                                    <div class="mb-3">
+                                                                      <input type="text" class="form-control" placeholder="Titulo">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                  <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="¡Describe tu publicacion!"></textarea>
+                                                              </div>                        
+                                                        </form>
+                                                          <div class="modal-footer">
+                                                              <label for="imageUpload" class="btn btn-primary btn-block btn-outlined">Seleccionar imagen</label>
+                                                              <input type="file" id="imageUpload" accept="image/*" style="display: none">
+                                                          </div>        
+                                                      </div>
+                                                      <div class=" modal-footer">
+                                                          <input style="width: 100px; border: 0.5px ;background-color:rgb(217, 227, 242); margin-top: 15px;" class="btn btn-light mr-5 " data-dismiss="modal" value="Subir">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>  <!-- Aqui Termina el codigo de la ventana emergente para realizar publicaciones -->   
+                                      
+                                        <!--Aqui empiezan las cards de las publicaciones-->
+                                        <div class="card mb-6" style="width: 95%; margin: 20px auto;">
+                                          <div class="row no-gutters">
+                                            <div  class="user-info">
+                                              <img src="assets/img/rodrigo.jpg" alt="pic"/>                               
+                                            </div>
+                                            <div class="container-archivo">
+                                              <div class="archivo">
+                                                 <video src="assets/img/y2mate.com - Mi vida antes y después de Generation_1080p.mp4"  autoplay  preload="auto"  controls></video>                     
+                                              </div>
+                        
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div  class="card-body">
+                                                   <h5 class="card-title">Generation Mexico </h5>
+                                                      <p class="card-text-descripcion"> ¡Mi vida antes y después de Generation 
+                                                        <br>
+                                                        En Generation buscamos cambiar, mejorar y crear trayectorias de vida exitosas, como es el caso de nuestro graduado de Guadalajara.
+                                                      <div class="icons">
+                                                          <input type="checkbox" id="like" style="display: none;">
+                                                            <label id="heart" for="like">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/></svg>
+                                                          </label>    
+                                                      </div>
+                                                  </div> 
+                                                  <div class="containerBr">
+                                                    <div class="d-flex justify-content-right row" style="margin-right: -190px;">
+                                                        <div class="col-md-0">
+                                                            <div class="d-flex flex-column comment-section" id="myGroup"   
+                                                                <div class="bg-white p-2">
+                                                                    <div id="icon" class="d-flex flex-row fs-42">
+                                                                        <div class="like p-2 cursor ml-1"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                                        <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>   
+                                                                    </div>
+                                                                </div>
+                                                                <div id="collapse-1" p-1 collapse"  style="background: none;">
+                                                                    <div><textarea class="form-control-comment" id="exampleTextarea" placeholder="Comentar"></textarea></div>
+                                                                    <div class="boton"><button class="btn-uno" type="button" >Enviar</button>
+                                                                      <button class="btn-dos" type="button">Cancelar</button></div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                    </div>  <!--  Aqui termina el contenedor de publicaciones -->
+                                        <!--Aqui empiezan las cards de las publicaciones-->
+                                        <div class="card mb-6" style="width: 95%; margin: 20px auto;">
+                                          <div class="row no-gutters">
+                                            <div  class="user-info">
+                                              <img src="assets/img/132199918_3965710900217784_3082249928042902856_n.jpg" alt="pic"/>                               
+                                            </div>
+                                            <div class="container-archivo">
+                                              <div class="archivo">
+                                                <img src="assets/img/toa-heftiba-gQjKmZ7BPSw-unsplash.jpg" alt="">
+                                              </div>
+                        
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div  class="card-body">
+                                                   <h5 class="card-title">“Desayuno estupendo!! ”</h5>
+                                                      <p class="card-text-descripcion">Si te alojas cerca de Alameda de Hércules en Sevilla y quieres desayunar como un auténtico españoleste es tu sitio! Rápidos, atentos y simpáticos! Olé</p>
+                                                      <div class="icons">
+                                                          <input type="checkbox" id="like" style="display: none;">
+                                                            <label id="heart" for="like">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/></svg>
+                                                          </label>    
+                                                      </div>
+                                                  </div> 
+                                                  <div class="containerBr">
+                                                    <div class="d-flex justify-content-right row" style="margin-right: -190px;">
+                                                        <div class="col-md-0">
+                                                            <div class="d-flex flex-column comment-section" id="myGroup"   
+                                                                <div class="bg-white p-2">
+                                                                    <div id="icon" class="d-flex flex-row fs-42">
+                                                                        <div class="like p-2 cursor ml-1"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                                        <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>   
+                                                                    </div>
+                                                                </div>
+                                                                <div id="collapse-1" p-1 collapse"  style="background: none;">
+                                                                    <div><textarea class="form-control-comment" id="exampleTextarea" placeholder="Comentar"></textarea></div>
+                                                                    <div class="boton"><button class="btn-uno" type="button" >Enviar</button>
+                                                                      <button class="btn-dos" type="button">Cancelar</button></div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                    </div>  <!--  Aqui termina el contenedor de publicaciones -->
+                                        <!--Aqui empiezan las cards de las publicaciones-->
+                                        <div class="card mb-6" style="width: 95%; margin: 20px auto;">
+                                          <div class="row no-gutters">
+                                            <div  class="user-info">
+                                              <img src="assets/img/pexels-mikhail-nilov-6707077.jpg" alt="pic"/>                               
+                                            </div>
+                                            <div class="container-archivo">
+                                              <div class="archivo">
+                                                 <video src="assets/img/y2mate.com - Conoce a Lizbeth_1080p.mp4"  autoplay  muted preload="auto"  controls ></video>                     
+                                              </div>
+                        
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div  class="card-body">
+                                                   <h5 class="card-title">Conoce a Lizbeth</h5>
+                                                      <p class="card-text-descripcion"> Lizbeth nos cuenta su experiencia  en nuestro Boottcamp en el que se está formando como Desarrolladora Java Fullstack.
+                                                        <br>
+                                                        #SoyGen #Genmx
+                                                      </p>
+                                                      <div class="icons">
+                                                          <input type="checkbox" id="like" style="display: none;">
+                                                            <label id="heart" for="like">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/></svg>
+                                                          </label>    
+                                                      </div>
+                                                  </div> 
+                                                  <div class="containerBr">
+                                                    <div class="d-flex justify-content-right row" style="margin-right: -190px;">
+                                                        <div class="col-md-0">
+                                                            <div class="d-flex flex-column comment-section" id="myGroup"   
+                                                                <div class="bg-white p-2">
+                                                                    <div id="icon" class="d-flex flex-row fs-42">
+                                                                        <div class="like p-2 cursor ml-1"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                                        <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>   
+                                                                    </div>
+                                                                </div>
+                                                                <div id="collapse-1" p-1 collapse"  style="background: none;">
+                                                                    <div><textarea class="form-control-comment" id="exampleTextarea" placeholder="Comentar"></textarea></div>
+                                                                    <div class="boton"><button class="btn-uno" type="button" >Enviar</button>
+                                                                      <button class="btn-dos" type="button">Cancelar</button></div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                    </div>  <!--  Aqui termina el contenedor de publicaciones -->
+                                        <!--Aqui empiezan las cards de las publicaciones-->
+                                        <div class="card mb-6" style="width: 95%; margin: 20px auto;">
+                                          <div class="row no-gutters">
+                                            <div  class="user-info">
+                                              <img src="assets/img/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg" alt="pic"/>                               
+                                            </div>
+                                            <div class="container-archivo">
+                                              <div class="archivo">
+                                                <img src="assets/img/nubelson-fernandes-Yh2Y8avvPec-unsplash (1).jpg" alt="">
+                                              </div>
+                        
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div  class="card-body">
+                                                   <h5 class="card-title">What is the life of a programmer?</h5>
+                                                      <p class="card-text-descripcion"> Learning is a continuous process. Rarely do you see a programmer who doesn’t read or study anything about their tech language, framework, or the latest tech trends. If you do find one, their probably not a good programmer.</p>
+                                                      <div class="icons">
+                                                          <input type="checkbox" id="like" style="display: none;">
+                                                            <label id="heart" for="like">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/></svg>
+                                                          </label>    
+                                                      </div>
+                                                  </div> 
+                                                  <div class="containerBr">
+                                                    <div class="d-flex justify-content-right row" style="margin-right: -190px;">
+                                                        <div class="col-md-0">
+                                                            <div class="d-flex flex-column comment-section" id="myGroup"   
+                                                                <div class="bg-white p-2">
+                                                                    <div id="icon" class="d-flex flex-row fs-42">
+                                                                        <div class="like p-2 cursor ml-1"><i class="fa fa-thumbs-o-up"></i><span class="ml-2">Like</span></div>
+                                                                        <div class="like p-2 cursor action-collapse" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"><i class="fa fa-commenting-o mt--1"></i><span class="ml-2">Comentar</span></div>   
+                                                                    </div>
+                                                                </div>
+                                                                <div id="collapse-1" p-1 collapse"  style="background: none;">
+                                                                    <div><textarea class="form-control-comment" id="exampleTextarea" placeholder="Comentar"></textarea></div>
+                                                                    <div class="boton"><button class="btn-uno" type="button" >Enviar</button>
+                                                                      <button class="btn-dos" type="button">Cancelar</button></div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                    </div>  <!--  Aqui termina el contenedor de publicaciones -->
+                                      
+                                     
+                                      <!--    Aqui empieza el codigo del scroll scroll_infinito -->
+                                        <!-- <div class="loading">
+                                          <div class="ball"></div>
+                                          <div class="ball"></div>
+                                          <div class="ball"></div>
+                                        </div> -->
+                             <!--  Aqui termina el codigo del scroll scroll_infinito -->
+            
+                                      
+                                   </main>
+                              </div>    
+                        
+            
+                              <!--   Aqui empieza las cards de empleos -->
+                              <aside>  
+                                 <section>
+                                     <div class="card-principal" >
+                                          <div class="row-trabajo">
+                                            <div class="container-img -md-3">
+                                               <img src="assets/img/mercadoLibre.jpg" alt=""> 
+                                            </div>
+                                                <div class="col-md-9">
+                                                    <div class="card-body-trabajo">
+                                                        <div class="top-card">
+                                                              <h5 class="card-title-trabajo"><a href="https://rogeliosantiago-gen.github.io/Project-Innovation/assets/html/perfilEmpresa.html" style="text-decoration:none;">Mercado Libre</a></h5>
+                                                         </div>
+                                                          <p class="card-text-trabajo">
+                                                            Senior Angular Developer
+                                                            <br>
+                                                            Ciudad de Mexico
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                     <div class="card-principal" >
+                                          <div class="row-trabajo">
+                                            <div class="container-img -md-3">
+                                               <img src="assets/img/oracle.jpg" alt=""> 
+                                            </div>
+                                                <div class="col-md-9">
+                                                    <div class="card-body-trabajo">
+                                                        <div class="top-card">
+                                                              <h5 class="card-title-trabajo"><a href="https://rogeliosantiago-gen.github.io/Project-Innovation/assets/html/perfilEmpresa.html" style="text-decoration:none;">Oracle</a></h5>
+                                                         </div>
+                                                          <p class="card-text-trabajo">
+                                                            Frontend Developer
+                                                            <br>
+                                                            Jalisco, Mexico
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                     <div class="card-principal" >
+                                          <div class="row-trabajo">
+                                            <div class="container-img -md-3">
+                                               <img src="assets/img/15930194372255.jpg" alt=""> 
+                                            </div>
+                                                <div class="col-md-9">
+                                                    <div class="card-body-trabajo">
+                                                        <div class="top-card">
+                                                              <h5 class="card-title-trabajo"><a href="https://rogeliosantiago-gen.github.io/Project-Innovation/assets/html/perfilEmpresa.html" style="text-decoration:none;">Netflix</a></h5>
+                                                         </div>
+                                                          <p class="card-text-trabajo">
+                                                            Full Stack Java Developer (Remoto)
+                                                            <br>
+                                                            California, Estados Unidos
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                   </section>
+                               </aside>
+            
+                              <!--  
+             -->
+            <!-- 
+                              
+                <!--Bootstrap-->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+                <!--Js  -->
+                <script src="assets/js/innovation.js"></script>
+                <script src="assets/js/scroll_infinito.js"></script>
+            </body>
+            </html>
