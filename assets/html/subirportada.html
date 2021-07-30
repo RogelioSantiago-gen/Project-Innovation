@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/subirportada.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Subir portada</title>
+</head>
+<body>
+
+    <!-- BOTON PARA DESPLEGAR VENTANA -->
+    <div>
+        <button id="btnAbrirPopup">
+            Abrir
+        </button>
+    </div>
+
+
+    <!-- VENTANA EMERGENTE  -->
+    <div class="overlay" id="overlay">
+        <div class="contenedor-popup" id="contenedor-popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <div class="agregar-imagen" >
+                    <img id="img-prevista"  src="#" alt="portada"> 
+                </div>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="file" id="img-subida" placeholder="Subir imagen">
+                </div>
+            </form>
+            <button class="guardar-cambios" id="guardar-cambios">Guardar</button> 
+        </div>        
+    </div>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="../js/subirportada.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/perfilEmpresa.css">
+    <link rel="stylesheet" href="../css/subirportada.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.5.0/css/all.css"> <!-- tache de portada -->
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <title>Perfil Empresa</title>
+</head>
+<body>
+      <!--Seccion Header, logo y foto de perfil-->
+      <header class="header">
+        <nav class="nav">
+      
+          <a href="../../index.html" class="logo"><img class="imagenLogo" src="../img/innovation-logo-azul.png" alt=""></a>
+          <div class="contenedor-perfil-flecha">
+            <a href="perfil.html" class="linkPerfil"><img class="fotoDePerfil" src="../img/foto de perfil.jpg" alt="user"></a>
+            <div class="dropdown" style="margin-right: 7%;">
+              <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><img src="../img/flecha-hacia-abajo-para-navegar.png" alt="">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button"><a href="../../configuracion.html">Configuración</a></button>
+                <button class="dropdown-item" type="button"><a href="login.html">Cerrar sesión</a></button>
+              </div>
+            </div>
+          </div>
+      
+        </nav>
+      </header>
+      <!--Navbar-->
+      <div class="sidebar">
+        <div class="logo_content">
+          <!-- BARRA DE MENU DESPLEGABLE -->
+          <div class="logo_name"></div>
+          <i class='bx bx-menu' id="btn"></i>
+        </div>
+      
+        <!-- EMPEZAMOS CON LOS ICONOS -->
+        <ul>
+          <li>
+            <!-- ICONO DE HOME -->
+            <a href="../../index.html">
+              <i class='bx bx-home'></i>
+              <span class="icon-name">Inicio</span>
+            </a>
+            <!--Nombre de los iconos-->
+            <span class="tooltip">Inicio</span>
+          </li>
+      
+          <li>
+            <!-- ICONO DE PERFIL -->
+            <a href="perfil.html">
+              <i class='bx bx-user'></i>
+              <span class="icon-name">Perfil</span>
+            </a>
+            <span class="tooltip">Perfil</span>
+          </li>
+      
+          <li>
+            <!-- ICONO DE BUSQUEDA -->
+            <a href="#">
+              <i class='bx bx-search'></i>
+              <span class="icon-name">Busqueda</span>
+            </a>
+            <span class="tooltip">Busqueda</span>
+          </li>
+      
+          <li>
+            <!-- ICONO DE SETTINGS -->
+            <a href="../../configuracion.html">
+              <i class='bx bx-cog'></i>
+              <span class="icon-name">Configuracion</span>
+            </a>
+            <span class="tooltip">Configuracion</span>
+          </li>
+        </ul>
+      
+      </div>
+      
+      <main>
+
+
+        <!--Foto de portada-->
+        <div class="portada">
+          <img src="../img/una-taza-de-javascript.png" alt="">
+        </div>
+        <!--Boton imagen portada-->
+        <div class="boton-portada">
+          <button id="btnAbrirPopup"><img src="../img/camara.png" alt=""></button>
+        </div>
+            <!-- VENTANA EMERGENTE  -->
+    <div class="overlay" id="overlay" >
+      <div class="contenedor-popup" id="contenedor-popup">
+          <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+              <div class="agregar-imagen">
+                  <img id="img-prevista"  src="#" alt="portada"> 
+              </div>
+          <form action="">
+              <div class="contenedor-inputs">
+                  <input type="file" id="img-subida" placeholder="Subir imagen">
+              </div>
+          </form>
+          <button class="guardar-cambios" id="guardar-cambios">Guardar</button> 
+      </div>        
+  </div>
+ 
+          <!--TERMINA VENTANA EMERGENTE-->
+
+        <!--Nombre-->
+        <div class="nombre">
+          <h1 class="letra_subtitulo">"Empresa X"<br>
+          </h1>
+        </div>
+      
+        <!--termino de portada-->
+      
+        <!--container de containers y iconos de amigos y mensajes-->
+        <div class="container_grupo_containers">
+        <div>
+            <!-- primer description-->
+            <div class="container_principal_1">
+              <div class="datos-usuario">
+      
+                <div class="habilidades">
+                  <h6 class="sub-datos">Ubicacion</h6>
+                  <ul class="list-habilidades">
+                    <li class="info">CDMX</li>
+                  </ul>
+                </div>
+      
+                
+              </div>
+            </div>
+          </div>
+      
+      
+      
+      
+          <!-- segundo proyectos-->
+          <div>
+            <div class="container_principal">
+              <div class="container_titulo">
+                <h1>Publicaciones de Vacantes</h1>
+      
+                <!--container de pop up-->
+                <div class=" container">
+                  <div class="row ">
+                    <div class=" col-md-12 ">
+                      <div class="modal fade " id="myModal">
+                        <div class="modal-dialog modal-none">
+                          <div class=" modal-content rounded-sm">
+                            <div class=" modal-header">
+                              <h1>Vacante</h1>
+                            </div>
+                            <div class=" modal-body font-weight-bold">
+      
+                              <form>
+                                <div class="form-group">
+                                  <label for=" text">Titulo</label>
+                                  <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+      
+                                  <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Describe la vacante..."></textarea>
+                                </div>
+                              </form>
+                              <div class="input-group mb-3">
+                                <input type="file" id="inputGroupFile02">
+      
+                              </div>
+                            </div>
+      
+                            <div class=" modal-footer">
+                              <input class="btn btn-primary" data-dismiss="modal" value="Subir">
+                            </div>
+                          </div>
+      
+                        </div>
+      
+                      </div>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="../img/upload.png" alt=""
+                          class="float-right" width="30px" height="30px"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="container-b">
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/webuno.PNG" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Netlix</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+      
+                </div>
+      
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-marko-blazevic-2708981.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Gamer</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-toni-ferreira-3596282.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Converse</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-wendy-wei-2350325.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>DJ</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-karolina-grabowska-4471269.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Coca-Cola</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBox">
+                    <img src="../img/img/pexels-cottonbro-5053841.jpg" alt="">
+                  </div>
+                  <div class="description">
+                    <div class="content">
+                      <h2>Xiaomi</h2>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione at optio, maiores perferendis
+                        unde magni</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      
+      </main>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="../js/innovation.js"></script>
+      <script src="../js/subirportadaEmpresa.js"></script> <!-- SUBIR PORTADA -->
+       <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
