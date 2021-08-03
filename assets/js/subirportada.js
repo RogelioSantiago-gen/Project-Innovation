@@ -19,7 +19,7 @@
     /*  overlay.addEventListener('click' , ()=>{
         overlay.classList.remove('active');
         popup.classList.remove('active');
-        imgPrevista.src="";  
+        imgPrevista.src="";
     });
   */
 
