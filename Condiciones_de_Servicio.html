@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/configuracion.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>Configuracion</title>
+</head>
+
+
+<body>
+
+    <!--Seccion Header, logo y foto de perfil-->
+    <header class="header">
+        <nav class="nav">         
+          <a href="index.html" class="logo"><img class="imagenLogo" src="assets/img/innovation-logo-azul.png"  alt=""></a>
+          <div class="contenedor-perfil-flecha">
+            <a href="assets/html/perfil.html" class="linkPerfil"><img class="fotoDePerfil" src="assets/img/foto de perfil.jpg" alt="user"></a>
+            <div class="dropdown" style="margin-right: 7%;">
+                <button class="btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/flecha-hacia-abajo-para-navegar.png" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button"><a href="configuracion.html">Configuración</a></button>
+                  <button class="dropdown-item" type="button"><a href="#">Mensajes</a></button>
+                  <button class="dropdown-item" type="button"><a href="assets/html/login.html">Cerrar sesión</a></button>
+                </div>
+            </div>
+          </div>
+
+        </nav>
+    </header>
+    <!--Navbar-->
+    <div class="sidebar">
+        <div class="logo_content"> <!-- BARRA DE MENU DESPLEGABLE -->
+          <div class="logo_name" ></div>
+          <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <!-- EMPEZAMOS CON LOS ICONOS -->
+        <ul >
+          <li> <!-- ICONO DE HOME -->
+            <a href="index.html">
+             <i class='bx bx-home'></i>
+              <span class="icon-name">Inicio</span>
+            </a>
+            <!--Nombre de los iconos-->
+             <span class="tooltip">Inicio</span>
+          </li>
+
+          <li> <!-- ICONO DE PERFIL -->
+           <a href="assets/html/perfil.html">
+             <i class='bx bx-user'></i>
+             <span class="icon-name">Perfil</span>
+           </a>
+            <span class="tooltip">Perfil</span>
+         </li>
+
+         <li>  <!-- ICONO DE BUSQUEDA -->
+           <a href="#">
+             <i class='bx bx-search busc' ></i>
+             <span class="icon-name">Busqueda</span>
+           </a>
+            <span class="tooltip">Busqueda</span>
+         </li>
+
+         <li> <!-- ICONO DE SETTINGS -->
+           <a href="configuracion.html">
+             <i class='bx bx-cog' ></i>
+             <span class="icon-name">Configuracion</span>
+           </a>
+           <span class="tooltip">Configuracion</span>
+         </li>
+        </ul>
+
+      </div>
+
+     <!----contenedor principal de configuracion---- -->
+    <div class="wrapper">
+       <!----contenedor Izquierdo de configuracion---- -->
+        <div class="left">   
+            <ul>
+                  <h5>Cuenta</h5>
+                  <br>
+                  <br>
+                  <li>
+                    <button id="perfil" class="menu-izquierdo"><img class="icon" src="assets/img/user (1).svg" alt=""><a class="list_item" href="configuracion.html">Perfil</a></button>
+                  </li>
+                  <li>
+                    <button class="menu-izquierdo" id="contraseña"><img class="icon" src="assets/img/mostrar-contrasena.png" alt=""><a href="configuracion_contraseña.html" class="list_item">Contraseña</a></button>
+                  </li>  
+                  <br>
+                  <h5>Preferencias</h5>
+                  <br>
+                  <br>
+                  <li><button class="menu-izquierdo" id="idioma-region"><img class="icon" src="assets/img/worldwide.png" alt=""><a href="configuracion_idioma.html" class="list_item">Idioma o region</a></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="ubicacion"><img class="icon" src="assets/img/map.png" alt=""><a href="configuracion_ubicacion.html" class="list_item">Ubicacion</a></button>
+                  </li>
+                  <br>
+                  <h5>Normas y politicas</h5>
+                  <br>
+                  <br>
+                  <li><button class="menu-izquierdo" id="condiciones-de-servicio"><img class="icon" src="assets/img/copy.svg" alt=""><span class="list_item"> Condiciones de Servicio</span></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="politica-de-datos"><img class="icon" src="assets/img/copy.svg" alt=""><span class="list_item">Politica de datos</span></button>
+                  </li>
+                  <li><button class="menu-izquierdo" id="normas-comunitarias"><img class="icon" src="assets/img/copy.svg" alt=""><span class="list_item">Normas comunitarias</span></button>
+                  </li>
+              </ul>
+          </div>
+                 <!-- Menu derecho de configuracion -->
+           <div class="right">
+             <h2>Condiciones de Servicio</h2>
+              
+                            <!--      ---------------Formato de datos--------- --- -->
+                          <p>
+                            Términos y condiciones
+1. Aceptación de las condiciones y términos generales del servicio.
+Los términos y condiciones generales aquí expresados tienen como objetivo normar el uso del servicio prestado por parte de INNOVATION puesto a disposición del cliente (CLIENTE) por medio de la aplicación Innovation (APLICACIÓN)
+La utilización de la APLICACIÓN atribuye al CLIENTE la condición de usuario del servicio (USUARIO) y manifiesta la expresa aceptación plena y sin excepción de los derechos y obligaciones derivados de todos y cada uno de los términos y condiciones expresados en este documento.
+Así mismo el USUARIO manifiesta tener conocimiento y otorga su autorización para que INOVATION a través de su Servicio envíe al Instituto  copia de los comprobantes certificados generados mediante la APLICACIÓN.
+INNOVATION se reserva el derecho de modificar en cualquier momento y sin dar aviso previo, los presentes Términos y Condiciones, la configuración y el contenido del servicio y/o de la APLICACIÓN.
+2. Objeto.
+INNOVATION otorga una licencia no exclusiva e intransferible al CLIENTE del uso de la APLICACIÓN para la generación de Perfiles conforme a lo establecido en estos términos y condiciones y en cualquier otra documentación que resulte aplicable.
+El CLIENTE no puede realizar copias o revelar contenido de la APLICACIÓN, de igual forma no debe permitir el acceso de terceros a la misma. La violación a esta condición por parte del CLIENTE, se someterá a todas las sanciones y obligaciones en la Ley de la Propiedad Industrial así como la cancelación inmediata del servicio exonerando a INNOVATION de cualquier obligación con el CLIENTE.
+Los derechos y obligaciones concedidos al CLIENTE por los presentes términos y condiciones se extienden a cualquier actualización o nueva versión que sustituya o complemente a la APLICACIÓN, salvo que la actualización o nueva versión cuente con términos y condiciones propias.
+3. Descripción del servicio y su funcionamiento.
+La APLICACIÓN es la encargada de generar los PERFILES a partir de la información ingresada por el CLIENTE, por tal motivo el CLIENTE es el único responsable por los datos que ingrese a la APLICACIÓN para la generación de PERFILES.
+El objetivo principal de la APLICACIÓN es la creación de PERFILES certificados a partir de la información capturada por el CLIENTE Dicha información es validada y se procede a construir el PERFIL de acuerdo a las especificaciones legales vigentes y los requerimientos establecidos por el INSTITUTO en el que el USUARIO se encuentre trabajando.
+4. Costos y formas de pago
+Todas las transacciones monetarias para la compra y adquisición de créditos para la generación de PERFILES digitales realizadas en línea, son llevadas a cabo por PayPal™, por tal motivo PayPal™ es el único responsable del proceso de pago. CODES no solicita ni almacena ningún dato relacionado con las tarjetas de crédito, códigos de seguridad, nombres de usuario ni contraseñas utilizadas por el servicio de PayPal™ para el procesamiento de los pagos.(Todos nuestros costos publicados tanto en el sitio como en la aplicación son en pesos mexicanos y ya incluyen el IVA.)
+5. Requerimientos técnicos para el uso adecuado del servicio.
+Para poder hacer uso adecuado del sistema se requiere de un equipo conectado a Internet con alguno de los siguientes navegadores instalados:
+1.	Internet Explorer 9.  
+2.	Google Chrome 14.0 o superior.  
+3.	Mozilla Firefox 8 o superior.  
+4.	Apple Safari 5 o superior.  
+6. Condiciones de uso.
+La APLICACIÓN deberá ser accesada únicamente por parte del CLIENTE para el cual el INSTITUTO haya asignado un nombre de usuario y contraseña para el uso del servicio.
+El USUARIO se compromete a utilizar el servicio conforme a las finalidades previstas en los presentes términos y condiciones del servicio para la generación de PERFILES. De manera enunciativa pero no limitativa, se prohíbe expresamente al CLIENTE:
+A.	Copia, reproducción, transformación, difusión, distribución, transmisión por cualquier medio, posterior publicación, exhibición, comunicación pública, representación total o parcial de la APLICACIÓN.
+B.	Realizar cualquier tipo de actuación que comportar modificaciones, ajustes, alteraciones o daños a la APLICACIÓN.
+C.	Tratar datos o información que se considern ilícitos, ofensivos o de cualquier otra naturaleza contraria a la ley.
+D.	Trata datos que puedan contener Virus, o cualquier otro elemento que pueda causar daños o alteraciones que pueda perjudicar a la APLICACIÓN, y dañar a su vez de manera directa o indirecta de INNOVATION.
+E.	Utilizar la APLICACIÓN con cualquier otro fin lesivo a los intereses de terceros, o que de cualquier forma puedan dañar, inutilizar, sobrecargar, o deteriorar los servicios, los equipos informáticos de otros usuarios de Internet (hardware y software).
+F.	En general, cualquier actividad que vaya en contra de la ley, la moral y las buenas costumbres generalmente aceptadas.
+El USUARIO será el único responsable por el uso que haga de la APLICACIÓN.
+7. Datos de caracter personal.
+El CLIENTE otorga su autorización para proporcionar a INNOVATION datos de caracter personal que serán utilizados únicamente para la prestación del servicio y fines relativos al mismo. De igual forma, el CLIENTE autoriza a INNOVATION para utilizar sus datos nivel macro con fines estadísticos y darlos a conocer a otras empresas que deseen publicar sus productos o servicios dentro de la aplicación. En ningún momento y bajo ninguna circunstancia INNOVATION brindará datos específicos del CLIENTE a otras entidades. Así mismo INNOVATION informa al CLIENTE que los COMPROBANTES serán enviados sin distinción al SAT.
+8. Responsabilidad por daños y perjuicios.
+En caso de incumplimiento o violación a las presentes condiciones, INNOVATION se reserva el derecho de suspender o cancelar si así fuera necesario el servicio otorgado al USUARIO. Además el USUARIO, responderá por los daños y perjuicios de toda naturaleza que INNOVATION sufra como consecuencia del incumplimiento de cualquiera de las condiciones señaladas en el presente documento.
+9. Garantía de la APLICACIÓN y niveles de servicio.
+INNOVATION no garantiza la continuidad y disponibilidad de la APLICACIÓN. Cuando sea posible, INNOVATION notificará al CLIENTE de las interrupciones en el funcionamiento del servicio. INNOVATION tampoco garantiza la infalibilidad de la APLICACIÓN.
+INNOVATION no será responsable por los daños y perjuicios de toda naturaleza que puedan deberse a la falta de disponibilidad o continuidad del servicio y a los fallos que pudieran producirse.
+El CLIENTE acepta que la APLICACIÓN es una herramienta destinada a complementar mas no a sustituir la labor humana.
+10. Vigencia
+La prestación del servicio es de duración indefinida. INNOVATION podrá dar por concluida o suspender la prestación del servicio observando las obligaciones legales que en su carácter de Prestador de Servicios esté obligado.
+El CLIENTE puede dejar libremente de utilizar el servicio cuando éste así lo desee por convenir a sus intereses personales, sin embargo INNOVATION guardará una copia de los COMPROBANTES emitidos en cumplimiento a la legislación vigente en el periodo establecido en la misma.
+
+                          </p>
+                          
+                          
+                        </div>
+                    
+               </div>
+                  <a href="#" class="gradient" id="box-c">aceptar</a> 
+                  <a href="#" class="gradient-border" id="box-d">Cancelar</a>
+           </div>
+     </div>
+     
+    <!-- Div de la ventana de busqueda -->
+    <div class = "contenedor1">
+      <div class="buscador1 busc-close">
+          <input class="entrada-busqueda1" type="text" placeholder="Buscar">
+          <button class="boton-buscar1">Buscar</button>
+      </div>
+    </div>
+    <!-- Fin de la Ventana de busqueda -->
+
+         <script src="assets/js/settings.js"></script>
+        <script src="assets/js/innovation.js"></script>
+         <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html> 
