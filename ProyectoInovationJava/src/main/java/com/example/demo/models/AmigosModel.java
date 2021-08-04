@@ -26,5 +26,31 @@ public class AmigosModel {
 	@ManyToOne
 	@JsonBackReference
 	private UsuarioModel friends;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public UsuarioModel getUser() {
+		return user;
+	}
+
+	public void setUser(UsuarioModel user) {
+		this.user = user;
+	}
+
+	public UsuarioModel getFriends() {
+		return friends;
+	}
+
+	public void setFriends(UsuarioModel friends) {
+		this.friends = friends;
+	}
+	
+	
 	
 }
