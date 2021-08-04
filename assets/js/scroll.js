@@ -7,7 +7,7 @@ getPost()
 
 async function getPost(){
    postCounter++
-   const urlPost= `https://jsonplaceholder.typicode.com/posts/${postCounter}`
+   const urlPost= ``
    const newPost= await fetch(urlPost)
    const postResponse= await newPost.json()
    renderDOM(postResponse)
@@ -28,10 +28,10 @@ function renderDOM(data){
   newElement.classList.add("card")
   newElement.innerHTML=`<div class="card">
 		<h2 class="title">${data.title}</h2>
-		<p class="text">${data.body}.</p>
+		<p class="card-text">${data.body}.</p>
 		<div class="user-info">
-			<img src="https://randomuser.me/api/portraits/women/26.jpg" alt="pic" />
-			<span>Leah Taylor</span>
+			<img src="" alt="pic" />
+			<span>Innovation card</span>
 		</div>
 	</div>`
  container.append(newElement)
