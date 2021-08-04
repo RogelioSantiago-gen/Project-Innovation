@@ -33,4 +33,37 @@ public class ChatsModel {
 	@JsonBackReference
 	private UsuarioModel receptor;
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public List<MensajesModel> getChats() {
+		return chats;
+	}
+
+	public void setChats(List<MensajesModel> chats) {
+		this.chats = chats;
+	}
+
+	public UsuarioModel getEmisor() {
+		return emisor;
+	}
+
+	public void setEmisor(UsuarioModel emisor) {
+		this.emisor = emisor;
+	}
+
+	public UsuarioModel getReceptor() {
+		return receptor;
+	}
+
+	public void setReceptor(UsuarioModel receptor) {
+		this.receptor = receptor;
+	}
+
+	
 }

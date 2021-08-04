@@ -30,29 +30,30 @@ public class UsuarioModel {
 	@Column(nullable=false, length=100)
 	private String password;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
 	private String foto_perfil;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
+	private String foto_portada;
+
+	@Column(length=100)
 	private String ubicacion;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
 	private String trabajo;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
 	private String habilidades;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
 	private String idiomas;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
 	private String intereses;
 	
-	@Column(nullable=true, length=100)
+	@Column(length=100)
 	private String enlace_github;
 	
-	@Column(nullable=false, length=100)
-	private int tipo_usuario;
 	
 	@OneToMany(targetEntity=ProyectosModel.class, mappedBy= "usuario")
 	@JsonManagedReference
@@ -84,6 +85,14 @@ public class UsuarioModel {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+	
+	public String getFoto_portada() {
+		return foto_portada;
+	}
+
+	public void setFoto_portada(String foto_portada) {
+		this.foto_portada = foto_portada;
 	}
 
 	public String getNombre() {
@@ -166,13 +175,6 @@ public class UsuarioModel {
 		this.enlace_github = enlace_github;
 	}
 
-	public int getTipo_usuario() {
-		return tipo_usuario;
-	}
-
-	public void setTipo_usuario(int tipo_usuario) {
-		this.tipo_usuario = tipo_usuario;
-	}
 
 	public List<ProyectosModel> getProyectos() {
 		return proyectos;
