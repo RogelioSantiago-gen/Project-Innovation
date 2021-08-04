@@ -562,6 +562,7 @@ background-color: tomato;
 
 /*Seccion trabajos*/
 
+
 aside{
   float: right;
   box-shadow: 0px 6px 16px rgba(237, 239, 247, 0.761);
@@ -571,7 +572,6 @@ aside{
   display: inline-block;
   margin-top: -170em;
   scroll-behavior:  auto;
-
 }
 
 .card-titulo-menu {
@@ -598,13 +598,15 @@ aside{
   margin-left: 25px;
   margin-top: 50px;
   border-radius: 10px;
-  box-shadow: 0px 6px 16px rgba(242, 242, 248, 0.803);
+  box-shadow: 0px 6px 16px rgba(224, 224, 226, 0.761);
 }
 
 .container-img {
-  margin-left: 15px;
+  margin-left: 13px;
   width: 150px;
-  height: 75px;
+  height: 77px;
+padding-top: 0.2em;
+
 }
 
 .container-img img {
@@ -615,6 +617,7 @@ aside{
 }
 
 .card-title-trabajo {
+  width: 150px;
   margin-top: 10px;
   font-family: sans-serif;
   margin-left: 6px;

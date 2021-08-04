@@ -19,7 +19,7 @@
     /*  overlay.addEventListener('click' , ()=>{
         overlay.classList.remove('active');
         popup.classList.remove('active');
-        imgPrevista.src="";  
+        imgPrevista.src="";
     });
   */
 
@@ -52,6 +52,7 @@
          imgPrevista.src = res.data.secure_url;
 
     });   
+    
     /* Cuando precionas este boton se envia la url de la imagen 
     a la base de datos y se actualiza la foto de portada */ 
     btnGuardar.addEventListener('click', ()=>{
