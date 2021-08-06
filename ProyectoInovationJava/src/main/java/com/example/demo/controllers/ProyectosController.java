@@ -28,14 +28,17 @@ public class ProyectosController {
 	}
 	
 	//RECUPERAR TODOS LOS PROYECTOS
+	//Tenemos que hacer que recupere de 3 en 3
+	//Hacer funcion en javascript que mande llamar al back cada que se actualizce el scrool infinito
 	@GetMapping
 	public ArrayList<ProyectosModel>getPosts(){
 		return proyectosService.getProyects();
 	}
+
 	
-	//UPDATE PROYECTO
-	@PutMapping("/update")
-	public String updateProyecto(@RequestBody ProyectosModel proyectoNew) {
-		return proyectosService.updateProyecto(proyectoNew);
-	}
+	/*Hacer uncion que recupere proyectos solo del ID DEL USUARIO logeado son para pagina perfil*/
+	
+
+	//FUNCION PARA BORRAR PROYECTO POR SU ID DEL PROYECTO 
+	
 }
