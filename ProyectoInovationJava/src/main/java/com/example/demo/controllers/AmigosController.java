@@ -11,5 +11,5 @@ import com.example.demo.services.AmigosService;
 public class AmigosController {
 
 	@Autowired
-	AmigosService amigosService;
+	AmigosService amigosService; 
 }

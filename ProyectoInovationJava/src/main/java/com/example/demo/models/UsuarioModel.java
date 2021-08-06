@@ -30,28 +30,28 @@ public class UsuarioModel {
 	@Column(nullable=false, length=100)
 	private String password;
 	
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String foto_perfil;
 	
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String foto_portada;
 
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String ubicacion;
 	
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String trabajo;
 	
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String habilidades;
 	
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String idiomas;
 	
-	@Column(length=100)
+	@Column(length=100, nullable=true)
 	private String intereses;
 	
-	@Column(length=100)
+	@Column(length=100,nullable=true)
 	private String enlace_github;
 	
 	
