@@ -51,11 +51,12 @@ body{
   }
   .textCenter{
     text-align: center;
+    margin-bottom: 30px;
   }
   h2{
     margin-top:35px;
     padding:0;
-    margin-bottom:10px;
+    margin-bottom:20px;
   }
   a{
     display:flex;
@@ -74,7 +75,7 @@ body{
   input{
     margin-bottom: 10px;
     width:240px;
-    height:35px;
+    height:25px;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
   }

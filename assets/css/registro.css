@@ -41,7 +41,7 @@
     border-radius: 20px;
     background-color: #ffff;
     width: 320px;
-    height: 540px;
+    height: 635px;
     margin: 200px auto;
     box-shadow: 0 20px 40px 0 rgba(204, 204, 204, 0.1);
   }
@@ -54,7 +54,7 @@
   h2{
     margin-top:35px;
     padding:0;
-    margin-bottom:23px;
+    margin-bottom:45px;
   }
   a{
     display:flex;
@@ -73,7 +73,7 @@
   input{
     margin-bottom: 10px;
     width:240px;
-    height:35px;
+    height:25px;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
   }
@@ -110,4 +110,11 @@
     margin:10px;
     font-size:14px;
     color: #4e4f5c;
-  }   
+  }
+  select{
+    width: 240px;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+  }
