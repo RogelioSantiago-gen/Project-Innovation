@@ -10,8 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 @Entity
 @Table(name="usuario")
 public class UsuarioModel {
@@ -52,31 +50,38 @@ public class UsuarioModel {
 	private String intereses;
 	
 	@Column(length=100,nullable=true)
+
 	private String enlace_github;
 	
+	@Column(length = 100, nullable=false)
+		private String username;
 	
+	
+	
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
 	@OneToMany(targetEntity=ProyectosModel.class, mappedBy= "usuario")
-	@JsonManagedReference
 	private List<ProyectosModel> proyectos;
 	
 	@OneToMany(targetEntity = AmigosModel.class, mappedBy = "user")
-	@JsonManagedReference
 	private List<AmigosModel> user;
 	
 	@OneToMany(targetEntity = AmigosModel.class, mappedBy = "friends")
-	@JsonManagedReference
 	private List<AmigosModel> friends;
 	
 	@OneToMany(targetEntity = MensajesModel.class, mappedBy = "user")
-	@JsonManagedReference
 	private List<MensajesModel> user_mensajes;
 	
 	@OneToMany(targetEntity = ChatsModel.class, mappedBy = "receptor")
-	@JsonManagedReference
 	private List<ChatsModel> receptor;
 	
 	@OneToMany(targetEntity = ChatsModel.class, mappedBy = "emisor")
-	@JsonManagedReference
 	private List<ChatsModel> emisor;
 
 	public long getId() {
@@ -183,7 +188,5 @@ public class UsuarioModel {
 	public void setProyectos(List<ProyectosModel> proyectos) {
 		this.proyectos = proyectos;
 	}
-	
-	
-	
+		
 }

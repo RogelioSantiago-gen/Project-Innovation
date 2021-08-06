@@ -263,7 +263,6 @@ main {
   margin-top: 70px;
   margin-right: 3%;
   height: auto;
- 
 }
 .contenedorBuscador {
   margin-top: 30px;
@@ -333,7 +332,6 @@ main {
   margin-left: -10em;
   background-color: white;
   margin-top: 50px;
-  
 }
 
 .container-imagen {
@@ -341,7 +339,6 @@ main {
   height: auto;
   padding: auto;
   cursor: pointer;
-  
 }
 
 .top-card img {
@@ -350,7 +347,6 @@ main {
   width: 100%;
   margin: 0px;
   margin-top: -325px;
- 
 }
 
 .card-title {
@@ -362,7 +358,6 @@ main {
   text-align: start;
   font-weight: 600;
   color: #112336;
- 
 }
 
 .card-text-descripcion {
@@ -377,7 +372,6 @@ main {
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  
 }
 
 .user-info {
@@ -403,7 +397,6 @@ main {
   margin-top: -1em;
   font-size: 1.1em;
   padding: auto;
-  
 }
 
 .name {
@@ -411,11 +404,9 @@ main {
 }
 
 #icon {
-  
   width: 150px;
   height: 4em;
- padding-bottom:3em ;
-
+  padding-bottom: 3em;
 }
 
 .col {
@@ -424,7 +415,6 @@ main {
   margin-top: -59px;
   width: 100px;
   font-size: 32px;
- 
 }
 
 .cursor {
@@ -457,11 +447,9 @@ main {
   margin-top: 0;
   margin-left: -3em;
   float: left;
-
 }
 
 .comentar {
-
   margin-top: -2px;
 }
 
@@ -480,9 +468,8 @@ main {
   transform: translateY(-50%);
 }
 
-.containerBr{
-background-color: tomato;
-
+.containerBr {
+  background-color: tomato;
 }
 
 #collapse-1 {
@@ -504,10 +491,7 @@ background-color: tomato;
   width: 100px;
   height: 49px;
   margin-top: -1px;
-
-} 
-
-
+}
 
 .btn-uno {
   width: 83px;
@@ -516,7 +500,7 @@ background-color: tomato;
   font-family: sans-serif;
   font-size: 1em;
   margin-right: 60px;
-} 
+}
 
 .loading {
   opacity: 30px;
@@ -562,16 +546,15 @@ background-color: tomato;
 
 /*Seccion trabajos*/
 
-
-aside{
-  float: right;
+aside {
   box-shadow: 0px 6px 16px rgba(237, 239, 247, 0.761);
   height: 950px;
   width: 15%;
   margin-right: 70px;
   display: inline-block;
-  margin-top: -170em;
-  scroll-behavior:  auto;
+  margin-top: 4em;
+  margin-left: 10em;
+  scroll-behavior: auto;
 }
 
 .card-titulo-menu {
@@ -605,8 +588,7 @@ aside{
   margin-left: 13px;
   width: 150px;
   height: 77px;
-padding-top: 0.2em;
-
+  padding-top: 0.2em;
 }
 
 .container-img img {
@@ -630,7 +612,6 @@ padding-top: 0.2em;
   font-size: 0.8em;
   margin-right: -68px;
 }
-
 
 /*------------------ estilo del cuadro de busqueda --------------------------*/
 .contenedor1 {

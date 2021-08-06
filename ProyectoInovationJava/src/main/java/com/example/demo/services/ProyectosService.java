@@ -24,8 +24,9 @@ public class ProyectosService {
 	public ArrayList<ProyectosModel> getProyects(){
 		return (ArrayList<ProyectosModel>) proyectosRepository.findAll();
 	}
+	
 	//UPDATE PROYECTO
-	public String updateProyecto(ProyectosModel proyectoNew) {
+	/*public String updateProyecto(ProyectosModel proyectoNew) {
 		Long num = proyectoNew.getId();
 		if(proyectosRepository.findById(num).isPresent()) {
 		
@@ -42,7 +43,7 @@ public class ProyectosService {
 		}else {
 			return "Error al modificar proyecto";
 		}	
-	}
+	}*/
 	
 	
 }
