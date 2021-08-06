@@ -39,14 +39,6 @@ public class UsuarioController {
 	}
 
 	
-	
-	
-	//CREAR USUARIO
-/*	@PostMapping
-	public UsuarioModel saveUser(@RequestBody UsuarioModel user) {
-		return usuarioService.saveUser(user);
-	}*/
-	
 	//BORRAR USUARIO
 	@DeleteMapping(path="/{id}")
 	public String deleteUser(@PathVariable("id")Long id) {

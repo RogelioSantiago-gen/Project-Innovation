@@ -20,11 +20,9 @@ public class AmigosModel {
 	private long id;
 	
 	@ManyToOne
-	@JsonBackReference
 	private UsuarioModel user;
 	
 	@ManyToOne
-	@JsonBackReference
 	private UsuarioModel friends;
 
 	public long getId() {

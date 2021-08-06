@@ -34,21 +34,6 @@ public class UsuarioService implements UserDetailsService{
 	}
 	
 	
-	
-	
-	//GUARDAR UN NUEVO USUARIO
-/*	public UsuarioModel saveUser(UsuarioModel user) {
-		
-		String nombre=user.getNombre();
-		String correo=user.getCorreo();
-		String password=user.getPassword();
-		
-		if(nombre!=null && correo!= null && password!=null) {
-			return usuarioRepository.save(user);
-		}
-		return user;
-	}*/
-	
 	//PARA BORRAR EL USUARIO 
 	public boolean deleteUser(Long id){
 		try {

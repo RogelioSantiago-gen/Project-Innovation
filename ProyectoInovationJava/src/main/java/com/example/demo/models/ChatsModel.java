@@ -26,11 +26,9 @@ public class ChatsModel {
 	private List<MensajesModel> chats;
 	
 	@ManyToOne
-	@JsonBackReference
 	private UsuarioModel emisor;
 	
 	@ManyToOne
-	@JsonBackReference
 	private UsuarioModel receptor;
 
 	public long getId() {
