@@ -28,7 +28,6 @@ public class ComentariosModel {
 	private Date fecha;
 	
 	@ManyToOne
-	@JsonBackReference
 	private ProyectosModel proyectos;
 
 	public long getId() {

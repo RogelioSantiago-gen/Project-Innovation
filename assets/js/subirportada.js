@@ -16,12 +16,6 @@
         imgPrevista.src="";
     });
 
-    /*  overlay.addEventListener('click' , ()=>{
-        overlay.classList.remove('active');
-        popup.classList.remove('active');
-        imgPrevista.src="";
-    });
-  */
 
     //CODIGO PARA SELECCIONAR LA IMG Y ENVIARLA AL SERVIDOR
     var imgSubida = document.getElementById("img-subida");
@@ -56,8 +50,25 @@
     /* Cuando precionas este boton se envia la url de la imagen 
     a la base de datos y se actualiza la foto de portada */ 
     btnGuardar.addEventListener('click', ()=>{
-        /* cuando se presione guardar enviar imgPrevista.src a la base de datos 
-        y cambiar la foto de portada */
+
+
+        if(imgPrevista.src =! null){
+            fetch('http://localhost:8080/users/',{
+                method: 'POST',
+                body: JSON.stringify(imgPrevista.src),
+                headers:{
+                    'Authorization': token,
+                    'Content-Type': 'application/json'
+                }
+            }).then(res=>  res.json())
+            .catch(error=>console.error('Error: ', error))
+            .then(response=> console.log('Success: ', response));
+        }else{
+            console.log("No hay imagen");
+        }
+
+    
+    
     });
     
     

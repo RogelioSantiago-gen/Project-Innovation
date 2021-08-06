@@ -38,11 +38,9 @@ public class ProyectosModel {
 	private String url_foto;
 	
 	@ManyToOne
-	@JsonBackReference
 	private UsuarioModel usuario;
 	
 	@OneToMany(targetEntity=ComentariosModel.class, mappedBy= "proyectos")
-	@JsonManagedReference
 	private List<ComentariosModel> comentarios;
 
 	
