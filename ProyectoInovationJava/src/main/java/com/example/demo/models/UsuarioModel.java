@@ -29,6 +29,9 @@ public class UsuarioModel {
 	@Column(nullable=false, length=100)
 	private String password;
 	
+	@Column(nullable=false, length=100)
+	private String tipo_Usuario;
+	
 	@Column(length=100, nullable=true)
 	private String foto_perfil;
 	
@@ -76,6 +79,15 @@ public class UsuarioModel {
 	private List<ChatsModel> emisor;
 	
 	
+	
+	public String getTipo_Usuario() {
+		return tipo_Usuario;
+	}
+
+	public void setTipo_Usuario(String tipo_Usuario) {
+		this.tipo_Usuario = tipo_Usuario;
+	}
+
 	public String getUsername() {
 		return username;
 	}
