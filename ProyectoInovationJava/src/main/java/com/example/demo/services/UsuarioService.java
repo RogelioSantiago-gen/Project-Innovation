@@ -51,28 +51,11 @@ public class UsuarioService implements UserDetailsService{
 	
 	//PARA PODER EDITAR UN USUARIO
 	public String usuarioUpdate(UsuarioModel user) {
-		Long num = user.getId();
-		if(usuarioRepository.findById(num).isPresent()) {
-			
-			UsuarioModel userToUpdate= new UsuarioModel();
-			
-			// userToUpdate.setId(user.getId());
-			userToUpdate.setEnlace_github(user.getEnlace_github());
-			userToUpdate.setFoto_perfil(user.getFoto_perfil());
-			userToUpdate.setCorreo(user.getCorreo());
-			userToUpdate.setHabilidades(user.getHabilidades());
-			userToUpdate.setIdiomas(user.getIdiomas());
-			userToUpdate.setIntereses(user.getIntereses());
-			userToUpdate.setUbicacion(user.getUbicacion());
-			userToUpdate.setPassword(user.getPassword());
-			userToUpdate.setFoto_portada(user.getFoto_portada());
-			
-			usuarioRepository.save(userToUpdate);
-			return "Usuario modificado";	
-		}else {
-			return "Error al modificar el proyecto";
-		}
 		
+		String userBandera = user.getFoto_perfil();
+			user.setFoto_perfil(userBandera);
+		
+		return "Se edito el user";
 	}
 	
 	

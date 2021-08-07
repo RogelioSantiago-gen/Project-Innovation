@@ -1,9 +1,11 @@
 
+
+
 token = localStorage.getItem('token');
 
 if(!token){
     url = window.location;
     console.log(url);
-    const path = url.pathname.substring(0, url.pathname.lastIndexOf('/')+1);
-    location.href= path + "login.html";
+    const path = 'file:///C:/Users/bayin/OneDrive/Documentos/Proyecto_Inovation/Project-Innovation/assets/html/login.html';
+    location.href= path;
 }

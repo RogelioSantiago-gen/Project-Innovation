@@ -1,17 +1,17 @@
 const buttonLog = document.querySelector('#buttonLog');
+const userName = document.querySelector('#userName');
+const password = document.querySelector('#password');
 
-buttonLog.addEventListener('submit', (e)=>{
+
+buttonLog.addEventListener('click', (e)=>{
 
     e.preventDefault;
 
-    const email = document.querySelector('#email');
-    const password = document.querySelector('#password');
-
-    if(email.value != '' && password.value != ''){
+    if(userName.value != '' && password.value != ''){
         fetch('http://localhost:8080/login', {
          method:'POST',
          body: JSON.stringify({ 
-             username: email.value,
+             username: userName.value,
              password: password.value
          }),
          headers: {
@@ -29,12 +29,12 @@ buttonLog.addEventListener('submit', (e)=>{
              localStorage.setItem('token', token); 
              url = window.location;  
              console.log(url);
-             const path = url.pathname.substring(0, url.pathname.lastIndexOf("/") + 1);
+             const path = 'file:///C:/Users/bayin/OneDrive/Documentos/Proyecto_Inovation/Project-Innovation/';
                                               
              location.href = path + 'index.html' ; 
          }else{
              localStorage.removeItem('token'); 
-             emailError.textContent='Usuario o contraseña incorrecta';
+             console.log("Contrseña o algo erroneo");
          }
      })
  }
