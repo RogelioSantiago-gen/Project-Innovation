@@ -34,7 +34,7 @@ buttonLog.addEventListener('click', (e)=>{
              location.href = path + 'index.html' ; 
          }else{
              localStorage.removeItem('token'); 
-             console.log("Contrseña o algo erroneo");
+             alert("Contraseña o usuario equivocado");
          }
      })
  }

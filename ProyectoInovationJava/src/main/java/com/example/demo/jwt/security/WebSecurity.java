@@ -1,6 +1,7 @@
 package com.example.demo.jwt.security;
 
 import static com.example.demo.jwt.security.Constants.LOGIN_URL;
+import static com.example.demo.jwt.security.Constants.REGISTER_URL;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,7 +43,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 			.cors().and()    
 			.csrf().disable() 
 			.authorizeRequests().antMatchers(HttpMethod.POST, LOGIN_URL).permitAll().and() 
-			.authorizeRequests().antMatchers(HttpMethod.POST, "/users/").permitAll() 
+			.authorizeRequests().antMatchers(HttpMethod.POST, REGISTER_URL ).permitAll() 
 			.anyRequest().authenticated().and()
 				.addFilter(new JWTAuthenticationFilter(authenticationManager()))
 				.addFilter(new JWTAuthorizationFilter(authenticationManager()));
