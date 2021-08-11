@@ -1,9 +1,11 @@
+/*
 const buttonLog = document.querySelector('#buttonLog');
 const userName = document.querySelector('#userName');
 const password = document.querySelector('#password');
 
 
 buttonLog.addEventListener('click', (e)=>{
+
 
     e.preventDefault;
 
@@ -29,7 +31,7 @@ buttonLog.addEventListener('click', (e)=>{
              localStorage.setItem('token', token); 
              url = window.location;  
              console.log(url);
-             const path = 'file:///C:/Users/bayin/OneDrive/Documentos/Proyecto_Inovation/Project-Innovation/';
+             const path = 'file:///C:/Users/andre/Desktop/Copia%20proyecto/Project-Innovation/';
                                               
              location.href = path + 'index.html' ; 
          }else{
@@ -40,3 +42,4 @@ buttonLog.addEventListener('click', (e)=>{
  }
 
 });
+*/
